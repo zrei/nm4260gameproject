@@ -26,5 +26,6 @@ window_set_rectangle(_xpos, _ypos, global.viewport_width, global.viewport_height
 
 surface_resize(application_surface, global.viewport_width, global.viewport_height);
 
-
+camera_target_pos = new Vector2(camera_pos.x, camera_pos.y);
+camera_moving = false;
 

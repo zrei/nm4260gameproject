@@ -37,6 +37,13 @@ function Vector2(_x = 0, _y = 0) constructor
 		magnitude = self.calculate_magnitude();
 		return new Vector2(x / magnitude, y / magnitude);
 	}
+	
+	static equals = function(_other_vector)
+	{
+		if (!struct_exists(_other_vector, "x") || !struct_exists(_other_vector, "y"))
+			return false;
+		return x == _other_vector.x && y == _other_vector.y;
+	}
 }
 
 // four cardinal directions

@@ -6,3 +6,7 @@ global.viewport_x = 0;
 global.viewport_y = 0;
 global.viewport_width = 683;
 global.viewport_height = 768;
+
+// camera speed
+global.camera_movement_speed_x = 0.05;
+global.camera_movement_speed_y = 0.05;

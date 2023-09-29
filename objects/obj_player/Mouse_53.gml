@@ -3,7 +3,7 @@
 
 // have to put in a check for within bounds
 
-if (curr_mouse_cooldown > 0)
+if (curr_mouse_cooldown > 0 || !can_move)
 	return;
 
 target_pos_x = mouse_x;
