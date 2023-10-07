@@ -29,3 +29,38 @@ surface_resize(application_surface, global.viewport_width, global.viewport_heigh
 camera_target_pos = new Vector2(camera_pos.x, camera_pos.y);
 camera_moving = false;
 
+move_camera_to_position = function(_position, _instanteneous = false)
+{
+	if (camera_moving)
+		return;
+	
+	camera_target_pos = _position;
+	
+	if (_instanteneous)
+	{
+		camera_pos = _position;	
+		camera_set_view_pos(curr_camera, camera_pos.x, camera_pos.y);
+		show_debug_message("Camera position: " + string(camera_get_view_x(curr_camera)) + ", " + string(camera_get_view_y(curr_camera)));
+		show_debug_message("Camera width: " + string(camera_get_view_width(curr_camera)) + ", Camera height: " + string(camera_get_view_height(curr_camera)));
+		camera_moving = false;
+		return;
+	}
+
+	//camera_target_pos = new Vector2(camera_get_view_x(curr_camera) - global.viewport_width, camera_get_view_y(curr_camera));
+	camera_moving = true;
+	obj_player.disable_player_controls();
+}
+
+get_camera_x_position = function()
+{
+	if (curr_camera == undefined)
+		return;
+	return camera_pos.x;
+}
+
+get_camera_y_position = function()
+{
+	if (curr_camera == undefined)
+		return;
+	return camera_pos.y;
+}

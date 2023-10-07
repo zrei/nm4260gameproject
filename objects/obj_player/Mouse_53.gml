@@ -8,8 +8,5 @@ if (curr_mouse_cooldown > 0 || !can_move)
 
 target_pos_x = mouse_x;
 target_pos_y = mouse_y;
-show_debug_message("Set target position to: {0}, {1}", target_pos_x, target_pos_y);
+//show_debug_message("Set target position to: {0}, {1}", target_pos_x, target_pos_y);
 curr_mouse_cooldown = global.player_mouse_cooldown;
-
-
-

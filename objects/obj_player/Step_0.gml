@@ -18,13 +18,13 @@ if (can_move && distance_to_point(target_pos_x, target_pos_y) > global.point_rea
 if (!pause_cooldowns)
 {
 	if (curr_mouse_cooldown > 0)
-	{
 		curr_mouse_cooldown -= 1;	
-	}
+	
 	if (shooting_cooldown > 0)
-	{
 		shooting_cooldown -= 1;	
-	}
+
+	if (invul_cooldown > 0)
+		invul_cooldown -= 1;
 }
 
 // update facing position if not moving
