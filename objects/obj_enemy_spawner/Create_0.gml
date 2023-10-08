@@ -8,7 +8,6 @@ max_angle = 360;
 
 spawned_number = 0;
 number_to_spawn = random_range(min_spawn_number, max_spawn_number);
-show_debug_message("Spawn " + string(number_to_spawn));
 position = new Vector2(x, y);
 
 spawn_enemy = function()
@@ -39,4 +38,9 @@ start_spawning = function()
 		spawn_enemy();
 	curr_state = ROOM_STATE.IDLE;
 	spawned_number = 0;
+}
+
+get_wave = function()
+{
+	return wave_number;
 }

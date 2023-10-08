@@ -8,11 +8,9 @@ curr_end_callback = undefined;
 
 create_transition = function(_sequence, _origin_position, _pause_after_creation = true, _end_callback = undefined)
 {
-	show_debug_message("Transition " + string(_sequence) + " created");
 	active_transition = _sequence;
 	active_sequence = layer_sequence_create(global.transition_layer, _origin_position.x ,_origin_position.y, active_transition);
 	
-	show_debug_message("End callback is null: " + string(_end_callback == undefined));
 	curr_end_callback = _end_callback;
 
 	if (_pause_after_creation)

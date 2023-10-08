@@ -7,7 +7,11 @@ attack_cooldown = 0;
 
 take_damage = function(_damage_value)
 {
-	enemy_health -= _damage_value;
+	if (global.enable_player_one_hit_kill)
+		enemy_health = 0;
+	else if (!global.invincible_enemy)
+		enemy_health -= _damage_value;
+
 	if (enemy_health <= 0)
 		die();
 }
@@ -25,10 +29,15 @@ die = function()
 attack = function()
 {
 	obj_player.take_damage(attack_damage, calculate_distance_vector_between_two_points(new Vector2(obj_player.x, obj_player.y), new Vector2(x, y)));
-	attack_cooldown = global.enemy_attack_cooldown;
-	can_act = false;
-	speed = 0;
-	moving = false;
+	
+	if (!global.no_enemy_attack_cooldown)
+	{
+		attack_cooldown = global.enemy_attack_cooldown;
+		can_act = false;
+		speed = 0;
+		moving = false;
+	}
+	
 }
 
 despawn = function()

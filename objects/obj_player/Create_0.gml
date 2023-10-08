@@ -50,21 +50,21 @@ move_instanteneously = function(_position, _facing_direction)
 
 take_damage = function(_damage_amount, _damage_direction)
 {
+	if (global.invincible_player)
+		return;
+
 	if (invul_cooldown > 0)
 		return;
 
-	player_health -= _damage_amount;
-	
+	if (global.enemy_one_hit_kill)
+		player_health = 0;
+	else 
+		player_health -= _damage_amount;
+
+	obj_healthbar_controller.update_healthbar(player_health);
+
 	if (player_health <= 0)
-	{
-		show_debug_message("player died");
-		disable_player_controls();
-		_end_callback = function()
-		{
-			room_restart();	
-		}
-		obj_transition_controller.create_transition(global.fade_in_transition, obj_dungeon_controller.get_current_room_top_left_corner(), false, _end_callback);
-	}
+		die();
 
 	invul_cooldown = global.player_invul_cooldown;
 }
@@ -82,3 +82,34 @@ set_element = function(_element)
 {
 	curr_element = _element;
 }
+
+heal = function(_heal_amount)
+{
+	if (_heal_amount < 0)
+	{
+		show_debug_message("Cannot heal negative amount");
+		return;
+	}
+
+	player_health = min(player_health + _heal_amount, global.player_health);
+	obj_healthbar_controller.update_healthbar(player_health);
+}
+
+set_health = function(_health)
+{
+	player_health = min(_health, global.player_health);
+	obj_healthbar_controller.update_healthbar(player_health);
+
+	if (player_health <= 0)
+		die();
+}
+
+die = function()
+{
+	disable_player_controls();
+	_end_callback = function()
+	{
+		room_restart();	
+	}
+	obj_transition_controller.create_transition(global.fade_in_transition, obj_dungeon_controller.get_current_room_top_left_corner(), false, _end_callback);
+}	

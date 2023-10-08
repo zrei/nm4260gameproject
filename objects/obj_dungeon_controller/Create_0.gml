@@ -72,3 +72,9 @@ get_current_room_top_left_corner = function()
 
 	return current_dungeon_room.get_top_left_corner_of_room();
 }
+
+debug_kill_all_enemies = function()
+{
+	with (obj_enemy_parent)
+		die();
+}
