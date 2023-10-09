@@ -30,6 +30,8 @@ if (!pause_cooldowns)
 // update facing position if not moving
 if (!moving && can_shoot)
 {
-	curr_facing_position = calculate_new_player_face_angle(x, y, mouse_x, mouse_y);
+	curr_facing_position = calculate_face_angle(x, y, mouse_x, mouse_y);
+	sprite_index = global.player_sprites.get_sprite(map_angles_to_cardinal_directions(curr_facing_position));
+	
 	// update sprite
 }

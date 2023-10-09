@@ -20,6 +20,21 @@ enum CARDINAL_DIRECTIONS {
 	WEST
 }
 
+function map_angles_to_cardinal_directions(_angle)
+{
+	switch (_angle)
+	{
+		case 0: 
+			return CARDINAL_DIRECTIONS.EAST;
+		case 90:
+			return CARDINAL_DIRECTIONS.NORTH;
+		case 180:
+			return CARDINAL_DIRECTIONS.WEST;
+		case 270:
+			return CARDINAL_DIRECTIONS.SOUTH;
+	}
+}
+
 function get_opposite_cardinal_direction(_cardinal_direction)
 {
 	switch (_cardinal_direction)

@@ -4,6 +4,8 @@
 can_act = false;
 moving = false;
 attack_cooldown = 0;
+curr_face_angle = 270;
+enemy_sprites = new FourDirectionalSprites(left_facing_sprite, right_facing_sprite, front_facing_sprite, back_facing_sprite);
 
 take_damage = function(_damage_value)
 {

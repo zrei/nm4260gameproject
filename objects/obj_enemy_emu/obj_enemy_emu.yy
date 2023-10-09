@@ -1,13 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_enemy_emu_test",
+  "name": "obj_enemy_emu",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"movement_speed","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"2",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"attack_damage","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"1",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"enemy_health","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"8",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"front_facing_sprite","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"spr_emu_front_facing",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"back_facing_sprite","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"spr_emu_back_facing",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"left_facing_sprite","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"spr_emu_left_facing",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"right_facing_sprite","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"spr_emu_right_facing",},
   ],
   "parent": {
     "name": "Enemies",
@@ -33,8 +37,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_emu",
-    "path": "sprites/spr_emu/spr_emu.yy",
+    "name": "spr_emu_back_facing",
+    "path": "sprites/spr_emu_back_facing/spr_emu_back_facing.yy",
   },
   "spriteMaskId": null,
   "visible": true,

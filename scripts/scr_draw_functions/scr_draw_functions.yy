@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "Sprites and Drawing",
+    "path": "folders/Scripts/Sprites and Drawing.yy",
   },
 }

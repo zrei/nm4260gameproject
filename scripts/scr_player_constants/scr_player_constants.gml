@@ -6,3 +6,10 @@ global.player_health = 10;
 global.player_mouse_cooldown = convert_seconds_to_frames(0);
 global.player_shooting_cooldown = convert_seconds_to_frames(0.5);
 global.player_invul_cooldown = convert_seconds_to_frames(1);
+
+global.player_sprites = new FourDirectionalSprites(
+	spr_player_left_facing,
+	spr_player_right_facing,
+	spr_player_front_facing,
+	spr_player_back_facing
+);
