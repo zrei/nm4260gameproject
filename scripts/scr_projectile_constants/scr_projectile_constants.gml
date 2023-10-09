@@ -1,7 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 global.projectile_speed = 3;
-global.projectile_damage = 2;
+global.projectile_damage = 3;
 
 function ProjectileVariables(_sprite, _direction, _element, _speed = global.projectile_speed, _damage = global.projectile_damage) constructor
 {

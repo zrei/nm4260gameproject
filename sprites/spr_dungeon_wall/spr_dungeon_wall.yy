@@ -6,21 +6,21 @@
   "bbox_left": 0,
   "bbox_right": 1,
   "bbox_top": 0,
-  "bboxMode": 2,
+  "bboxMode": 0,
   "collisionKind": 5,
   "collisionTolerance": 0,
   "DynamicTexturePage": false,
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"74ccdbb1-f903-4261-acd3-c182e3afaf9a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8d6b4503-96b0-4e62-bbe6-9cd48b986e2d",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 2,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"fbd8489e-e3f9-4d48-9acd-f42670ccec60","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"f49a0f10-b2b8-4050-8804-b1a1ad4a212d","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"74ccdbb1-f903-4261-acd3-c182e3afaf9a","path":"sprites/spr_dungeon_wall/spr_dungeon_wall.yy",},},},"Disabled":false,"id":"86b18415-504d-423e-8d47-c82c8108bee7","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8d6b4503-96b0-4e62-bbe6-9cd48b986e2d","path":"sprites/spr_dungeon_wall/spr_dungeon_wall.yy",},},},"Disabled":false,"id":"cba1f21d-a959-4e37-b0e4-cd2f639dcdd5","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
