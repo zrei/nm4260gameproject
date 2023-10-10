@@ -5,11 +5,11 @@ current_dungeon_room = undefined;
 
 set_current_room = function(_dungeon_room, _direction_of_entrance, _instantaneous = false)
 {
+	obj_player.disable_player_controls();
 	with (obj_enemy_parent)
 	{
 		can_act = false;
 	}
-	obj_player.disable_player_controls();
 	
 	if (current_dungeon_room != undefined)
 		current_dungeon_room.end_room();

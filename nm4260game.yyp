@@ -137,7 +137,6 @@
     {"id":{"name":"obj_btn","path":"objects/obj_btn/obj_btn.yy",},},
     {"id":{"name":"spr_signboard","path":"sprites/spr_signboard/spr_signboard.yy",},},
     {"id":{"name":"obj_grass_obstacle","path":"objects/obj_grass_obstacle/obj_grass_obstacle.yy",},},
-    {"id":{"name":"scr_player_direction_calculations","path":"scripts/scr_player_direction_calculations/scr_player_direction_calculations.yy",},},
     {"id":{"name":"obj_projectile","path":"objects/obj_projectile/obj_projectile.yy",},},
     {"id":{"name":"spr_btn","path":"sprites/spr_btn/spr_btn.yy",},},
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},},

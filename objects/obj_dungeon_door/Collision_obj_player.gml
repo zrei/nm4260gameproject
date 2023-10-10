@@ -4,6 +4,8 @@
 if (curr_state == DOOR_STATE.LOCKED || !can_transition)
 	return;
 
+obj_player.disable_player_controls();
+
 var _end_callback = function()
 {
 	obj_dungeon_controller.set_current_room(connected_dungeon_room, entrance_direction, true);

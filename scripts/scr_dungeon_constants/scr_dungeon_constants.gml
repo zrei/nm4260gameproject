@@ -35,6 +35,21 @@ function map_angles_to_cardinal_directions(_angle)
 	}
 }
 
+function map_cardinal_directions_to_angles(_cardinal_direction)
+{
+	switch (_cardinal_direction)
+	{
+		case CARDINAL_DIRECTIONS.EAST:
+			return 0;
+		case CARDINAL_DIRECTIONS.NORTH:
+			return 90;
+		case CARDINAL_DIRECTIONS.WEST:
+			return 180;
+		case CARDINAL_DIRECTIONS.SOUTH:
+			return 270;
+	}
+}
+
 function get_opposite_cardinal_direction(_cardinal_direction)
 {
 	switch (_cardinal_direction)

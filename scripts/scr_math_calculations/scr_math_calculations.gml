@@ -75,3 +75,8 @@ function calculate_point_on_circle_perimeter(_center_of_circle, _angle, _radius)
 	_temp_vector = new Vector2(_radius * cos(_angle), _radius * sin(_angle));
 	return _temp_vector.translate(_center_of_circle.x, _center_of_circle.y);
 }
+
+function pythagoras_get_c(_a, _b)
+{
+	return sqrt(sqr(_a) + sqr(_b));
+}

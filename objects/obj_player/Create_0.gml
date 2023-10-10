@@ -10,6 +10,11 @@ target_pos_x = x;
 target_pos_y = y;
 moving = false;
 can_move = true;
+left_key = ord("A");
+right_key = ord("D");
+up_key = ord("W");
+down_key = ord("S");
+input_order = [];
 
 // cooldowns
 curr_mouse_cooldown = 0;
@@ -31,6 +36,8 @@ disable_player_controls = function()
 	self.can_move = false;
 	self.can_shoot = false;
 	self.pause_cooldowns = true;
+	speed = 0;
+	moving = false;
 }
 
 enable_player_controls = function()
@@ -46,6 +53,7 @@ move_instanteneously = function(_position, _facing_direction)
 	y = _position.y;
 	target_pos_x = x;
 	target_pos_y = y;
+	set_facing_position(_facing_direction);
 }
 
 take_damage = function(_damage_amount, _damage_direction)
@@ -112,4 +120,32 @@ die = function()
 		room_restart();	
 	}
 	obj_transition_controller.create_transition(global.fade_in_transition, obj_dungeon_controller.get_current_room_top_left_corner(), false, _end_callback);
+}	
+
+set_facing_position = function(_cardinal_direction)
+{
+	if (map_angles_to_cardinal_directions(curr_facing_position) == _cardinal_direction)
+		return;
+
+	sprite_index = global.player_sprites.get_sprite(_cardinal_direction);
+	curr_facing_position = map_cardinal_directions_to_angles(_cardinal_direction);
+}
+
+update_input_order = function(_cardinal_direction)
+{
+	_prev_location = array_get_index(input_order, _cardinal_direction);
+	if (_prev_location != -1)
+		array_delete(input_order, _prev_location, 1);
+	array_push(input_order, _cardinal_direction);
+}
+
+get_earlier_input = function(_cardinal_direction_a, _cardinal_direction_b)
+{
+	for (var _i = array_length(input_order) - 1; _i >= 0; _i--)
+	{
+		if (input_order[_i] == _cardinal_direction_a)
+			return _cardinal_direction_a;
+		if (input_order[_i] == _cardinal_direction_b)
+			return _cardinal_direction_b;
+	}
 }	
