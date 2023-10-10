@@ -12,6 +12,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"back_facing_sprite","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"spr_emu_back_facing",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"left_facing_sprite","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"spr_emu_left_facing",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"right_facing_sprite","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"spr_emu_right_facing",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"attack_cooldown","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"convert_seconds_to_frames(2)",},
   ],
   "parent": {
     "name": "Enemies",

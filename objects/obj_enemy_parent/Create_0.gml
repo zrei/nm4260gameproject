@@ -3,7 +3,7 @@
 
 can_act = false;
 moving = false;
-attack_cooldown = 0;
+curr_attack_cooldown = 0;
 curr_face_angle = 270;
 enemy_sprites = new FourDirectionalSprites(left_facing_sprite, right_facing_sprite, front_facing_sprite, back_facing_sprite);
 
@@ -34,7 +34,7 @@ attack = function()
 	
 	if (!global.no_enemy_attack_cooldown)
 	{
-		attack_cooldown = global.enemy_attack_cooldown;
+		curr_attack_cooldown = attack_cooldown;
 		can_act = false;
 		speed = 0;
 		moving = false;

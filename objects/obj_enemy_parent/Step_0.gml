@@ -1,9 +1,9 @@
 /// @description Move towards player
 // You can write your code in this editor
-if (attack_cooldown > 0)
+if (curr_attack_cooldown > 0)
 {
-	attack_cooldown -= 1;
-	if (attack_cooldown <= 0)
+	curr_attack_cooldown -= 1;
+	if (curr_attack_cooldown <= 0)
 		can_act = true;
 }
 
