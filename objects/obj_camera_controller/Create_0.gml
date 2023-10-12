@@ -11,7 +11,7 @@ view_set_wport(DEFAULT_VIEWPORT, global.viewport_width);
 view_set_hport(DEFAULT_VIEWPORT, global.viewport_height);
 
 // default camera position
-camera_pos = new Vector2(683, 0);
+camera_pos = new Vector2(0, 0);
 camera_width = global.viewport_width;
 camera_height = global.viewport_height;
 
@@ -46,7 +46,6 @@ move_camera_to_position = function(_position, _instanteneous = false)
 		return;
 	}
 
-	//camera_target_pos = new Vector2(camera_get_view_x(curr_camera) - global.viewport_width, camera_get_view_y(curr_camera));
 	camera_moving = true;
 	obj_player.disable_player_controls();
 }

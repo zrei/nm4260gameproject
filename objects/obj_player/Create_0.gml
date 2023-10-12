@@ -6,18 +6,11 @@ movement_speed = global.player_movement_speed;
 player_health = global.player_health;
 
 // movement variables
-target_pos_x = x;
-target_pos_y = y;
 moving = false;
 can_move = true;
-left_key = ord("A");
-right_key = ord("D");
-up_key = ord("W");
-down_key = ord("S");
 input_order = [];
 
 // cooldowns
-curr_mouse_cooldown = 0;
 invul_cooldown = 0;
 
 // shooting
@@ -51,8 +44,6 @@ move_instanteneously = function(_position, _facing_direction)
 {
 	x = _position.x;
 	y = _position.y;
-	target_pos_x = x;
-	target_pos_y = y;
 	set_facing_position(_facing_direction);
 }
 
@@ -89,6 +80,7 @@ obtain_key = function()
 set_element = function(_element)
 {
 	curr_element = _element;
+	obj_element_ui_controller.on_change_element(_element);
 }
 
 heal = function(_heal_amount)
