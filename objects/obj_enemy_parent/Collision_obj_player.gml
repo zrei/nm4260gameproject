@@ -4,4 +4,4 @@
 if (!can_act)
 	return;
 	
-attack()
+attack();

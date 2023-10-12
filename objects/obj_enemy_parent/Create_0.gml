@@ -30,7 +30,7 @@ die = function()
 // override in child
 attack = function()
 {
-	obj_player.take_damage(attack_damage, calculate_distance_vector_between_two_points(new Vector2(obj_player.x, obj_player.y), new Vector2(x, y)));
+	obj_player.take_damage(attack_damage, point_direction(x, y, obj_player.x, obj_player.y));
 	
 	if (!global.no_enemy_attack_cooldown)
 	{

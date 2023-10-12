@@ -2,7 +2,11 @@
 // You can write your code in this editor
 
 // update movement
-if (can_move)
+if (knockback_cooldown > 0)
+{
+	// do nothing
+}
+else if (can_move)
 {
 	var _horizontal = keyboard_check(MOVE_RIGHT_KEY) - keyboard_check(MOVE_LEFT_KEY);
 	var _vertical = keyboard_check(MOVE_DOWN_KEY) - keyboard_check(MOVE_UP_KEY);
@@ -77,4 +81,11 @@ if (!pause_cooldowns)
 
 	if (invul_cooldown > 0)
 		invul_cooldown -= 1;
+		
+	if (knockback_cooldown > 0)
+	{
+		knockback_cooldown -= 1;
+		if (knockback_cooldown <= 0)
+			can_move = true;
+	}
 }

@@ -18,6 +18,9 @@ curr_facing_position = 90; // in angles, initially facing forward
 shooting_cooldown = global.player_shooting_cooldown;
 can_shoot = true;
 
+// knockback
+knockback_cooldown = 0;
+
 pause_cooldowns = false;
 
 is_key_obtained = false;
@@ -63,9 +66,13 @@ take_damage = function(_damage_amount, _damage_direction)
 	obj_healthbar_controller.update_healthbar(player_health);
 
 	if (player_health <= 0)
+	{
 		die();
+		return;
+	}
 
 	invul_cooldown = global.player_invul_cooldown;
+	knockback(_damage_direction);
 }
 
 check_key_obtained = function() {
@@ -141,3 +148,11 @@ get_earlier_input = function(_cardinal_direction_a, _cardinal_direction_b)
 			return _cardinal_direction_b;
 	}
 }	
+
+knockback = function(_damage_direction)
+{
+	can_move = false;
+	knockback_cooldown = global.player_knockback_time;
+	speed = global.player_knockback_speed;
+	direction = _damage_direction;
+}

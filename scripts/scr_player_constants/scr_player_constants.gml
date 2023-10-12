@@ -12,6 +12,8 @@ global.player_health = 10;
 global.player_shooting_cooldown = convert_seconds_to_frames(0.5);
 global.player_invul_cooldown = convert_seconds_to_frames(1);
 global.allow_shooting_while_moving = true;
+global.player_knockback_speed = 10.0;
+global.player_knockback_time = convert_seconds_to_frames(0.2);
 
 global.player_sprites = new FourDirectionalSprites(
 	spr_player_left_facing,
