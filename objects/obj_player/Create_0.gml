@@ -82,6 +82,7 @@ check_key_obtained = function() {
 obtain_key = function()
 {
 	is_key_obtained = true;
+	obj_key_controller.on_obtain_key();
 }
 
 set_element = function(_element)

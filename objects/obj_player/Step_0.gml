@@ -70,6 +70,7 @@ else {
 if CHECK_SHOOT_KEY && !(shooting_cooldown > 0 || (!global.allow_shooting_while_moving && moving) || !can_shoot)
 {
 	instance_create_layer(x, y, "Player", obj_projectile, get_projectile_variable(curr_facing_position, curr_element));
+	obj_sfx_controller.play_sound(global.player_gun_fire_sound);
 	shooting_cooldown = global.player_shooting_cooldown;
 }
 

@@ -21,3 +21,5 @@ global.player_sprites = new FourDirectionalSprites(
 	spr_player_front_facing,
 	spr_player_back_facing
 );
+
+global.player_gun_fire_sound = snd_gun_fire;
