@@ -3,9 +3,8 @@
 
 self.image_index = 0;
 
-on_change_element = function(_args)
+on_change_element = function(_element)
 {
-	var _element = _args[0];
 	switch (_element)
 	{
 		case SKILL_ELEMENTS.NONE:

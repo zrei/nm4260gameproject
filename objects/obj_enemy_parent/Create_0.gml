@@ -31,7 +31,7 @@ take_damage = function(_damage_value)
 
 die = function()
 {
-	global.on_enemy_death_event.invoke([]);
+	global.on_enemy_death_event.invoke();
 	drop_heal_item();
 	instance_destroy(self);
 	// start death animation
@@ -71,7 +71,7 @@ drop_heal_item = function()
 	}
 }
 
-on_debug_kill_all_enemies = function(_args)
+on_debug_kill_all_enemies = function()
 {
 	die();	
 }

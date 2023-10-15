@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_dungeon_events",
+  "name": "scr_transition_events",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

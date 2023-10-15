@@ -3,7 +3,7 @@
 
 is_key_obtained = false;
 
-on_obtain_key = function(_args)
+on_obtain_key = function()
 {
 	is_key_obtained = true;
 }

@@ -5,7 +5,8 @@
 #macro MOVE_RIGHT_KEY ord("D")
 #macro MOVE_UP_KEY ord("W")
 #macro MOVE_DOWN_KEY ord("S")
-#macro CHECK_SHOOT_KEY mouse_check_button_pressed(mb_left)
+#macro SHOOT_KEY mb_left
+#macro PAUSE_KEY vk_escape
 
 global.player_movement_speed = 5.0;
 global.player_health = 10;

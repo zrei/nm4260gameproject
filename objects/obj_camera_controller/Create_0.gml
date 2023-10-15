@@ -47,7 +47,7 @@ move_camera_to_position = function(_position, _instanteneous = false)
 	}
 
 	camera_moving = true;
-	obj_player.disable_player_controls();
+	block_all_player_controls();
 }
 
 get_camera_x_position = function()

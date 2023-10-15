@@ -24,5 +24,23 @@ function CustomEvent() constructor
 	}
 }
 
+function VoidEvent() : CustomEvent() constructor
+{
+	static invoke = function()
+	{
+		for (var _i = 0; _i < ds_list_size(subscribers); _i++)
+			subscribers[| _i]();
+	}	
+}
+
+function IntEvent() : CustomEvent() constructor
+{
+	static invoke = function(_int)
+	{
+		for (var _i = 0; _i < ds_list_size(subscribers); _i++)
+			subscribers[| _i](_int);
+	}
+}
+
 // no arguments
-global.on_pause_time_event = new CustomEvent();
+global.on_pause_time_event = new VoidEvent();

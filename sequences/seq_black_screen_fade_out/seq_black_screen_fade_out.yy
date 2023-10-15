@@ -12,7 +12,11 @@
   "events": {
     "resourceType": "KeyframeStore<MessageEventKeyframe>",
     "resourceVersion": "1.0",
-    "Keyframes": [],
+    "Keyframes": [
+      {"resourceType":"Keyframe<MessageEventKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"MessageEventKeyframe","resourceVersion":"1.0","Events":[
+              "full_black_screen",
+            ],},},"Disabled":false,"id":"d334b111-dd12-43e7-a807-4b74a5ff5a65","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+    ],
   },
   "eventStubScript": null,
   "eventToFunction": {},

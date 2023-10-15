@@ -7,7 +7,6 @@ player_health = global.player_health;
 
 // movement variables
 moving = false;
-can_move = true;
 input_order = [];
 
 // cooldowns
@@ -16,7 +15,6 @@ invul_cooldown = 0;
 // shooting
 curr_facing_position = 90; // in angles, initially facing forward
 shooting_cooldown = global.player_shooting_cooldown;
-can_shoot = true;
 
 // knockback
 knockback_cooldown = 0;
@@ -24,27 +22,9 @@ curr_damage_flash_amount_remaining = 0;
 curr_damage_flash_interval = 0;
 use_damaged_sprite = false;
 
-pause_cooldowns = false;
-
 is_key_obtained = false;
 
 curr_element = SKILL_ELEMENTS.NONE;
-
-disable_player_controls = function()
-{
-	self.can_move = false;
-	self.can_shoot = false;
-	self.pause_cooldowns = true;
-	speed = 0;
-	moving = false;
-}
-
-enable_player_controls = function()
-{
-	self.can_move = true;
-	self.can_shoot = true;
-	self.pause_cooldowns = false;
-}
 
 move_instanteneously = function(_position, _facing_direction)
 {
@@ -66,9 +46,7 @@ take_damage = function(_damage_amount, _damage_direction)
 	else 
 		player_health -= _damage_amount;
 
-	global.on_player_change_health_event.invoke([player_health]);
-	
-	//obj_healthbar_controller.update_healthbar(player_health);
+	global.on_player_change_health_event.invoke(player_health);
 
 	if (player_health <= 0)
 	{
@@ -89,13 +67,13 @@ check_key_obtained = function() {
 obtain_key = function()
 {
 	is_key_obtained = true;
-	global.on_player_obtain_key_event.invoke([]);
+	global.on_player_obtain_key_event.invoke();
 }
 
 set_element = function(_element)
 {
 	if (curr_element != _element)
-		global.on_player_change_element_event.invoke([_element]);
+		global.on_player_change_element_event.invoke(_element);
 	curr_element = _element;
 }
 
@@ -108,13 +86,13 @@ heal = function(_heal_amount)
 	}
 
 	player_health = min(player_health + _heal_amount, global.player_health);
-	global.on_player_change_health_event.invoke([player_health]);
+	global.on_player_change_health_event.invoke(player_health);
 }
 
 set_health = function(_health)
 {
 	player_health = min(_health, global.player_health);
-	global.on_player_change_health_event.invoke([player_health]);
+	global.on_player_change_health_event.invoke(player_health);
 
 	if (player_health <= 0)
 		die();
@@ -123,7 +101,7 @@ set_health = function(_health)
 die = function()
 {
 	disable_player_controls();
-	global.on_player_die_event.invoke([]);
+	global.on_player_die_event.invoke();
 	_end_callback = function()
 	{
 		room_restart();	
@@ -168,8 +146,7 @@ get_earlier_input = function(_cardinal_direction_a, _cardinal_direction_b)
 
 knockback = function(_damage_direction)
 {
-	can_move = false;
 	knockback_cooldown = global.player_knockback_time;
-	speed = global.player_knockback_speed;
+	moving = false;
 	direction = _damage_direction;
 }

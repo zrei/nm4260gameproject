@@ -21,19 +21,19 @@ find_free_notification = function()
 			return notification_objects[| _i];
 }
 
-on_obtain_key = function(_args)
+on_obtain_key = function()
 {
 	send_notification("Obtained key!");	
 }
 
-on_pick_up_item = function(_args)
+on_pick_up_item = function(_item_name)
 {
-	send_notification("Picked up " + _args[0]);
+	send_notification("Picked up " + _item_name);
 }
 
-on_change_element = function(_args)
+on_change_element = function(_element)
 {
-	send_notification("Element changed to " + get_element_string_representation(_args[0]));
+	send_notification("Element changed to " + get_element_string_representation(_element));
 }
 
 global.on_player_pick_up_item_event.subscribe(on_pick_up_item);

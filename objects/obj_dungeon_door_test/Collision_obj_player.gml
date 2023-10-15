@@ -4,7 +4,7 @@
 if (curr_state == DOOR_STATE.LOCKED || !can_transition)
 	return;
 
-obj_player.disable_player_controls();
+block_all_player_controls();
 
 var _end_callback = function()
 {

@@ -5,7 +5,8 @@ current_dungeon_room = undefined;
 
 set_current_room = function(_dungeon_room, _direction_of_entrance, _instantaneous = false)
 {
-	obj_player.disable_player_controls();
+	block_all_player_controls();
+
 	with (obj_enemy_parent)
 	{
 		can_act = false;
@@ -21,7 +22,7 @@ set_current_room = function(_dungeon_room, _direction_of_entrance, _instantaneou
 		show_debug_message("End callback called");
 		start_current_room();
 		show_debug_message("Re-enable player controls");
-		obj_player.enable_player_controls();
+		unblock_all_player_controls();
 		with (obj_dungeon_door)
 		{
 			can_transition = true;
@@ -46,7 +47,7 @@ start_current_room = function()
 	current_dungeon_room.start_room();
 }
 
-on_enemy_spawn = function(_args)
+on_enemy_spawn = function()
 {
 	if (current_dungeon_room == undefined)
 		return;
@@ -54,7 +55,7 @@ on_enemy_spawn = function(_args)
 	current_dungeon_room.update_active_enemy_count(1);
 }
 
-on_enemy_die = function(_args)
+on_enemy_die = function()
 {
 	if (current_dungeon_room == undefined)
 		return;

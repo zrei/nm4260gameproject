@@ -196,7 +196,7 @@ ds_map_add(string_map_to_cheat, "showallcheats", new Cheat(
 	
 function kill_all_enemies(_ignore)
 {
-	global.on_debug_kill_all_enemies_event.invoke([]);
+	global.on_debug_kill_all_enemies_event.invoke();
 	show_debug_message("Killed all enemies");
 }
 

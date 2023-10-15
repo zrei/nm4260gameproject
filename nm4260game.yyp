@@ -135,7 +135,7 @@
     {"id":{"name":"obj_dungeon_door","path":"objects/obj_dungeon_door/obj_dungeon_door.yy",},},
     {"id":{"name":"scr_player_constants","path":"scripts/scr_player_constants/scr_player_constants.yy",},},
     {"id":{"name":"obj_notification","path":"objects/obj_notification/obj_notification.yy",},},
-    {"id":{"name":"scr_dungeon_events","path":"scripts/scr_dungeon_events/scr_dungeon_events.yy",},},
+    {"id":{"name":"scr_transition_events","path":"scripts/scr_transition_events/scr_transition_events.yy",},},
     {"id":{"name":"spr_ui_key_indicator","path":"sprites/spr_ui_key_indicator/spr_ui_key_indicator.yy",},},
     {"id":{"name":"spr_neutral_emu_left_facing","path":"sprites/spr_neutral_emu_left_facing/spr_neutral_emu_left_facing.yy",},},
     {"id":{"name":"obj_key_controller","path":"objects/obj_key_controller/obj_key_controller.yy",},},

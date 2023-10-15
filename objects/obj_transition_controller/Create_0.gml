@@ -4,7 +4,7 @@
 active_transition = undefined;
 active_sequence = undefined;
 curr_end_callback = undefined;
-
+pause_when_full = false;
 
 create_transition = function(_sequence, _origin_position, _pause_after_creation = true, _end_callback = undefined)
 {

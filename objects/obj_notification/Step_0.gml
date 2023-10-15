@@ -2,7 +2,7 @@
 // You can write your code in this editor
 if (!completed_movement && to_move)
 {
-	distance_moved_so_far += movement_speed * global.delta_time;
+	distance_moved_so_far += movement_speed * global.time_scale;
 	if (distance_moved_so_far >= distance_to_move)
 	{
 		completed_movement = true;
@@ -11,7 +11,7 @@ if (!completed_movement && to_move)
 }
 else if (curr_fade_time > 0) {
 	image_alpha = curr_fade_time / fade_time;
-	curr_fade_time -= global.delta_time;
+	curr_fade_time -= global.time_scale;
 }
 else
 {
