@@ -3,8 +3,9 @@
 
 self.image_index = 0;
 
-on_change_element = function(_element)
+on_change_element = function(_args)
 {
+	var _element = _args[0];
 	switch (_element)
 	{
 		case SKILL_ELEMENTS.NONE:
@@ -22,5 +23,6 @@ on_change_element = function(_element)
 	}
 }
 
+global.on_player_change_element_event.subscribe(on_change_element);
 
 

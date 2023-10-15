@@ -36,7 +36,6 @@ set_current_room = function(_dungeon_room, _direction_of_entrance, _instantaneou
 
 	// start black screen transition with appropriate end callback function
 	obj_transition_controller.play_current_transition();
-	
 }
 
 start_current_room = function()
@@ -44,15 +43,23 @@ start_current_room = function()
 	if (current_dungeon_room == undefined)
 		return;
 	
-	current_dungeon_room.start_room()
+	current_dungeon_room.start_room();
 }
 
-update_current_room_active_enemy_count = function(_active_number)
+on_enemy_spawn = function(_args)
 {
 	if (current_dungeon_room == undefined)
 		return;
+	
+	current_dungeon_room.update_active_enemy_count(1);
+}
 
-	current_dungeon_room.update_active_enemy_count(_active_number);
+on_enemy_die = function(_args)
+{
+	if (current_dungeon_room == undefined)
+		return;
+		
+	current_dungeon_room.update_active_enemy_count(-1);
 }
 
 check_current_room_is_active = function()
@@ -73,8 +80,5 @@ get_current_room_top_left_corner = function()
 	return current_dungeon_room.get_top_left_corner_of_room();
 }
 
-debug_kill_all_enemies = function()
-{
-	with (obj_enemy_parent)
-		die();
-}
+global.on_enemy_spawn_event.subscribe(on_enemy_spawn);
+global.on_enemy_death_event.subscribe(on_enemy_die);

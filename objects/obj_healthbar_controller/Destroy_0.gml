@@ -1,4 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-global.on_debug_kill_all_enemies_event.unsubscribe(on_debug_kill_all_enemies);
+global.on_player_change_health_event.unsubscribe(on_player_change_health);

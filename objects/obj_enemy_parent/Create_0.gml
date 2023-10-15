@@ -31,7 +31,7 @@ take_damage = function(_damage_value)
 
 die = function()
 {
-	obj_dungeon_controller.update_current_room_active_enemy_count(-1);
+	global.on_enemy_death_event.invoke([]);
 	drop_heal_item();
 	instance_destroy(self);
 	// start death animation
@@ -70,3 +70,10 @@ drop_heal_item = function()
 		instance_create_layer(_spawn_point.x, _spawn_point.y, "Enemy", heal_item);
 	}
 }
+
+on_debug_kill_all_enemies = function(_args)
+{
+	die();	
+}
+
+global.on_debug_kill_all_enemies_event.subscribe(on_debug_kill_all_enemies);

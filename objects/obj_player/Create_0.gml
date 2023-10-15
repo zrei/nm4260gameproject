@@ -66,7 +66,9 @@ take_damage = function(_damage_amount, _damage_direction)
 	else 
 		player_health -= _damage_amount;
 
-	obj_healthbar_controller.update_healthbar(player_health);
+	global.on_player_change_health_event.invoke([player_health]);
+	
+	//obj_healthbar_controller.update_healthbar(player_health);
 
 	if (player_health <= 0)
 	{
@@ -87,13 +89,14 @@ check_key_obtained = function() {
 obtain_key = function()
 {
 	is_key_obtained = true;
-	obj_key_controller.on_obtain_key();
+	global.on_player_obtain_key_event.invoke([]);
 }
 
 set_element = function(_element)
 {
+	if (curr_element != _element)
+		global.on_player_change_element_event.invoke([_element]);
 	curr_element = _element;
-	obj_element_ui_controller.on_change_element(_element);
 }
 
 heal = function(_heal_amount)
@@ -105,13 +108,13 @@ heal = function(_heal_amount)
 	}
 
 	player_health = min(player_health + _heal_amount, global.player_health);
-	obj_healthbar_controller.update_healthbar(player_health);
+	global.on_player_change_health_event.invoke([player_health]);
 }
 
 set_health = function(_health)
 {
 	player_health = min(_health, global.player_health);
-	obj_healthbar_controller.update_healthbar(player_health);
+	global.on_player_change_health_event.invoke([player_health]);
 
 	if (player_health <= 0)
 		die();
@@ -120,6 +123,7 @@ set_health = function(_health)
 die = function()
 {
 	disable_player_controls();
+	global.on_player_die_event.invoke([]);
 	_end_callback = function()
 	{
 		room_restart();	

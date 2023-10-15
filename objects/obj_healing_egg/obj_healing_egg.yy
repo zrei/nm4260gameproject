@@ -8,6 +8,7 @@
   "managed": true,
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_healing_item_parent","path":"objects/obj_healing_item_parent/obj_healing_item_parent.yy",},"propertyId":{"name":"heal_amount","path":"objects/obj_healing_item_parent/obj_healing_item_parent.yy",},"value":"2",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_healing_item_parent","path":"objects/obj_healing_item_parent/obj_healing_item_parent.yy",},"propertyId":{"name":"item_name","path":"objects/obj_healing_item_parent/obj_healing_item_parent.yy",},"value":"Egg",},
   ],
   "parent": {
     "name": "Heal Items",

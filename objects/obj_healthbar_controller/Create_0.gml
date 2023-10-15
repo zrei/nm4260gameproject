@@ -3,7 +3,9 @@
 
 healthbar_value = global.player_health;
 
-update_healthbar = function(_new_health_value)
+on_player_change_health = function(_new_health_value)
 {
-	healthbar_value = _new_health_value;
+	healthbar_value = _new_health_value[0];
 }
+
+global.on_player_change_health_event.subscribe(on_player_change_health);

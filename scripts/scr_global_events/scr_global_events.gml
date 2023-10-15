@@ -17,11 +17,12 @@ function CustomEvent() constructor
 			ds_list_delete(subscribers, _index);
 	}
 	
-	static invoke = function()
+	static invoke = function(_args)
 	{
 		for (var _i = 0; _i < ds_list_size(subscribers); _i++)
-			subscribers[| _i]();
+			subscribers[| _i](_args);
 	}
 }
 
+// no arguments
 global.on_pause_time_event = new CustomEvent();

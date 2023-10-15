@@ -27,13 +27,13 @@ spawn_enemy = function()
 		ds_list_add(spawned_points, _spawn_point);
 		break;
 	}
+	global.on_enemy_spawn_event.invoke([]);
 	spawned_number += 1;
 }
 
 start_spawning = function()
 {
 	curr_state = ROOM_STATE.ACTIVE;	
-	obj_dungeon_controller.update_current_room_active_enemy_count(number_to_spawn);
 	for (var _i = 0; _i < number_to_spawn; _i++)
 		spawn_enemy();
 	curr_state = ROOM_STATE.IDLE;
