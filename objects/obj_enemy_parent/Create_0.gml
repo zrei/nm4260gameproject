@@ -32,6 +32,7 @@ take_damage = function(_damage_value)
 die = function()
 {
 	obj_dungeon_controller.update_current_room_active_enemy_count(-1);
+	drop_heal_item();
 	instance_destroy(self);
 	// start death animation
 	// disable attacks and any hitboxes
@@ -56,4 +57,16 @@ attack = function()
 despawn = function()
 {
 	instance_destroy(self);
+}
+
+drop_heal_item = function()
+{
+	var _rand_value = random(1);
+	if (_rand_value < heal_item_drop_chance)
+	{
+		var _angle = random_range(min_heal_item_drop_angle, max_heal_item_drop_angle);
+		var _spawn_radius = random_range(min_heal_item_drop_radius, max_heal_item_drop_radius);
+		var _spawn_point = calculate_point_on_circle_perimeter(new Vector2(x, y), _angle, _spawn_radius);
+		instance_create_layer(_spawn_point.x, _spawn_point.y, "Enemy", heal_item);
+	}
 }
