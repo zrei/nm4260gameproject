@@ -13,8 +13,8 @@
     "path": "folders/Objects/Dungeon Room/Doors.yy",
   },
   "parentObjectId": {
-    "name": "obj_dungeon_door_test",
-    "path": "objects/obj_dungeon_door_test/obj_dungeon_door_test.yy",
+    "name": "obj_dungeon_door",
+    "path": "objects/obj_dungeon_door/obj_dungeon_door.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -32,8 +32,8 @@
   "properties": [],
   "solid": true,
   "spriteId": {
-    "name": "spr_dungeon_door_to_next_level",
-    "path": "sprites/spr_dungeon_door_to_next_level/spr_dungeon_door_to_next_level.yy",
+    "name": "spr_dungeon_door",
+    "path": "sprites/spr_dungeon_door/spr_dungeon_door.yy",
   },
   "spriteMaskId": null,
   "visible": true,
