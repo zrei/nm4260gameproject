@@ -24,4 +24,4 @@ function CustomEvent() constructor
 	}
 }
 
-global.on_pause_time_event = CustomEvent();
+global.on_pause_time_event = new CustomEvent();

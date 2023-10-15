@@ -67,6 +67,21 @@ else {
 	moving = false;
 }
 
+if (curr_damage_flash_interval > 0 && curr_damage_flash_amount_remaining > 0)
+{
+	curr_damage_flash_interval -= 1;
+	if (curr_damage_flash_interval <= 0)
+	{
+		use_damaged_sprite = !use_damaged_sprite;
+		curr_damage_flash_amount_remaining -= 1;	
+		curr_damage_flash_interval = global.player_damage_interval;
+	}
+}
+else
+	use_damaged_sprite = false;
+	
+set_sprite(map_angles_to_cardinal_directions(curr_facing_position));
+
 if CHECK_SHOOT_KEY && !(shooting_cooldown > 0 || (!global.allow_shooting_while_moving && moving) || !can_shoot)
 {
 	instance_create_layer(x, y, "Player", obj_projectile, get_projectile_variable(curr_facing_position, curr_element));

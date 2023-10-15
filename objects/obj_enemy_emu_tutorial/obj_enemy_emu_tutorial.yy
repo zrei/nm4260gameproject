@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_emu_back_facing",
-    "path": "sprites/spr_emu_back_facing/spr_emu_back_facing.yy",
+    "name": "spr_neutral_emu_back_facing",
+    "path": "sprites/spr_neutral_emu_back_facing/spr_neutral_emu_back_facing.yy",
   },
   "spriteMaskId": null,
   "visible": true,

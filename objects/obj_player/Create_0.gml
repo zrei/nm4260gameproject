@@ -20,6 +20,9 @@ can_shoot = true;
 
 // knockback
 knockback_cooldown = 0;
+curr_damage_flash_amount_remaining = 0;
+curr_damage_flash_interval = 0;
+use_damaged_sprite = false;
 
 pause_cooldowns = false;
 
@@ -72,6 +75,8 @@ take_damage = function(_damage_amount, _damage_direction)
 	}
 
 	invul_cooldown = global.player_invul_cooldown;
+	curr_damage_flash_amount_remaining = global.player_damage_flash_amount;
+	curr_damage_flash_interval = global.player_damage_interval;
 	knockback(_damage_direction);
 }
 
@@ -127,8 +132,15 @@ set_facing_position = function(_cardinal_direction)
 	if (map_angles_to_cardinal_directions(curr_facing_position) == _cardinal_direction)
 		return;
 
-	sprite_index = global.player_sprites.get_sprite(_cardinal_direction);
 	curr_facing_position = map_cardinal_directions_to_angles(_cardinal_direction);
+}
+
+set_sprite = function(_cardinal_direction)
+{
+	if (use_damaged_sprite)
+		sprite_index = global.player_damaged_sprites.get_sprite(_cardinal_direction);
+	else
+		sprite_index = global.player_sprites.get_sprite(_cardinal_direction);
 }
 
 update_input_order = function(_cardinal_direction)

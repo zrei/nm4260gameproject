@@ -14,12 +14,20 @@ global.player_invul_cooldown = convert_seconds_to_frames(1);
 global.allow_shooting_while_moving = true;
 global.player_knockback_speed = 10.0;
 global.player_knockback_time = convert_seconds_to_frames(0.2);
+global.player_damage_interval = convert_seconds_to_frames(0.2);
+global.player_damage_flash_amount = 4;
 
 global.player_sprites = new FourDirectionalSprites(
 	spr_player_left_facing,
 	spr_player_right_facing,
 	spr_player_front_facing,
 	spr_player_back_facing
+);
+global.player_damaged_sprites = new FourDirectionalSprites(
+	spr_player_left_facing_damaged,
+	spr_player_right_facing_damaged,
+	spr_player_front_facing_damaged,
+	spr_player_back_facing_damaged
 );
 
 global.player_gun_fire_sound = snd_gun_fire;

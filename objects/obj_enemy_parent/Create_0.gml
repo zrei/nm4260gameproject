@@ -4,8 +4,13 @@
 can_act = false;
 moving = false;
 curr_attack_cooldown = 0;
+curr_damage_flash_amount_remaining = 0;
+curr_damage_flash_interval = 0;
+
 curr_face_angle = 270;
 enemy_sprites = new FourDirectionalSprites(left_facing_sprite, right_facing_sprite, front_facing_sprite, back_facing_sprite);
+enemy_sprites_damaged = new FourDirectionalSprites(left_facing_sprite_damaged, right_facing_sprite_damaged, front_facing_sprite_damaged, back_facing_sprite_damaged);
+use_damaged_sprite = false;
 
 take_damage = function(_damage_value)
 {
@@ -13,9 +18,15 @@ take_damage = function(_damage_value)
 		enemy_health = 0;
 	else if (!global.invincible_enemy)
 		enemy_health -= _damage_value;
-
+	
 	if (enemy_health <= 0)
+	{
 		die();
+		return;
+	}	
+
+	curr_damage_flash_amount_remaining = flash_amount;
+	curr_damage_flash_interval = flash_interval;
 }
 
 die = function()
