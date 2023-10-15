@@ -10,7 +10,7 @@ num_spawners = array_length(spawners);
 num_active_enemies = 0;
 
 curr_update_amount = 0;
-dungeon_dimensions = new DungeonRoomDimensions(x, y, length, width);
+dungeon_dimensions = new DungeonRoomDimensions(x, y, global.width, global.height);
 
 update_active_enemy_count = function(_update_amount)
 {

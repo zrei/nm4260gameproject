@@ -113,6 +113,7 @@
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"spr_dungeon_wall","path":"sprites/spr_dungeon_wall/spr_dungeon_wall.yy",},},
     {"id":{"name":"spr_fire_obstacle","path":"sprites/spr_fire_obstacle/spr_fire_obstacle.yy",},},
+    {"id":{"name":"spr_water_obstacle","path":"sprites/spr_water_obstacle/spr_water_obstacle.yy",},},
     {"id":{"name":"spr_dungeon_chest_closed","path":"sprites/spr_dungeon_chest_closed/spr_dungeon_chest_closed.yy",},},
     {"id":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"id":{"name":"scr_draw_functions","path":"scripts/scr_draw_functions/scr_draw_functions.yy",},},
@@ -148,6 +149,7 @@
     {"id":{"name":"spr_pause_screen","path":"sprites/spr_pause_screen/spr_pause_screen.yy",},},
     {"id":{"name":"ts_wall","path":"tilesets/ts_wall/ts_wall.yy",},},
     {"id":{"name":"spr_player_back_facing","path":"sprites/spr_player_back_facing/spr_player_back_facing.yy",},},
+    {"id":{"name":"obj_water_obstacle","path":"objects/obj_water_obstacle/obj_water_obstacle.yy",},},
     {"id":{"name":"obj_element_swapper_parent","path":"objects/obj_element_swapper_parent/obj_element_swapper_parent.yy",},},
     {"id":{"name":"scr_directions_calculations","path":"scripts/scr_directions_calculations/scr_directions_calculations.yy",},},
     {"id":{"name":"spr_neutral_emu_back_facing","path":"sprites/spr_neutral_emu_back_facing/spr_neutral_emu_back_facing.yy",},},
@@ -188,8 +190,8 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"roomId":{"name":"Level1","path":"rooms/Level1/Level1.yy",},},
-    {"roomId":{"name":"EndScreen","path":"rooms/EndScreen/EndScreen.yy",},},
     {"roomId":{"name":"Level2","path":"rooms/Level2/Level2.yy",},},
+    {"roomId":{"name":"EndScreen","path":"rooms/EndScreen/EndScreen.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [

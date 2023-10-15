@@ -20,21 +20,20 @@ if (curr_damage_flash_interval > 0 && curr_damage_flash_amount_remaining > 0)
 else
 	use_damaged_sprite = false;
 
-if (!can_act)
-{
-	return;
-}
-
-if (distance_to_point(obj_player.x, obj_player.y) > global.point_reached_threshold)
+if (distance_to_point(obj_player.x, obj_player.y) > global.point_reached_threshold && can_act)
 {
 	move_towards_point(obj_player.x, obj_player.y, movement_speed * global.time_scale);
 	curr_face_angle = calculate_face_angle(x, y, obj_player.x, obj_player.y);
-	//sprite_index = enemy_sprites.get_sprite(map_angles_to_cardinal_directions(curr_face_angle));
 	moving = true;
 } else
 {
 	speed = 0;	
 	moving = false;
+}
+
+if (!can_act)
+{
+	return;
 }
 
 if (use_damaged_sprite)

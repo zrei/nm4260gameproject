@@ -1,7 +1,8 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-global.entrance_offset = 50;
-
+global.entrance_offset = 90;
+global.width = 816;
+global.height = 624;
 enum ROOM_STATE {
 	IDLE,
 	ACTIVE,
