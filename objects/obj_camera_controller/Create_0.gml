@@ -42,6 +42,7 @@ move_camera_to_position = function(_position, _instanteneous = false)
 		camera_set_view_pos(curr_camera, camera_pos.x, camera_pos.y);
 		show_debug_message("Camera position: " + string(camera_get_view_x(curr_camera)) + ", " + string(camera_get_view_y(curr_camera)));
 		show_debug_message("Camera width: " + string(camera_get_view_width(curr_camera)) + ", Camera height: " + string(camera_get_view_height(curr_camera)));
+		global.on_camera_moved_event.invoke(camera_pos);
 		camera_moving = false;
 		return;
 	}

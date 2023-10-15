@@ -27,6 +27,7 @@ spawn_enemy = function()
 		ds_list_add(spawned_points, _spawn_point);
 		break;
 	}
+	
 	global.on_enemy_spawn_event.invoke();
 	spawned_number += 1;
 }

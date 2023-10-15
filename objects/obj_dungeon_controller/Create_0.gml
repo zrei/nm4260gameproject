@@ -2,40 +2,19 @@
 // You can write your code in this editor
 
 current_dungeon_room = undefined;
+next_dungeon_room = undefined;
+direction_of_entrance = undefined;
 
 set_current_room = function(_dungeon_room, _direction_of_entrance, _instantaneous = false)
-{
-	block_all_player_controls();
-
-	with (obj_enemy_parent)
-	{
-		can_act = false;
-	}
-	
+{	
 	if (current_dungeon_room != undefined)
 		current_dungeon_room.end_room();
 	
 	current_dungeon_room = _dungeon_room;
 	
-	_end_callback = function()
-	{
-		show_debug_message("End callback called");
-		start_current_room();
-		show_debug_message("Re-enable player controls");
-		unblock_all_player_controls();
-		with (obj_dungeon_door)
-		{
-			can_transition = true;
-		}
-	}
-	
-	// create paused black screen with appropriate start callback function
-	obj_transition_controller.create_transition(global.fade_out_transition, current_dungeon_room.get_top_left_corner_of_room(), true, _end_callback);
-	
 	obj_player.move_instanteneously(_dungeon_room.get_starting_position(_direction_of_entrance), _direction_of_entrance);
 	obj_camera_controller.move_camera_to_position(_dungeon_room.get_top_left_corner_of_room(), _instantaneous);
 
-	// start black screen transition with appropriate end callback function
 	obj_transition_controller.play_current_transition();
 }
 
@@ -81,5 +60,32 @@ get_current_room_top_left_corner = function()
 	return current_dungeon_room.get_top_left_corner_of_room();
 }
 
+on_transition_to_next_room = function(_dungeon_room_instance, _direction_of_entrance)
+{
+	next_dungeon_room = _dungeon_room_instance;
+	direction_of_entrance = _direction_of_entrance;
+}
+
+on_full_black_screen = function()
+{
+	if (next_dungeon_room == undefined)
+	{
+		room_goto_next();
+		return;
+	}
+	set_current_room(next_dungeon_room, direction_of_entrance, true);
+	next_dungeon_room = undefined;
+	direction_of_entrance = undefined;
+}
+
+on_transition_end = function()
+{
+	start_current_room();	
+}
+
 global.on_enemy_spawn_event.subscribe(on_enemy_spawn);
 global.on_enemy_death_event.subscribe(on_enemy_die);
+global.on_transition_to_next_room_event.subscribe(on_transition_to_next_room);
+
+global.on_full_black_screen_event.subscribe(on_full_black_screen);
+global.on_end_transition_event.subscribe(on_transition_end);

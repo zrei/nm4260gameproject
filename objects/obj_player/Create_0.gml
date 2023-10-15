@@ -150,3 +150,16 @@ knockback = function(_damage_direction)
 	moving = false;
 	direction = _damage_direction;
 }
+
+on_transition_begin = function()
+{
+	block_all_player_controls();
+}
+
+on_transition_end = function()
+{
+	unblock_all_player_controls();
+}
+
+global.on_begin_transition_event.subscribe(on_transition_begin);
+global.on_end_transition_event.subscribe(on_transition_end);

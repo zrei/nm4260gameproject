@@ -24,5 +24,9 @@ unlock = function()
 	curr_state = DOOR_STATE.UNLOCKED;
 }
 
+on_transition_end = function()
+{
+	can_transition = true;
+}
 
-
+global.on_end_transition_event.subscribe(on_transition_end);

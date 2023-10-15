@@ -42,5 +42,29 @@ function IntEvent() : CustomEvent() constructor
 	}
 }
 
+function DungeonTransitionEvent() : CustomEvent() constructor
+{
+	static invoke = function(_dungeon_room_instance, _direction_of_entrance)
+	{
+		for (var _i = 0; _i < ds_list_size(subscribers); _i++)
+			subscribers[| _i](_dungeon_room_instance, _direction_of_entrance);
+	}
+}
+
+function PositionEvent() : CustomEvent() constructor
+{
+	static invoke = function(_position)
+	{
+		if (!is_instanceof(_position, Vector2))
+		{
+			show_debug_message("Argument provided is not a Vector2!");
+			return;
+		}
+		
+		for (var _i = 0; _i < ds_list_size(subscribers); _i++)
+			subscribers[| _i](_position);
+	}
+}
+		
 // no arguments
 global.on_pause_time_event = new VoidEvent();

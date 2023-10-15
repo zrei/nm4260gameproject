@@ -77,3 +77,16 @@ on_debug_kill_all_enemies = function()
 }
 
 global.on_debug_kill_all_enemies_event.subscribe(on_debug_kill_all_enemies);
+
+on_transition_begin = function()
+{
+	can_act = false;
+}
+
+on_dungeon_room_end = function()
+{
+	despawn();
+}
+
+global.on_begin_transition_event.subscribe(on_transition_begin);
+global.on_end_dungeon_room_event.subscribe(on_dungeon_room_end);

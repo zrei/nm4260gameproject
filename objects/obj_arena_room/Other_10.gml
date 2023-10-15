@@ -3,7 +3,7 @@
 
 if (curr_state != ROOM_STATE.IDLE)
 	return;
-	
+
 start_wave_spawners(curr_wave);
 lock_doors();
 
