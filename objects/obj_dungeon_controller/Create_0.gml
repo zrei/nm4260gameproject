@@ -70,7 +70,13 @@ on_full_black_screen = function()
 {
 	if (next_dungeon_room == undefined)
 	{
-		room_goto_next();
+		if (global.player_is_dead)
+		{
+			global.player_is_dead = false;
+			room_restart();
+		}
+		else
+			room_goto_next();
 		return;
 	}
 	set_current_room(next_dungeon_room, direction_of_entrance, true);

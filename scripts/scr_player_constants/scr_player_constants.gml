@@ -7,6 +7,7 @@
 #macro MOVE_DOWN_KEY ord("S")
 #macro SHOOT_KEY mb_left
 #macro PAUSE_KEY vk_escape
+#macro INTERACT_BUTTON ord("E")
 
 global.player_movement_speed = 5.0;
 global.player_health = 10;
@@ -17,6 +18,8 @@ global.player_knockback_speed = 10.0;
 global.player_knockback_time = convert_seconds_to_frames(0.2);
 global.player_damage_interval = convert_seconds_to_frames(0.2);
 global.player_damage_flash_amount = 4;
+
+global.player_is_dead = false;
 
 global.player_sprites = new FourDirectionalSprites(
 	spr_player_left_facing,

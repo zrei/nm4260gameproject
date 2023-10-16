@@ -88,5 +88,11 @@ on_dungeon_room_end = function()
 	despawn();
 }
 
+on_player_die = function()
+{
+	can_act = false;
+}
+
+global.on_player_death_event.subscribe(on_player_die);
 global.on_begin_transition_event.subscribe(on_transition_begin);
 global.on_end_dungeon_room_event.subscribe(on_dungeon_room_end);

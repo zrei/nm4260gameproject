@@ -28,6 +28,7 @@ curr_element = SKILL_ELEMENTS.NONE;
 
 move_instanteneously = function(_position, _facing_direction)
 {
+	show_debug_message("Move player to " + string(_position));
 	x = _position.x;
 	y = _position.y;
 	set_facing_position(_facing_direction);
@@ -100,13 +101,9 @@ set_health = function(_health)
 
 die = function()
 {
-	disable_player_controls();
-	global.on_player_die_event.invoke();
-	_end_callback = function()
-	{
-		room_restart();	
-	}
-	obj_transition_controller.create_transition(global.fade_in_transition, obj_dungeon_controller.get_current_room_top_left_corner(), false, _end_callback);
+	global.player_is_dead = true;
+	global.on_player_death_event.invoke();
+	obj_transition_controller.create_transition(global.fade_in_transition, obj_dungeon_controller.get_current_room_top_left_corner(), false, false);
 }	
 
 set_facing_position = function(_cardinal_direction)
@@ -150,16 +147,3 @@ knockback = function(_damage_direction)
 	moving = false;
 	direction = _damage_direction;
 }
-
-on_transition_begin = function()
-{
-	block_all_player_controls();
-}
-
-on_transition_end = function()
-{
-	unblock_all_player_controls();
-}
-
-global.on_begin_transition_event.subscribe(on_transition_begin);
-global.on_end_transition_event.subscribe(on_transition_end);

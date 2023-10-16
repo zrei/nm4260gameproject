@@ -291,3 +291,13 @@ ds_map_add(string_map_to_cheat, "player.die", new Cheat(
 	kill_player,
 	"Kills player",
 	"player.die"));
+	
+function next_level(_ignore)
+{
+	room_goto_next();
+}
+
+ds_map_add(string_map_to_cheat, "nextlevel", new Cheat(
+	next_level,
+	"Go to next level",
+	"nextlevel"));

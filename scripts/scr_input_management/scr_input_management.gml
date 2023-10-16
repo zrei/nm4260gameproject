@@ -71,18 +71,23 @@ function unblock_mouse(_mouses)
 	}
 }
 
-global.player_keys = [MOVE_LEFT_KEY, MOVE_RIGHT_KEY, MOVE_DOWN_KEY, MOVE_UP_KEY];
+global.player_movement_keys = [MOVE_LEFT_KEY, MOVE_RIGHT_KEY, MOVE_DOWN_KEY, MOVE_UP_KEY];
 global.player_mouse = [SHOOT_KEY];
 global.player_pause = [PAUSE_KEY];
+global.player_interact = [INTERACT_BUTTON];
 
 function block_all_player_controls()
 {
-	block_keys(global.player_keys);
+	block_keys(global.player_movement_keys);
 	block_mouse(global.player_mouse);
+	block_keys(global.player_interact);
+	block_keys(global.player_pause);
 }
 
 function unblock_all_player_controls()
 {
-	unblock_keys(global.player_keys);
+	unblock_keys(global.player_movement_keys);
 	unblock_mouse(global.player_mouse);
+	unblock_keys(global.player_interact);
+	unblock_keys(global.player_pause);
 }

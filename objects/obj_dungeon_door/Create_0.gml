@@ -29,4 +29,10 @@ on_transition_end = function()
 	can_transition = true;
 }
 
+on_transition_to_next_room = function(_ignore1, _ignore2)
+{
+	can_transition = false;	
+}
+
 global.on_end_transition_event.subscribe(on_transition_end);
+global.on_transition_to_next_room_event.subscribe(on_transition_to_next_room);
