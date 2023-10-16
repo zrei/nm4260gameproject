@@ -54,3 +54,5 @@ enable_enemies = function()
 	with (obj_enemy_parent)
 		can_act = true;
 }
+
+instantiate_walls(new Vector2(x, y), layer, north_door, south_door, east_door, west_door);

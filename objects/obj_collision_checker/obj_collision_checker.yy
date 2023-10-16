@@ -1,18 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_dungeon_wall",
-  "eventList": [],
+  "name": "obj_collision_checker",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Dungeon Room",
-    "path": "folders/Objects/Dungeon Room.yy",
+    "name": "Controllers",
+    "path": "folders/Objects/Controllers.yy",
   },
-  "parentObjectId": {
-    "name": "obj_bullet_destroy_upon_collide_parent",
-    "path": "objects/obj_bullet_destroy_upon_collide_parent/obj_bullet_destroy_upon_collide_parent.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -27,11 +26,8 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [],
-  "solid": true,
-  "spriteId": {
-    "name": "spr_dungeon_wall",
-    "path": "sprites/spr_dungeon_wall/spr_dungeon_wall.yy",
-  },
+  "solid": false,
+  "spriteId": null,
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }

@@ -12,6 +12,11 @@ else
 	var _vertical = check_key_held(MOVE_DOWN_KEY) - check_key_held(MOVE_UP_KEY);
 	if (_horizontal != 0 || _vertical != 0)
 	{
+		//var _direction_vector = (new Vector2(_horizontal, _vertical)).calculate_unit_vector();
+		//var _new_x = x + _direction_vector.x * global.time_scale * movement_speed;
+		//var _new_y = y + _direction_vector.y * global.time_scale * movement_speed;
+		//var _tilemap_data = obj_collision_checker.get_collision_at_position(_new_x, _new_y) & _tilemap_data;
+		
 		speed = movement_speed * global.time_scale;
 		direction = point_direction(0, 0, _horizontal, _vertical);
 		moving = true;

@@ -160,6 +160,7 @@
     {"id":{"name":"spr_player_left_facing_damaged","path":"sprites/spr_player_left_facing_damaged/spr_player_left_facing_damaged.yy",},},
     {"id":{"name":"scr_sprite_functions","path":"scripts/scr_sprite_functions/scr_sprite_functions.yy",},},
     {"id":{"name":"seq_black_screen_fade_in_out","path":"sequences/seq_black_screen_fade_in_out/seq_black_screen_fade_in_out.yy",},},
+    {"id":{"name":"scr_wall_creation","path":"scripts/scr_wall_creation/scr_wall_creation.yy",},},
     {"id":{"name":"obj_cheats_controller","path":"objects/obj_cheats_controller/obj_cheats_controller.yy",},},
     {"id":{"name":"spr_fire_projectile","path":"sprites/spr_fire_projectile/spr_fire_projectile.yy",},},
     {"id":{"name":"scr_global_constants","path":"scripts/scr_global_constants/scr_global_constants.yy",},},
