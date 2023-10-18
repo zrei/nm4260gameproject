@@ -5,10 +5,7 @@
 #macro END_ROOM_EVENT 2
 
 curr_state = ROOM_STATE.IDLE;
-num_spawners = array_length(spawners);
 num_active_enemies = 0;
-
-doors = undefined;
 
 curr_update_amount = 0;
 dungeon_dimensions = new DungeonRoomDimensions(x, y, global.width, global.height);
@@ -17,6 +14,12 @@ dungeon_room = new DungeonRoomStruct(new Vector2(x, y), layer,
 	new DungeonRoomSideStruct(has_south_door, south_door_type, south_door_connecting_room),
 	new DungeonRoomSideStruct(has_east_door, east_door_type, east_door_connecting_room),
 	new DungeonRoomSideStruct(has_west_door, west_door_type, west_door_connecting_room));
+
+doors = instantiate_room(dungeon_room);
+num_doors = array_length(doors);
+
+spawners = scan_for_spawners(dungeon_dimensions);
+num_spawners = array_length(spawners);
 
 update_active_enemy_count = function(_update_amount)
 {
@@ -54,13 +57,3 @@ start_spawners = function()
 	for (var _i = 0; _i < num_spawners; _i++)
 		spawners[_i].start_spawning();
 }
-
-enable_enemies = function()
-{
-	with (obj_enemy_parent)
-		can_act = true;
-}
-
-doors = instantiate_room(dungeon_room);
-num_doors = array_length(doors);
-//instantiate_walls(new Vector2(x, y), layer, has_north_door, south_door, east_door, west_door);

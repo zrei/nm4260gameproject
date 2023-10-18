@@ -154,3 +154,16 @@ function instantiate_room(_dungeon_room_struct)
 		
 	return _doors;
 }
+
+function scan_for_spawners(_dungeon_dimensions)
+{
+	var _spawners = [];
+	
+	with (obj_enemy_spawner)
+	{
+		if (point_in_rectangle(x, y, _dungeon_dimensions.left_bound, _dungeon_dimensions.upper_bound, _dungeon_dimensions.right_bound, _dungeon_dimensions.lower_bound))
+			array_push(_spawners, self);
+	}
+	
+	return _spawners;
+}

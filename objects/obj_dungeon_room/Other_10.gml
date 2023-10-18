@@ -8,4 +8,4 @@ start_spawners();
 	
 curr_state = ROOM_STATE.ACTIVE;
 
-enable_enemies();
+global.on_start_dungeon_room_event.invoke();

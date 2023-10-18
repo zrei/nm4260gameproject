@@ -9,11 +9,4 @@ lock_doors();
 
 curr_state = ROOM_STATE.ACTIVE;
 
-with (obj_enemy_parent)
-{
-	can_act = true;
-}
-
-
-
-
+global.on_start_dungeon_room_event.invoke();

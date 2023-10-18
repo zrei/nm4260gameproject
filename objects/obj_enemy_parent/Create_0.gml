@@ -83,6 +83,11 @@ on_transition_begin = function()
 	can_act = false;
 }
 
+on_dungeon_room_begin = function()
+{
+	can_act = true;	
+}
+
 on_dungeon_room_end = function()
 {
 	despawn();
@@ -108,3 +113,4 @@ global.on_begin_transition_event.subscribe(on_transition_begin);
 global.on_end_dungeon_room_event.subscribe(on_dungeon_room_end);
 global.on_pause_menu_opened_event.subscribe(on_pause_menu_opened);
 global.on_pause_menu_closed_event.subscribe(on_pause_menu_closed);
+global.on_start_dungeon_room_event.subscribe(on_dungeon_room_begin);

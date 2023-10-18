@@ -3,3 +3,4 @@
 // pass next room
 global.on_transition_to_next_room_event = new DungeonTransitionEvent();
 global.on_end_dungeon_room_event = new VoidEvent();
+global.on_start_dungeon_room_event = new VoidEvent();
