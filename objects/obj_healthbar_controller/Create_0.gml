@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+event_inherited();
 healthbar_value = global.player_health;
 
 on_player_change_health = function(_new_health_value)

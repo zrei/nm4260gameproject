@@ -5,7 +5,7 @@ global.projectile_damage = 3;
 
 function ProjectileVariables(_sprite, _direction, _element, _speed = global.projectile_speed, _damage = global.projectile_damage) constructor
 {
-	speed = _speed;
+	projectile_movement_speed = _speed;
 	direction = _direction;
 	projectile_damage = _damage;
 	projectile_sprite = _sprite;

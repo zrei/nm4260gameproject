@@ -91,3 +91,17 @@ function unblock_all_player_controls()
 	unblock_keys(global.player_interact);
 	unblock_keys(global.player_pause);
 }
+
+function block_player_actions()
+{
+	block_keys(global.player_movement_keys);
+	block_mouse(global.player_mouse);
+	block_keys(global.player_interact);
+}
+
+function unblock_player_actions()
+{
+	unblock_keys(global.player_movement_keys);
+	unblock_mouse(global.player_mouse);
+	unblock_keys(global.player_interact);
+}

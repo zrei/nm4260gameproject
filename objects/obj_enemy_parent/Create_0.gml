@@ -93,6 +93,18 @@ on_player_die = function()
 	can_act = false;
 }
 
+on_pause_menu_opened = function()
+{
+	can_act = false;	
+}
+
+on_pause_menu_closed = function()
+{
+	can_act = true;
+}
+
 global.on_player_death_event.subscribe(on_player_die);
 global.on_begin_transition_event.subscribe(on_transition_begin);
 global.on_end_dungeon_room_event.subscribe(on_dungeon_room_end);
+global.on_pause_menu_opened_event.subscribe(on_pause_menu_opened);
+global.on_pause_menu_closed_event.subscribe(on_pause_menu_closed);

@@ -4,14 +4,21 @@
 function CustomEvent() constructor
 {
 	subscribers = ds_list_create();
-	
+	has_been_freed = false;
+
 	static subscribe = function(_callback)
 	{
+		if (has_been_freed)
+			return;
+
 		ds_list_add(subscribers, _callback);
 	}
 	
 	static unsubscribe = function(_callback)
 	{
+		if (has_been_freed)
+			return;
+
 		_index = ds_list_find_index(subscribers, _callback);
 		if (_index != -1)
 			ds_list_delete(subscribers, _index);
@@ -19,8 +26,20 @@ function CustomEvent() constructor
 	
 	static invoke = function(_args)
 	{
+		if (has_been_freed)
+			return;
+
 		for (var _i = 0; _i < ds_list_size(subscribers); _i++)
 			subscribers[| _i](_args);
+	}
+	
+	static free_subscribers = function()
+	{
+		if (has_been_freed)
+			return;
+			
+		ds_list_destroy(subscribers);
+		has_been_freed = true;
 	}
 }
 
@@ -65,6 +84,3 @@ function PositionEvent() : CustomEvent() constructor
 			subscribers[| _i](_position);
 	}
 }
-		
-// no arguments
-global.on_pause_time_event = new VoidEvent();

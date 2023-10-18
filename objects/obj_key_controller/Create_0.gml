@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+event_inherited();
+
 is_key_obtained = false;
 
 on_obtain_key = function()
