@@ -55,4 +55,4 @@ enable_enemies = function()
 		can_act = true;
 }
 
-instantiate_walls(new Vector2(x, y), layer, north_door, south_door, east_door, west_door);
+instantiate_walls(new Vector2(x, y), layer, has_north_door, south_door, east_door, west_door);
