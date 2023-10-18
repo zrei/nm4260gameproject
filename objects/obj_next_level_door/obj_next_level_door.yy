@@ -32,8 +32,8 @@
   "properties": [],
   "solid": true,
   "spriteId": {
-    "name": "spr_dungeon_door_horizontal",
-    "path": "sprites/spr_dungeon_door_horizontal/spr_dungeon_door_horizontal.yy",
+    "name": "spr_dungeon_door_to_next_level",
+    "path": "sprites/spr_dungeon_door_to_next_level/spr_dungeon_door_to_next_level.yy",
   },
   "spriteMaskId": null,
   "visible": true,
