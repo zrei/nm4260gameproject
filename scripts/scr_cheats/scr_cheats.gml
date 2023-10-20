@@ -301,3 +301,23 @@ ds_map_add(string_map_to_cheat, "nextlevel", new Cheat(
 	next_level,
 	"Go to next level",
 	"nextlevel"));
+	
+function change_element(_element)
+{
+	if (parse_element(_element))
+		global.on_debug_change_element_event.invoke(curr_out_value);
+}
+
+function parse_element(_element)
+{
+	curr_out_value = get_element_from_string(string_lower(_element));
+	if (curr_out_value == undefined)
+		return false;
+	else
+		return true;
+}
+
+ds_map_add(string_map_to_cheat, "player.element", new Cheat(
+	change_element,
+	"Change player's element",
+	"player.element *element*"));

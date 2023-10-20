@@ -6,6 +6,7 @@ global.on_player_change_health_event = new IntEvent();
 
 // one argument, element changed to
 global.on_player_change_element_event = new IntEvent();
+global.on_debug_change_element_event = new IntEvent();
 
 // no argument
 global.on_player_death_event = new VoidEvent();

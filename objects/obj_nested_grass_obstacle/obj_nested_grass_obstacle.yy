@@ -1,19 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_fire_obstacle",
+  "name": "obj_nested_grass_obstacle",
   "eventList": [],
   "managed": true,
-  "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_obstacle_parent","path":"objects/obj_obstacle_parent/obj_obstacle_parent.yy",},"propertyId":{"name":"obstacle_element","path":"objects/obj_obstacle_parent/obj_obstacle_parent.yy",},"value":"SKILL_ELEMENTS.FIRE",},
-  ],
+  "overriddenProperties": [],
   "parent": {
     "name": "Obstacles",
     "path": "folders/Objects/Obstacles.yy",
   },
   "parentObjectId": {
-    "name": "obj_simple_destroy_obstacle_parent",
-    "path": "objects/obj_simple_destroy_obstacle_parent/obj_simple_destroy_obstacle_parent.yy",
+    "name": "obj_nested_obstacle",
+    "path": "objects/obj_nested_obstacle/obj_nested_obstacle.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -29,10 +27,10 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [],
-  "solid": true,
+  "solid": false,
   "spriteId": {
-    "name": "spr_fire_obstacle",
-    "path": "sprites/spr_fire_obstacle/spr_fire_obstacle.yy",
+    "name": "spr_grass_obstacle",
+    "path": "sprites/spr_grass_obstacle/spr_grass_obstacle.yy",
   },
   "spriteMaskId": null,
   "visible": true,

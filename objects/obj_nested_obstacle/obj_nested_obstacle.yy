@@ -1,9 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_obstacle_parent",
+  "name": "obj_nested_obstacle",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_projectile","path":"objects/obj_projectile/obj_projectile.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -12,8 +14,8 @@
     "path": "folders/Objects/Obstacles.yy",
   },
   "parentObjectId": {
-    "name": "obj_bullet_destroy_upon_collide_parent",
-    "path": "objects/obj_bullet_destroy_upon_collide_parent/obj_bullet_destroy_upon_collide_parent.yy",
+    "name": "obj_obstacle_parent",
+    "path": "objects/obj_obstacle_parent/obj_obstacle_parent.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -28,10 +30,8 @@
   "physicsShape": 1,
   "physicsShapePoints": [],
   "physicsStartAwake": true,
-  "properties": [
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"obstacle_element","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"SKILL_ELEMENTS.NONE","varType":4,},
-  ],
-  "solid": true,
+  "properties": [],
+  "solid": false,
   "spriteId": null,
   "spriteMaskId": null,
   "visible": true,

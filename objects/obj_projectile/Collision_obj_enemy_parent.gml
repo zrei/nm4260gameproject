@@ -3,5 +3,3 @@
 
 other.get_hit_by_projectile(projectile_element, projectile_damage);
 instance_destroy(self);
-
-

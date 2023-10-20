@@ -147,3 +147,5 @@ knockback = function(_damage_direction)
 	moving = false;
 	direction = _damage_direction;
 }
+
+global.on_debug_change_element_event.subscribe(set_element);

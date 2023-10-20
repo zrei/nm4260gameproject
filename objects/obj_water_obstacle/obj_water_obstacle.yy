@@ -12,8 +12,8 @@
     "path": "folders/Objects/Obstacles.yy",
   },
   "parentObjectId": {
-    "name": "obj_obstacle_parent",
-    "path": "objects/obj_obstacle_parent/obj_obstacle_parent.yy",
+    "name": "obj_simple_destroy_obstacle_parent",
+    "path": "objects/obj_simple_destroy_obstacle_parent/obj_simple_destroy_obstacle_parent.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

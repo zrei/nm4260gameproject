@@ -14,8 +14,10 @@ use_damaged_sprite = false;
 
 get_hit_by_projectile = function(_projectile_element, _damage)
 {
-	if (_projectile_element == SKILL_ELEMENTS.NONE || enemy_element == SKILL_ELEMENTS.NONE)
+	if (enemy_element == SKILL_ELEMENTS.NONE)
 		take_damage(_damage);
+	else if (_projectile_element == SKILL_ELEMENTS.NONE)
+		take_damage(0.75 * _damage);
 	else if (is_element_a_weak_to_element_b(_projectile_element, enemy_element))
 		show_debug_message("Weaker element hit");
 	else if (is_element_a_weak_to_element_b(enemy_element, _projectile_element))

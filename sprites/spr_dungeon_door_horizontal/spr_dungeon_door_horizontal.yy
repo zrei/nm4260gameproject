@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"36bcb196-0e53-4259-8d36-7ec50a1cc28f",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b9dfea95-ee3e-44ba-9471-e75175376d69",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"142883ff-59b3-49eb-bfc8-332261cb4e3a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"aab8d185-0878-4314-8262-770335125829",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 48,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"f1a6fc5c-f3d6-46f0-9ccd-c595dc25ae70","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"39cb99c3-4d6b-4661-8358-e1640111c091","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -55,8 +55,8 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"36bcb196-0e53-4259-8d36-7ec50a1cc28f","path":"sprites/spr_dungeon_door_horizontal/spr_dungeon_door_horizontal.yy",},},},"Disabled":false,"id":"f776590c-61e3-4e5c-83bc-9ce17b5a7138","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b9dfea95-ee3e-44ba-9471-e75175376d69","path":"sprites/spr_dungeon_door_horizontal/spr_dungeon_door_horizontal.yy",},},},"Disabled":false,"id":"c75bd144-879c-4a3c-a501-7a0974bdd72f","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"142883ff-59b3-49eb-bfc8-332261cb4e3a","path":"sprites/spr_dungeon_door_horizontal/spr_dungeon_door_horizontal.yy",},},},"Disabled":false,"id":"d36e0500-12e9-4307-9931-2cf0350c475f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"aab8d185-0878-4314-8262-770335125829","path":"sprites/spr_dungeon_door_horizontal/spr_dungeon_door_horizontal.yy",},},},"Disabled":false,"id":"fad5841b-e610-4b7b-a9c7-8a718ede8671","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

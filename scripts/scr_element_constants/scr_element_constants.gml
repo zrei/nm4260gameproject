@@ -27,6 +27,21 @@ function get_element_string_representation(_element)
 		case SKILL_ELEMENTS.GRASS:
 			return "Grass";
 		case SKILL_ELEMENTS.NONE:
-			return "Neutral";
+			return "None";
+	}
+}
+
+function get_element_from_string(_str)
+{
+	switch (_str)
+	{
+		case "fire":
+			return SKILL_ELEMENTS.FIRE;
+		case "water":
+			return SKILL_ELEMENTS.WATER;
+		case "grass":
+			return SKILL_ELEMENTS.GRASS;
+		case "none":
+			return SKILL_ELEMENTS.NONE;
 	}
 }

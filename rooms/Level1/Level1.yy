@@ -42,6 +42,11 @@
     {"name":"inst_E64AD08","path":"rooms/Level1/Level1.yy",},
     {"name":"inst_6C787E62","path":"rooms/Level1/Level1.yy",},
     {"name":"inst_44B45665","path":"rooms/Level1/Level1.yy",},
+    {"name":"obstacle_1","path":"rooms/Level1/Level1.yy",},
+    {"name":"obstacle_2","path":"rooms/Level1/Level1.yy",},
+    {"name":"obstacle_3","path":"rooms/Level1/Level1.yy",},
+    {"name":"gate_instance","path":"rooms/Level1/Level1.yy",},
+    {"name":"inst_14717CC4","path":"rooms/Level1/Level1.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -82,6 +87,15 @@
                 {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_spawner","path":"objects/obj_enemy_spawner/obj_enemy_spawner.yy",},"propertyId":{"name":"enemy_to_spawn","path":"objects/obj_enemy_spawner/obj_enemy_spawner.yy",},"value":"obj_enemy_emu_tutorial",},
                 {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_spawner","path":"objects/obj_enemy_spawner/obj_enemy_spawner.yy",},"propertyId":{"name":"wave_number","path":"objects/obj_enemy_spawner/obj_enemy_spawner.yy",},"value":"1",},
               ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2176.0,"y":576.0,},
+            {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"obstacle_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_nested_grass_obstacle","path":"objects/obj_nested_grass_obstacle/obj_nested_grass_obstacle.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2368.0,"y":672.0,},
+            {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"obstacle_2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_nested_grass_obstacle","path":"objects/obj_nested_grass_obstacle/obj_nested_grass_obstacle.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2112.0,"y":640.0,},
+            {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"obstacle_3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_nested_grass_obstacle","path":"objects/obj_nested_grass_obstacle/obj_nested_grass_obstacle.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1952.0,"y":768.0,},
+            {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_14717CC4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_order_destroy_obstacle","path":"objects/obj_order_destroy_obstacle/obj_order_destroy_obstacle.yy",},"properties":[
+                {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_obstacle_parent","path":"objects/obj_obstacle_parent/obj_obstacle_parent.yy",},"propertyId":{"name":"obstacle_element","path":"objects/obj_obstacle_parent/obj_obstacle_parent.yy",},"value":"SKILL_ELEMENTS.GRASS",},
+                {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_order_destroy_obstacle","path":"objects/obj_order_destroy_obstacle/obj_order_destroy_obstacle.yy",},"propertyId":{"name":"gate","path":"objects/obj_order_destroy_obstacle/obj_order_destroy_obstacle.yy",},"value":"gate_instance",},
+                {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_order_destroy_obstacle","path":"objects/obj_order_destroy_obstacle/obj_order_destroy_obstacle.yy",},"propertyId":{"name":"obstacles_in_order","path":"objects/obj_order_destroy_obstacle/obj_order_destroy_obstacle.yy",},"value":"[obstacle_1, obstacle_2, obstacle_3]",},
+              ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2432.0,"y":544.0,},
+            {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"gate_instance","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_gate_horizontal","path":"objects/obj_gate_horizontal/obj_gate_horizontal.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1952.0,"y":512.0,},
           ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
         {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Room_2","depth":900,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
             {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"level_1_dungeon_room_2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_dungeon_room","path":"objects/obj_dungeon_room/obj_dungeon_room.yy",},"properties":[

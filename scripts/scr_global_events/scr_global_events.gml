@@ -85,4 +85,13 @@ function PositionEvent() : CustomEvent() constructor
 	}
 }
 
+function ObstacleEvent() : CustomEvent() constructor
+{
+	static invoke = function(_projectile_element, _nested_obstacle)
+	{	
+		for (var _i = 0; _i < ds_list_size(subscribers); _i++)
+			subscribers[| _i](_projectile_element, _nested_obstacle);
+	}
+}
+
 global.on_complete_level_event = new VoidEvent();

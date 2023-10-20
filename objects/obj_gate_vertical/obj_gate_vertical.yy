@@ -1,19 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_fire_obstacle",
+  "name": "obj_gate_vertical",
   "eventList": [],
   "managed": true,
-  "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_obstacle_parent","path":"objects/obj_obstacle_parent/obj_obstacle_parent.yy",},"propertyId":{"name":"obstacle_element","path":"objects/obj_obstacle_parent/obj_obstacle_parent.yy",},"value":"SKILL_ELEMENTS.FIRE",},
-  ],
+  "overriddenProperties": [],
   "parent": {
     "name": "Obstacles",
     "path": "folders/Objects/Obstacles.yy",
   },
   "parentObjectId": {
-    "name": "obj_simple_destroy_obstacle_parent",
-    "path": "objects/obj_simple_destroy_obstacle_parent/obj_simple_destroy_obstacle_parent.yy",
+    "name": "obj_gate",
+    "path": "objects/obj_gate/obj_gate.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -29,10 +27,10 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [],
-  "solid": true,
+  "solid": false,
   "spriteId": {
-    "name": "spr_fire_obstacle",
-    "path": "sprites/spr_fire_obstacle/spr_fire_obstacle.yy",
+    "name": "spr_dungeon_door_vertical",
+    "path": "sprites/spr_dungeon_door_vertical/spr_dungeon_door_vertical.yy",
   },
   "spriteMaskId": null,
   "visible": true,
