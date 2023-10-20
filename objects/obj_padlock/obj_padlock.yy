@@ -11,8 +11,8 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_floating_element","path":"objects/obj_floating_element/obj_floating_element.yy",},"propertyId":{"name":"movement_cycle_time","path":"objects/obj_floating_element/obj_floating_element.yy",},"value":"convert_seconds_to_miliseconds(4)",},
   ],
   "parent": {
-    "name": "UI",
-    "path": "folders/Objects/UI.yy",
+    "name": "Pop Ups",
+    "path": "folders/Objects/UI/Pop Ups.yy",
   },
   "parentObjectId": {
     "name": "obj_floating_element",

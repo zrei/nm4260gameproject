@@ -13,8 +13,8 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_follow_camera_element","path":"objects/obj_follow_camera_element/obj_follow_camera_element.yy",},"propertyId":{"name":"camera_offset_y","path":"objects/obj_follow_camera_element/obj_follow_camera_element.yy",},"value":"30",},
   ],
   "parent": {
-    "name": "UI",
-    "path": "folders/Objects/UI.yy",
+    "name": "HUD",
+    "path": "folders/Objects/UI/HUD.yy",
   },
   "parentObjectId": {
     "name": "obj_follow_camera_element",

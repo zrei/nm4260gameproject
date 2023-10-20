@@ -27,3 +27,5 @@ destroy_popup = function(_popup_instance)
 		instance_destroy(_popup_instance);	
 	}
 }
+
+global.on_popup_controller_ready_event.invoke();

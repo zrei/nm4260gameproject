@@ -1,18 +1,18 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_pause_screen",
-  "eventList": [],
+  "name": "obj_layer_controller",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Pause Menu",
-    "path": "folders/Objects/UI/Pause Menu.yy",
+    "name": "Controllers",
+    "path": "folders/Objects/Controllers.yy",
   },
-  "parentObjectId": {
-    "name": "obj_follow_camera_element",
-    "path": "objects/obj_follow_camera_element/obj_follow_camera_element.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -28,10 +28,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_pause_screen",
-    "path": "sprites/spr_pause_screen/spr_pause_screen.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 pause_menu_open = false;
-pause_layer = layer_get_id("Pause");
+pause_layer = global.menu_layer;
 
 btn_to_use = obj_main_menu_btn;
 

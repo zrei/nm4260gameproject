@@ -95,3 +95,4 @@ function ObstacleEvent() : CustomEvent() constructor
 }
 
 global.on_complete_level_event = new VoidEvent();
+global.on_popup_controller_ready_event = new VoidEvent();

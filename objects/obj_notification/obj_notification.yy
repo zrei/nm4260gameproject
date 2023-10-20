@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "UI",
-    "path": "folders/Objects/UI.yy",
+    "name": "HUD",
+    "path": "folders/Objects/UI/HUD.yy",
   },
   "parentObjectId": null,
   "persistent": false,

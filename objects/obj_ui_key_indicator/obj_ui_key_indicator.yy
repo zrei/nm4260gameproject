@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_healthbar_controller",
+  "name": "obj_ui_key_indicator",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
@@ -9,12 +9,12 @@
   ],
   "managed": true,
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_follow_camera_element","path":"objects/obj_follow_camera_element/obj_follow_camera_element.yy",},"propertyId":{"name":"camera_offset_x","path":"objects/obj_follow_camera_element/obj_follow_camera_element.yy",},"value":"30",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_follow_camera_element","path":"objects/obj_follow_camera_element/obj_follow_camera_element.yy",},"propertyId":{"name":"camera_offset_x","path":"objects/obj_follow_camera_element/obj_follow_camera_element.yy",},"value":"170",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_follow_camera_element","path":"objects/obj_follow_camera_element/obj_follow_camera_element.yy",},"propertyId":{"name":"camera_offset_y","path":"objects/obj_follow_camera_element/obj_follow_camera_element.yy",},"value":"30",},
   ],
   "parent": {
-    "name": "UI",
-    "path": "folders/Objects/Controllers/UI.yy",
+    "name": "HUD",
+    "path": "folders/Objects/UI/HUD.yy",
   },
   "parentObjectId": {
     "name": "obj_follow_camera_element",
@@ -35,7 +35,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_ui_key_indicator",
+    "path": "sprites/spr_ui_key_indicator/spr_ui_key_indicator.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }
