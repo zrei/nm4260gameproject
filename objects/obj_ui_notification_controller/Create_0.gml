@@ -5,7 +5,7 @@ notification_objects = ds_list_create();
 
 for (var _i = 0; _i < num_notifications; _i++)
 {
-	var _notif_object = instance_create_layer(0, 0, "UI", obj_notification);
+	var _notif_object = instance_create_layer(0, 0, "HUD", obj_notification);
 	ds_list_add(notification_objects, _notif_object);
 }
 

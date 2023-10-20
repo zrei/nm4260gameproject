@@ -84,3 +84,5 @@ function PositionEvent() : CustomEvent() constructor
 			subscribers[| _i](_position);
 	}
 }
+
+global.on_complete_level_event = new VoidEvent();

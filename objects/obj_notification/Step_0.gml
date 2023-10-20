@@ -18,5 +18,8 @@ else
 	reset();
 }
 
+if (!is_active)
+	return;
+
 x = obj_camera_controller.get_camera_x_position() + starting_pos_offset_x + distance_moved_so_far * direction_to_move;
 y = obj_camera_controller.get_camera_y_position() + starting_pos_offset_y;

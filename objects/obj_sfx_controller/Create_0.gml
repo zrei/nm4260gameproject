@@ -74,3 +74,18 @@ stop_sound = function(_sound_instance)
 		ds_list_delete(currently_playing_sounds, _index);
 	}
 }
+
+on_pause_menu_opened = function()
+{
+	// can exclude UI sounds.
+	// a sound object...
+	pause_all_sounds();
+}
+
+on_pause_menu_closed = function()
+{
+	resume_all_sounds();
+}
+
+global.on_pause_menu_opened_event.subscribe(on_pause_menu_opened);
+global.on_pause_menu_closed_event.subscribe(on_pause_menu_closed);

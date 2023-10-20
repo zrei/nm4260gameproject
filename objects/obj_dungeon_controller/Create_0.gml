@@ -76,7 +76,10 @@ on_full_black_screen = function()
 			room_restart();
 		}
 		else
+		{
+			global.on_complete_level_event.invoke();
 			room_goto_next();
+		}
 		return;
 	}
 	set_current_room(next_dungeon_room, direction_of_entrance, true);

@@ -12,6 +12,23 @@ enemy_sprites = new FourDirectionalSprites(left_facing_sprite, right_facing_spri
 enemy_sprites_damaged = new FourDirectionalSprites(left_facing_sprite_damaged, right_facing_sprite_damaged, front_facing_sprite_damaged, back_facing_sprite_damaged);
 use_damaged_sprite = false;
 
+get_hit_by_projectile = function(_projectile_element, _damage)
+{
+	if (_projectile_element == SKILL_ELEMENTS.NONE || enemy_element == SKILL_ELEMENTS.NONE)
+		take_damage(_damage);
+	else if (is_element_a_weak_to_element_b(_projectile_element, enemy_element))
+		show_debug_message("Weaker element hit");
+	else if (is_element_a_weak_to_element_b(enemy_element, _projectile_element))
+		take_damage(_damage);
+	else
+		power_up();
+}
+
+power_up = function()
+{
+	movement_speed = min(movement_speed + movement_speed_increase_amount, movement_speed_cap);
+}
+
 take_damage = function(_damage_value)
 {
 	if (global.enable_player_one_hit_kill)
@@ -32,6 +49,7 @@ take_damage = function(_damage_value)
 die = function()
 {
 	global.on_enemy_death_event.invoke();
+	global.on_timer_affected_event.invoke(-time_reduction);
 	drop_heal_item();
 	instance_destroy(self);
 	// start death animation

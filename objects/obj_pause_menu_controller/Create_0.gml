@@ -52,11 +52,6 @@ instantiate_pause_menu = function()
 	instance_deactivate_layer(pause_layer);
 }
 
-position_pause_menu = function()
-{
-	//pause_menu_background_instance.x
-}
-
 open_pause_menu = function()
 {
 	if (pause_menu_open)
@@ -79,6 +74,7 @@ close_pause_menu = function()
 
 restart_level = function()
 {
+	obj_bgm_controller.stop_all_sounds();
 	
 }
 
@@ -92,4 +88,7 @@ open_help = function()
 	
 }
 
-instantiate_pause_menu();
+if (pause_layer != -1)
+{
+	instantiate_pause_menu();	
+}
