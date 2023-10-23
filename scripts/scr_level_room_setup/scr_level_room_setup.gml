@@ -21,6 +21,7 @@ function instantiate_controllers()
 	instance_create_layer(0, 0, global.controllers_layer, obj_ui_notification_controller);
 	instance_create_layer(0, 0, global.controllers_layer, obj_popup_controller);
 	instance_create_layer(0, 0, global.controllers_layer, obj_timer_controller);
+	instance_create_layer(0, 0, global.controllers_layer, obj_hud_controller);
 	
 }
 
@@ -46,7 +47,8 @@ function instantiate_hud_layer()
 	instance_create_layer(0, 0, global.hud_layer, obj_ui_element_indicator);
 	instance_create_layer(0, 0, global.hud_layer, obj_ui_key_indicator);
 	instance_create_layer(0, 0, global.hud_layer, obj_ui_healthbar);
-	instance_create_layer(0, 0, global.hud_layer, obj_ui_timer);
+	instance_create_layer(600, 30, global.hud_layer, obj_ui_timer);
+	instance_create_layer(0, 0, global.hud_layer, obj_ui_pause_button);
 }
 
 function instantiate_transition_layer()

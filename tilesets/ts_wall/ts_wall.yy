@@ -85,8 +85,8 @@
     "path": "folders/Tile Sets.yy",
   },
   "spriteId": {
-    "name": "spr_wall_tilesprite",
-    "path": "sprites/spr_wall_tilesprite/spr_wall_tilesprite.yy",
+    "name": "spr_level_1_wall_tilesprite",
+    "path": "sprites/spr_level_1_wall_tilesprite/spr_level_1_wall_tilesprite.yy",
   },
   "spriteNoExport": false,
   "textureGroupId": {

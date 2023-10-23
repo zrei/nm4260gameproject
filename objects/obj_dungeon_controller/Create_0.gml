@@ -77,6 +77,7 @@ on_full_black_screen = function()
 		}
 		else
 		{
+			obj_bgm_controller.stop_all_sounds();
 			global.on_complete_level_event.invoke();
 			room_goto_next();
 		}

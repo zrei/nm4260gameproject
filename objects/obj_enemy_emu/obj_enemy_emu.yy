@@ -21,7 +21,6 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"heal_item_drop_chance","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"0.4",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"min_heal_item_drop_radius","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"3",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"max_heal_item_drop_radius","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"3",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"max_heal_item_drop_angle","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"360",},
   ],
   "parent": {
     "name": "Enemies",

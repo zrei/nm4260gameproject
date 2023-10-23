@@ -55,10 +55,36 @@ take_damage = function(_damage_amount, _damage_direction)
 		return;
 	}
 
+	obj_sfx_controller.play_sound(snd_player_damage);
 	invul_cooldown = global.player_invul_cooldown;
 	curr_damage_flash_amount_remaining = global.player_damage_flash_amount;
 	curr_damage_flash_interval = global.player_damage_interval;
 	knockback(_damage_direction);
+}
+
+take_damage_non_directional = function(_damage_amount)
+{
+	if (global.invincible_player)
+		return;
+
+	if (invul_cooldown > 0)
+		return;
+
+	
+	player_health -= _damage_amount;
+
+	global.on_player_change_health_event.invoke(player_health);
+
+	if (player_health <= 0)
+	{
+		die();
+		return;
+	}
+
+	obj_sfx_controller.play_sound(snd_player_damage);
+	invul_cooldown = global.player_invul_cooldown;
+	curr_damage_flash_amount_remaining = global.player_damage_flash_amount;
+	curr_damage_flash_interval = global.player_damage_interval;
 }
 
 check_key_obtained = function() {

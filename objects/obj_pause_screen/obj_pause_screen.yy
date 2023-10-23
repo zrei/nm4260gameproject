@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_pause_screen",
-    "path": "sprites/spr_pause_screen/spr_pause_screen.yy",
+    "name": "spr_grey_overlay",
+    "path": "sprites/spr_grey_overlay/spr_grey_overlay.yy",
   },
   "spriteMaskId": null,
   "visible": true,

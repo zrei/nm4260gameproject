@@ -4,14 +4,10 @@
   "name": "obj_ui_element_indicator",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,},
   ],
   "managed": true,
-  "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_follow_camera_element","path":"objects/obj_follow_camera_element/obj_follow_camera_element.yy",},"propertyId":{"name":"camera_offset_x","path":"objects/obj_follow_camera_element/obj_follow_camera_element.yy",},"value":"120",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_follow_camera_element","path":"objects/obj_follow_camera_element/obj_follow_camera_element.yy",},"propertyId":{"name":"camera_offset_y","path":"objects/obj_follow_camera_element/obj_follow_camera_element.yy",},"value":"30",},
-  ],
+  "overriddenProperties": [],
   "parent": {
     "name": "HUD",
     "path": "folders/Objects/UI/HUD.yy",
@@ -33,11 +29,16 @@
   "physicsShape": 1,
   "physicsShapePoints": [],
   "physicsStartAwake": true,
-  "properties": [],
+  "properties": [
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"spr_neutral","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"spr_element_indicator_neutral","varType":5,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"spr_fire","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"spr_element_indicator_fire","varType":5,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"spr_grass","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"spr_element_indicator_grass","varType":5,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"spr_water","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"spr_element_indicator_water","varType":5,},
+  ],
   "solid": false,
   "spriteId": {
-    "name": "spr_indicator_circle",
-    "path": "sprites/spr_indicator_circle/spr_indicator_circle.yy",
+    "name": "spr_element_indicator_neutral",
+    "path": "sprites/spr_element_indicator_neutral/spr_element_indicator_neutral.yy",
   },
   "spriteMaskId": null,
   "visible": true,

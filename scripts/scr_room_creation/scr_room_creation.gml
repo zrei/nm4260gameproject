@@ -12,8 +12,10 @@ global.door_dimensions = 3 * global.tileset_dimensions;
 global.north_wall_offset = 1 * global.tileset_dimensions;
 global.west_wall_offset = 1 * global.tileset_dimensions;
 
-global.horizontal_door_sprite = spr_dungeon_door_horizontal;
-global.vertical_door_sprite = spr_dungeon_door_vertical;
+global.closed_horizontal_door_sprite = spr_dungeon_door_horizontal;
+global.closed_vertical_door_sprite = spr_dungeon_door_vertical;
+global.open_horizontal_door_sprite = spr_dirt_horizontal;
+global.open_vertical_door_sprite = spr_dirt_vertical;
 
 global.full_horizontal_wall_dimensions = 15 * global.tileset_dimensions;
 global.half_horizontal_wall_dimensions = 6 * global.tileset_dimensions;
@@ -30,7 +32,8 @@ enum DOOR_TYPE
 function DungeonDoorCreationStruct(_entrance_direction, _connecting_room) constructor
 {
 	entrance_direction = _entrance_direction;
-	sprite_index = get_door_sprite(entrance_direction);
+	closed_sprite = get_closed_door_sprite(entrance_direction);
+	open_sprite = get_open_door_sprite(entrance_direction);
 	connected_dungeon_room = _connecting_room;
 }
 
@@ -55,12 +58,20 @@ function DungeonRoomStruct(_position, _layer, _north_side, _south_side, _east_si
 	west_side = _west_side;
 }
 
-function get_door_sprite(_entrance_direction)
+function get_closed_door_sprite(_entrance_direction)
 {
 	if (_entrance_direction == CARDINAL_DIRECTIONS.NORTH || _entrance_direction == CARDINAL_DIRECTIONS.SOUTH)
-		return global.horizontal_door_sprite;
+		return global.closed_horizontal_door_sprite;
 	else
-		return global.vertical_door_sprite;
+		return global.closed_vertical_door_sprite;
+}
+
+function get_open_door_sprite(_entrance_direction)
+{
+	if (_entrance_direction == CARDINAL_DIRECTIONS.NORTH || _entrance_direction == CARDINAL_DIRECTIONS.SOUTH)
+		return global.open_horizontal_door_sprite;
+	else
+		return global.open_vertical_door_sprite;
 }
 
 function instantiate_walls(_room_position, _layer, _north_door, _south_door, _east_door, _west_door)

@@ -7,7 +7,10 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
   ],
   "managed": true,
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_dungeon_door","path":"objects/obj_dungeon_door/obj_dungeon_door.yy",},"propertyId":{"name":"closed_sprite","path":"objects/obj_dungeon_door/obj_dungeon_door.yy",},"value":"spr_dungeon_door_to_next_level",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_dungeon_door","path":"objects/obj_dungeon_door/obj_dungeon_door.yy",},"propertyId":{"name":"open_sprite","path":"objects/obj_dungeon_door/obj_dungeon_door.yy",},"value":"spr_dirt_horizontal",},
+  ],
   "parent": {
     "name": "Doors",
     "path": "folders/Objects/Dungeon Room/Doors.yy",

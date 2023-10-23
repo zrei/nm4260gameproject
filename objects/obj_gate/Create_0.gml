@@ -6,7 +6,7 @@ event_inherited();
 
 curr_state = undefined;
 
-lock = function()
+lock_gate = function()
 {
 	curr_state = DOOR_STATE.LOCKED;
 	solid = true;
@@ -14,18 +14,10 @@ lock = function()
 	mask_index = sprite_index;
 }
 
-unlock = function()
+unlock_gate = function()
 {
 	curr_state = DOOR_STATE.UNLOCKED;
 	mask_index = -1;
 	solid = false;
 	visible = false;
 }
-
-
-
-
-
-
-
-

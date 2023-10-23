@@ -3,25 +3,25 @@
 
 curr_state = DOOR_STATE.UNLOCKED;
 self.solid = false;
-self.image_index = 1;
+self.sprite_index = open_sprite;
 can_transition = true;
 requires_key = false;
+
+on_unlock_event = new VoidEvent();
 
 lock = function()
 {
 	self.solid = true;
-	self.image_index = 0;
+	self.sprite_index = closed_sprite;
 	curr_state = DOOR_STATE.LOCKED;
 }
 
 unlock = function()
 {
-	if (requires_key)
-		if (!obj_player.check_key_obtained())
-			return;
 	self.solid = false;
-	self.image_index = 1;
+	self.sprite_index = open_sprite;
 	curr_state = DOOR_STATE.UNLOCKED;
+	on_unlock_event.invoke();
 }
 
 on_transition_end = function()

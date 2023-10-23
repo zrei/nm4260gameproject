@@ -1,35 +1,36 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-// Inherit the parent event
-event_inherited();
-
-gate.lock();
 num_obstacles = array_length(obstacles_in_order);
-curr_obstacle_to_be_destroyed = 0;
+curr_obstacle_to_clear = 0;
 
-check_correct_hit_order = function(_element, _nested_obstacle_instance)
+num_gates = array_length(gates);
+
+for (var _i = 0; _i < num_gates; _i++)
+	gates[_i].lock_gate();
+
+unlock_gates = function()
 {
-	if (!is_element_a_weak_to_element_b(obstacle_element, _element))
-		return;
-	
-	if (obstacles_in_order[curr_obstacle_to_be_destroyed] != _nested_obstacle_instance)
+	for (var _i = 0; _i < num_gates; _i++)
+		gates[_i].unlock_gate();
+}
+
+check_order = function(_obstacle_instance)
+{		
+	if (obstacles_in_order[curr_obstacle_to_clear] != _obstacle_instance)
 		reset_obstacles();
 	else
 	{
-		curr_obstacle_to_be_destroyed += 1;
-		_nested_obstacle_instance.clear_obstacle();
-		if (curr_obstacle_to_be_destroyed >= num_obstacles)
-			gate.unlock();
+		_obstacle_instance.clear_obstacle();
+		curr_obstacle_to_clear += 1;	
+		if (curr_obstacle_to_clear == num_obstacles)
+			unlock_gates();
 	}
 }
 
-for (var _i = 0; _i < num_obstacles; _i++)
-	obstacles_in_order[_i].on_hit_by_projectile_event.subscribe(check_correct_hit_order);
-	
 reset_obstacles = function()
 {
 	for (var _i = 0; _i < num_obstacles; _i++)
 		obstacles_in_order[_i].reset_obstacle();
-	curr_obstacle_to_be_destroyed = 0;
+	curr_obstacle_to_clear = 0;
 }
+
+for (var _i = 0; _i < num_obstacles; _i++)
+		obstacles_in_order[_i].on_hit_by_projectile_event.subscribe(check_order);

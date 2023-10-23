@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_dungeon_chest_open",
-  "bbox_bottom": 29,
-  "bbox_left": 10,
-  "bbox_right": 47,
+  "bbox_bottom": 33,
+  "bbox_left": 6,
+  "bbox_right": 41,
   "bbox_top": 4,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b3219f47-2fea-4fa3-b400-7711410ae122",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f4bb3550-3fbd-4de4-9e48-d1f147d5baea",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 48,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"182537ba-310f-43af-a753-32e2d6618c93","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"87be8b9a-5469-4e00-942d-6fdb41912f3a","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b3219f47-2fea-4fa3-b400-7711410ae122","path":"sprites/spr_dungeon_chest_open/spr_dungeon_chest_open.yy",},},},"Disabled":false,"id":"333f6275-b227-4880-9a7a-74326962e68c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f4bb3550-3fbd-4de4-9e48-d1f147d5baea","path":"sprites/spr_dungeon_chest_open/spr_dungeon_chest_open.yy",},},},"Disabled":false,"id":"b343bb7b-e785-4194-b2cf-126b3aa075b1","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

@@ -10,6 +10,7 @@ create_popup = function(_popup, _position = new Vector2(0, 0), _additional_infor
 		return;
 
 	var _popup_instance = instance_create_layer(_position.x, _position.y, popup_layer, _popup, _additional_information);
+	show_debug_message("Popup instance: " + string(_popup_instance));
 	ds_list_add(popups, _popup_instance);
 	return _popup_instance;
 }
@@ -18,8 +19,8 @@ destroy_popup = function(_popup_instance)
 {
 	if (popup_layer == undefined || popup_layer == -1)
 		return;
-		
-	var _index = ds_list_find_index(popup_layer, _popup_instance);
+	show_debug_message("Popup instance: " + string(_popup_instance));
+	var _index = ds_list_find_index(popups, _popup_instance);
 	
 	if (_index != -1)
 	{

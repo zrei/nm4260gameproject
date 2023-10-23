@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-on_hit_by_projectile_event = new ObstacleEvent();
+on_hit_by_projectile_event = new IntEvent();
 
 // Inherit the parent event
 event_inherited();

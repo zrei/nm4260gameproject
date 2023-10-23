@@ -9,8 +9,8 @@
   ],
   "managed": true,
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_follow_camera_element","path":"objects/obj_follow_camera_element/obj_follow_camera_element.yy",},"propertyId":{"name":"camera_offset_x","path":"objects/obj_follow_camera_element/obj_follow_camera_element.yy",},"value":"170",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_follow_camera_element","path":"objects/obj_follow_camera_element/obj_follow_camera_element.yy",},"propertyId":{"name":"camera_offset_y","path":"objects/obj_follow_camera_element/obj_follow_camera_element.yy",},"value":"30",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_follow_camera_element","path":"objects/obj_follow_camera_element/obj_follow_camera_element.yy",},"propertyId":{"name":"camera_offset_x","path":"objects/obj_follow_camera_element/obj_follow_camera_element.yy",},"value":"0",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_follow_camera_element","path":"objects/obj_follow_camera_element/obj_follow_camera_element.yy",},"propertyId":{"name":"camera_offset_y","path":"objects/obj_follow_camera_element/obj_follow_camera_element.yy",},"value":"0",},
   ],
   "parent": {
     "name": "HUD",

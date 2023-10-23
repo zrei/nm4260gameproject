@@ -2,23 +2,23 @@
 // You can write your code in this editor
 event_inherited();
 
-self.image_index = 0;
+sprite_index = spr_neutral;
 
 on_change_element = function(_element)
 {
 	switch (_element)
 	{
 		case SKILL_ELEMENTS.NONE:
-			self.image_index = 0;
+			sprite_index = spr_neutral;
 			break;
 		case SKILL_ELEMENTS.WATER:
-			self.image_index = 1;
+			sprite_index = spr_water;
 			break;
 		case SKILL_ELEMENTS.FIRE:
-			self.image_index = 3;
+			sprite_index = spr_fire;
 			break;
 		case SKILL_ELEMENTS.GRASS:
-			self.image_index = 2;
+			sprite_index = spr_grass;
 			break;
 	}
 }

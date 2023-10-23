@@ -8,7 +8,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_floating_element","path":"objects/obj_floating_element/obj_floating_element.yy",},"propertyId":{"name":"movement_curve","path":"objects/obj_floating_element/obj_floating_element.yy",},"value":"anim_movement_hover",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_floating_element","path":"objects/obj_floating_element/obj_floating_element.yy",},"propertyId":{"name":"has_motion","path":"objects/obj_floating_element/obj_floating_element.yy",},"value":"True",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_floating_element","path":"objects/obj_floating_element/obj_floating_element.yy",},"propertyId":{"name":"y_movement_scale","path":"objects/obj_floating_element/obj_floating_element.yy",},"value":"25",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_floating_element","path":"objects/obj_floating_element/obj_floating_element.yy",},"propertyId":{"name":"movement_cycle_time","path":"objects/obj_floating_element/obj_floating_element.yy",},"value":"convert_seconds_to_miliseconds(4)",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_floating_element","path":"objects/obj_floating_element/obj_floating_element.yy",},"propertyId":{"name":"movement_cycle_time","path":"objects/obj_floating_element/obj_floating_element.yy",},"value":"convert_seconds_to_microseconds(4)",},
   ],
   "parent": {
     "name": "Pop Ups",
@@ -34,8 +34,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_dungeon_wall",
-    "path": "sprites/spr_dungeon_wall/spr_dungeon_wall.yy",
+    "name": "spr_padlock",
+    "path": "sprites/spr_padlock/spr_padlock.yy",
   },
   "spriteMaskId": null,
   "visible": true,
