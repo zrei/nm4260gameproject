@@ -5,6 +5,7 @@
 if (knockback_cooldown > 0)
 {
 	speed = global.player_knockback_speed * global.time_scale;
+	show_debug_message("Position: " + string(x) + ", " + string(y));
 }
 else
 {

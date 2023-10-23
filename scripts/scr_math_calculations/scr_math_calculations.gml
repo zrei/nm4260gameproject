@@ -52,7 +52,7 @@ function Vector2(_x = 0, _y = 0) constructor
 }
 
 // four cardinal directions
-global.up_vector = new Vector2(0, 1);
+global.up_vector = new Vector2(0, -1);
 global.right_vector = new Vector2(1, 0);
 global.down_vector = global.up_vector.flip_y();
 global.left_vector = global.right_vector.flip_x();

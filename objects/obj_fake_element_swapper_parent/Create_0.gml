@@ -6,4 +6,5 @@ event_inherited();
 perform_interaction = function()
 {
 	obj_player.take_damage_non_directional(damage_value);	
+	instance_destroy(self);
 }

@@ -31,7 +31,8 @@ move_instanteneously = function(_position, _facing_direction)
 	show_debug_message("Move player to " + string(_position));
 	x = _position.x;
 	y = _position.y;
-	set_facing_position(_facing_direction);
+	if (_facing_direction != undefined)
+		set_facing_position(_facing_direction);
 }
 
 take_damage = function(_damage_amount, _damage_direction)

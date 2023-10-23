@@ -26,3 +26,18 @@ function calculate_face_angle(_x1, _y1, _x2, _y2)
 	} else
 		return 0;
 }
+
+function map_cardinal_directions_to_vectors(_cardinal_direction)
+{
+	switch (_cardinal_direction)
+	{
+		case CARDINAL_DIRECTIONS.NORTH: 
+			return global.up_vector;
+		case CARDINAL_DIRECTIONS.SOUTH:
+			return global.down_vector;
+		case CARDINAL_DIRECTIONS.WEST:
+			return global.left_vector;
+		case CARDINAL_DIRECTIONS.EAST:
+			return global.right_vector;
+	}
+}
