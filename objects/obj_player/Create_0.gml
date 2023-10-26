@@ -177,3 +177,4 @@ knockback = function(_damage_direction)
 }
 
 global.on_debug_change_element_event.subscribe(set_element);
+global.on_debug_obtain_key_event.subscribe(obtain_key);

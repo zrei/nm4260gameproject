@@ -36,3 +36,15 @@ function quit_game()
 	obj_bgm_controller.stop_all_sounds();
 	game_end();
 }
+
+function go_to_first_level()
+{
+	room_goto(FIRST_LEVEL);
+}
+
+function go_to_first_level_transition()
+{
+	obj_bgm_controller.stop_all_sounds();
+	global.curr_transition_purpose = TRANSITION_PURPOSE.TO_FIRST_LEVEL;
+	obj_transition_controller.create_transition(global.fade_in_transition, new Vector2(0, 0), false, false);
+}

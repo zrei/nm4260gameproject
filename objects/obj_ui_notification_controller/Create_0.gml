@@ -9,9 +9,9 @@ for (var _i = 0; _i < num_notifications; _i++)
 	ds_list_add(notification_objects, _notif_object);
 }
 
-send_notification = function(_text)
+send_notification = function(_text, _spr)
 {
-	find_free_notification().set_to_move(CARDINAL_DIRECTIONS.EAST, 64 + 10, 2, convert_seconds_to_frames(0.5), _text);
+	find_free_notification().set_to_move(CARDINAL_DIRECTIONS.EAST, 64 + 10, 2, convert_seconds_to_frames(0.5), _text, _spr);
 }
 
 find_free_notification = function()
@@ -23,17 +23,17 @@ find_free_notification = function()
 
 on_obtain_key = function()
 {
-	send_notification("Obtained key!");	
+	send_notification("Obtained key!", spr_key);	
 }
 
 on_pick_up_item = function(_item_name)
 {
-	send_notification("Picked up " + _item_name);
+	send_notification("Picked up " + _item_name, spr_egg);
 }
 
 on_change_element = function(_element)
 {
-	send_notification("Element changed to " + get_element_string_representation(_element));
+	send_notification("Element changed to " + get_element_string_representation(_element), spr_key);
 }
 
 global.on_player_pick_up_item_event.subscribe(on_pick_up_item);

@@ -3,6 +3,7 @@
 global.main_menu_font = font_add("slkscr.ttf", 15, false, false, 32, 128);
 global.back_button_font = font_add("slkscr.ttf", 15, false, false, 32, 128);
 global.overlay_font = font_add("slkscr.ttf", 22, false, false, 32, 128);
+global.notification_font = font_add("slkscr.ttf", 11, false, false, 32, 128);
 
 global.unhovered_color = $000000;
 global.hovered_color = $9e9e9e;

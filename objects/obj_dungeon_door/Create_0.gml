@@ -4,6 +4,7 @@
 curr_state = DOOR_STATE.UNLOCKED;
 self.solid = false;
 self.sprite_index = open_sprite;
+self.image_alpha = 0.4;
 can_transition = true;
 requires_key = false;
 
@@ -13,6 +14,7 @@ lock = function()
 {
 	self.solid = true;
 	self.sprite_index = closed_sprite;
+	self.image_alpha = 1;
 	curr_state = DOOR_STATE.LOCKED;
 }
 
@@ -20,6 +22,7 @@ unlock = function()
 {
 	self.solid = false;
 	self.sprite_index = open_sprite;
+	self.image_alpha = 0.4;
 	curr_state = DOOR_STATE.UNLOCKED;
 	on_unlock_event.invoke();
 }

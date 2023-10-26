@@ -321,3 +321,14 @@ ds_map_add(string_map_to_cheat, "player.element", new Cheat(
 	change_element,
 	"Change player's element",
 	"player.element *element*"));
+	
+function give_key(_ignore)
+{
+	global.on_debug_obtain_key_event.invoke();
+	show_message("Player obtained key");
+}
+
+ds_map_add(string_map_to_cheat, "player.obtainkey", new Cheat(
+	give_key,
+	"Give player the key",
+	"player.obtainkey"));

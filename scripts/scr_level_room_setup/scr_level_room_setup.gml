@@ -1,6 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 #macro FIRST_SCREEN SplashScreen
+#macro FIRST_LEVEL Level1Transition
 
 function gamemaker_room_start(_dungeon_room_instance, _entrance_direction) {
 	instantiate_enemy_layer();
@@ -35,6 +36,12 @@ function instantiate_main_menu_controllers()
 	instance_create_layer(0, 0, global.controllers_layer, obj_how_to_play_controller);
 	instance_create_layer(0, 0, global.controllers_layer, obj_credits_controller);
 	instance_create_layer(0, 0, global.controllers_layer, obj_main_menu_controller);
+}
+
+function instantiate_end_screen_controllers()
+{
+	global.controllers_layer = layer_create(-20, "Controllers");
+	instance_create_layer(0, 0, global.controllers_layer, obj_game_win_controller);
 }
 
 function instantiate_enemy_layer()

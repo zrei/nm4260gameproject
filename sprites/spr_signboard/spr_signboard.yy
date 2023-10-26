@@ -23,7 +23,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"74d3ab0e-0fe1-45f0-a320-caa298c108be","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 0,
+  "origin": 1,
   "parent": {
     "name": "Tutorials",
     "path": "folders/Sprites/Tutorials.yy",
@@ -59,7 +59,7 @@
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 0,
+    "xorigin": 24,
     "yorigin": 0,
   },
   "swatchColours": null,

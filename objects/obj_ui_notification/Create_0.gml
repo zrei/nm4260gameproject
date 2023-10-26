@@ -14,11 +14,12 @@ distance_moved_so_far = 0;
 direction_to_move = 0;
 movement_speed = 0;
 fade_time = 0;
+sprite_to_use = undefined;
 text = "";
 curr_fade_time = 0;
 
 	
-set_to_move = function(_cardinal_direction, _distance_to_move, _movement_speed, _fade_time, _text)
+set_to_move = function(_cardinal_direction, _distance_to_move, _movement_speed, _fade_time, _text, _spr)
 {	
 	is_active = true;
 	
@@ -29,6 +30,7 @@ set_to_move = function(_cardinal_direction, _distance_to_move, _movement_speed, 
 	fade_time = _fade_time;
 	curr_fade_time = _fade_time;
 	text = _text;
+	sprite_to_use = _spr;
 
 	if (movement_speed % distance_to_move != 0)
 		show_debug_message("The speed is not a multiple of the distance");

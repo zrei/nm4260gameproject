@@ -6,7 +6,7 @@
 
 is_open = false;
 
-overlay_instance = instance_create_layer(0, 0, global.overlay_layer, obj_pause_screen);
+overlay_instance = instance_create_layer(0, 0, global.overlay_layer, obj_you_died_screen);
 play_again_btn_instance = instance_create_layer(0, 0, global.menu_layer, obj_overlay_menu_btn, {
 	camera_offset_y: 20,
 	btn_text: "play again?"});

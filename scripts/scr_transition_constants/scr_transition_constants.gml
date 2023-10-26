@@ -5,7 +5,8 @@ enum TRANSITION_PURPOSE
 	TO_NEXT_ROOM,
 	TO_NEXT_LEVEL,
 	TO_MAIN_MENU,
-	RESTART_LEVEL
+	RESTART_LEVEL, 
+	TO_FIRST_LEVEL
 }
 
 global.fade_in_transition = seq_black_screen_fade_in;

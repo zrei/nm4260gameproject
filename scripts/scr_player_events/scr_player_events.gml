@@ -11,6 +11,7 @@ global.on_debug_change_element_event = new IntEvent();
 // no argument
 global.on_player_death_event = new VoidEvent();
 global.on_player_obtain_key_event = new VoidEvent();
+global.on_debug_obtain_key_event = new VoidEvent();
 
 // one argument, notification text for now
 global.on_player_pick_up_item_event = new IntEvent();
