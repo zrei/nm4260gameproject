@@ -68,12 +68,13 @@ on_transition_to_next_room = function(_dungeon_room_instance, _direction_of_entr
 
 on_full_black_screen = function()
 {
-	if (next_dungeon_room == undefined)
+	
+	/*if (next_dungeon_room == undefined)
 	{
 		if (global.player_is_dead)
 		{
 			global.player_is_dead = false;
-			room_restart();
+			
 		}
 		else
 		{
@@ -82,10 +83,26 @@ on_full_black_screen = function()
 			room_goto_next();
 		}
 		return;
+	}*/
+	
+	switch (global.curr_transition_purpose)
+	{
+		case TRANSITION_PURPOSE.TO_NEXT_ROOM:
+			set_current_room(next_dungeon_room, direction_of_entrance, true);
+			next_dungeon_room = undefined;
+			direction_of_entrance = undefined;
+			break;
+		case TRANSITION_PURPOSE.TO_NEXT_LEVEL:
+			to_next_level();
+			break;
+		case TRANSITION_PURPOSE.TO_MAIN_MENU:
+			go_to_main_menu();
+			break;
+		case TRANSITION_PURPOSE.RESTART_LEVEL:
+			restart_level();
+			break;
 	}
-	set_current_room(next_dungeon_room, direction_of_entrance, true);
-	next_dungeon_room = undefined;
-	direction_of_entrance = undefined;
+	global.curr_transition_purpose = TRANSITION_PURPOSE.TO_NEXT_ROOM;
 }
 
 on_transition_end = function()

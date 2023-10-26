@@ -50,3 +50,18 @@ resume_all_sounds = function(_excluded_sounds = [])
 			audio_resume_sound(currently_playing_bgm[| _i]);
 	}
 }
+
+on_arena_start = function()
+{
+	stop_all_sounds();
+	play_music(global.curr_arena_bgm);
+}
+
+on_arena_end = function()
+{
+	stop_all_sounds();
+	play_music(global.curr_level_bgm);
+}
+
+global.on_arena_start_event.subscribe(on_arena_start);
+global.on_arena_end_event.subscribe(on_arena_end);

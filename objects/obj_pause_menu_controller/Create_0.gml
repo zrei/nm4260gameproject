@@ -3,6 +3,7 @@
 
 pause_menu_open = false;
 pause_layer = global.menu_layer;
+overlay_open = false;
 
 btn_to_use = obj_overlay_menu_btn;
 
@@ -31,34 +32,35 @@ activate_all_instances = function()
 	for (var _i = 0; _i < array_length(pause_menu_instances); _i++)
 		instance_activate_object(pause_menu_instances[_i]);
 }
+
 instantiate_pause_menu = function()
 {
-	pause_menu_background_instance = instance_create_layer(0, 0, pause_layer, pause_menu_background);
+	pause_menu_background_instance = instance_create_layer(0, 0, global.overlay_layer, pause_menu_background);
 	
-	resume_btn_instance = instance_create_layer(0, 0, pause_layer, obj_main_menu_btn, {
+	resume_btn_instance = instance_create_layer(0, 0, pause_layer, btn_to_use, {
 		camera_offset_x: 0,
 		camera_offset_y: resume_btn_offset_y,
 		btn_text: "resume"});
 	
 	resume_btn_instance.on_pressed.subscribe(close_pause_menu);
 	
-	restart_btn_instance = instance_create_layer(0, 0, pause_layer, obj_main_menu_btn, {
+	restart_btn_instance = instance_create_layer(0, 0, pause_layer, btn_to_use, {
 		camera_offset_x: 0,
 		camera_offset_y: resume_btn_offset_y + offset_btwn_buttons,
 		btn_text: "restart level"});
-	restart_btn_instance.on_pressed.subscribe(restart_level);
+	restart_btn_instance.on_pressed.subscribe(restart_level_transition);
 	
-	help_btn_instance = instance_create_layer(0, 0, pause_layer, obj_main_menu_btn, {
+	help_btn_instance = instance_create_layer(0, 0, pause_layer, btn_to_use, {
 		camera_offset_x: 0,
 		camera_offset_y: resume_btn_offset_y + offset_btwn_buttons * 2,
 		btn_text: "help"});
 	help_btn_instance.on_pressed.subscribe(open_help);
 	
-	exit_to_main_menu_btn_instance = instance_create_layer(0, 0, pause_layer, obj_main_menu_btn, {
+	exit_to_main_menu_btn_instance = instance_create_layer(0, 0, pause_layer, btn_to_use, {
 		camera_offset_x: 0,
 		camera_offset_y: resume_btn_offset_y + offset_btwn_buttons * 3,
 		btn_text: "exit to main menu"});
-	exit_to_main_menu_btn_instance.on_pressed.subscribe(goto_main_menu);
+	exit_to_main_menu_btn_instance.on_pressed.subscribe(go_to_main_menu_transition);
 	
 	pause_menu_instances = [pause_menu_background_instance, resume_btn_instance, restart_btn_instance, help_btn_instance, exit_to_main_menu_btn_instance];
 	
@@ -85,21 +87,25 @@ close_pause_menu = function()
 	pause_menu_open = false;
 }
 
-restart_level = function()
+hide_pause_menu = function()
 {
-	obj_bgm_controller.stop_all_sounds();
-	
+	deactivate_all_instances();
+	overlay_open = true;
 }
 
-goto_main_menu = function()
+show_pause_menu = function()
 {
-	
+	activate_all_instances();
+	overlay_open = false;
 }
 
 open_help = function()
 {
-	
+	hide_pause_menu();
+	obj_how_to_play_controller.show_overlay_menu();
 }
+
+obj_how_to_play_controller.on_overlay_hidden.subscribe(show_pause_menu);
 
 if (pause_layer != -1)
 {

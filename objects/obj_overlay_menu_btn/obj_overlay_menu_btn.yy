@@ -11,7 +11,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_btn","path":"objects/obj_btn/obj_btn.yy",},"propertyId":{"name":"button_font","path":"objects/obj_btn/obj_btn.yy",},"value":"global.overlay_font",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_btn","path":"objects/obj_btn/obj_btn.yy",},"propertyId":{"name":"selected_sound","path":"objects/obj_btn/obj_btn.yy",},"value":"snd_button_press",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_btn","path":"objects/obj_btn/obj_btn.yy",},"propertyId":{"name":"text_pos_offset_x","path":"objects/obj_btn/obj_btn.yy",},"value":"408",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_btn","path":"objects/obj_btn/obj_btn.yy",},"propertyId":{"name":"text_pos_offset_y","path":"objects/obj_btn/obj_btn.yy",},"value":"250",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_btn","path":"objects/obj_btn/obj_btn.yy",},"propertyId":{"name":"text_pos_offset_y","path":"objects/obj_btn/obj_btn.yy",},"value":"261",},
   ],
   "parent": {
     "name": "UI",

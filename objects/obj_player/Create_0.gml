@@ -129,8 +129,9 @@ set_health = function(_health)
 die = function()
 {
 	global.player_is_dead = true;
+	obj_sfx_controller.play_sound(snd_player_die);
 	global.on_player_death_event.invoke();
-	obj_transition_controller.create_transition(global.fade_in_transition, obj_dungeon_controller.get_current_room_top_left_corner(), false, false);
+	//obj_transition_controller.create_transition(global.fade_in_transition, obj_dungeon_controller.get_current_room_top_left_corner(), false, false);
 }	
 
 set_facing_position = function(_cardinal_direction)

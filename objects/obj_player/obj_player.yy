@@ -36,6 +36,9 @@
     "name": "spr_player_front_facing",
     "path": "sprites/spr_player_front_facing/spr_player_front_facing.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_player_back_facing",
+    "path": "sprites/spr_player_back_facing/spr_player_back_facing.yy",
+  },
   "visible": true,
 }

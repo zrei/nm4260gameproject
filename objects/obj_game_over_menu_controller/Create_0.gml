@@ -4,80 +4,41 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-pause_menu_open = false;
-pause_layer = layer_get_id("Pause");
+is_open = false;
 
-btn_to_use = obj_main_menu_btn;
+overlay_instance = instance_create_layer(0, 0, global.overlay_layer, obj_pause_screen);
+play_again_btn_instance = instance_create_layer(0, 0, global.menu_layer, obj_overlay_menu_btn, {
+	camera_offset_y: 20,
+	btn_text: "play again?"});
+go_to_main_menu_btn_instance = instance_create_layer(0, 0, global.menu_layer, obj_overlay_menu_btn, {
+	camera_offset_y: 70,
+	btn_text: "exit to main menu"});
 
-pause_menu_background = obj_pause_screen;
+instances = [overlay_instance, play_again_btn_instance, go_to_main_menu_btn_instance];
 
-btn_offset_x = global.viewport_width / 2;
-resume_btn_offset_y = 400;
-offset_btwn_buttons = 100;
-
-pause_menu_background_instance = noone;
-restart_btn_instance = noone;
-exit_to_main_menu_btn_instance = noone;
-
-anchored_top_left_point = new Vector2(0, 0);
-
-instantiate_pause_menu = function()
+deactivate_all_instances = function()
 {
-	pause_menu_background_instance = instance_create_layer(0, 0, pause_layer, pause_menu_background);
-
-	restart_btn_instance = instance_create_layer(0, 0, pause_layer, obj_main_menu_btn, {
-		camera_offset_x: btn_offset_x,
-		camera_offset_y: resume_btn_offset_y + offset_btwn_buttons,
-		btn_text: "restart level"});
-	restart_btn_instance.on_pressed.subscribe(restart_level);
-	
-	exit_to_main_menu_btn_instance = instance_create_layer(0, 0, pause_layer, obj_main_menu_btn, {
-		camera_offset_x: btn_offset_x,
-		camera_offset_y: resume_btn_offset_y + offset_btwn_buttons * 3,
-		btn_text: "exit to main menu"});
-	exit_to_main_menu_btn_instance.on_pressed.subscribe(goto_main_menu);
-	
-	instance_deactivate_layer(pause_layer);
+	for (var _i = 0; _i < array_length(instances); _i++)
+		instance_deactivate_object(instances[_i]);
 }
 
-open_pause_menu = function()
+activate_all_instances = function()
 {
-	if (pause_menu_open)
-		return;
-
-	instance_activate_layer(pause_layer);
-	global.on_pause_menu_opened_event.invoke();	
-	pause_menu_open = true;
+	for (var _i = 0; _i < array_length(instances); _i++)
+		instance_activate_object(instances[_i]);
 }
 
-close_pause_menu = function()
+show_overlay_menu = function()
 {
-	if (!pause_menu_open)
-		return;
-	
-	instance_deactivate_layer(pause_layer);
-	global.on_pause_menu_closed_event.invoke();
-	pause_menu_open = false;
-}
-
-restart_level = function()
-{
+	is_open = true;
 	obj_bgm_controller.stop_all_sounds();
-	
+	obj_bgm_controller.play_music(snd_game_over_music);
+	activate_all_instances();
 }
 
-goto_main_menu = function()
-{
-	
-}
+play_again_btn_instance.on_pressed.subscribe(restart_level_transition);
 
-open_help = function()
-{
-	
-}
+go_to_main_menu_btn_instance.on_pressed.subscribe(go_to_main_menu_transition);
 
-instantiate_pause_menu();
-
-
-
-
+deactivate_all_instances();
+global.on_player_death_event.subscribe(show_overlay_menu);

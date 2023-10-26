@@ -6,8 +6,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Pause Menu",
-    "path": "folders/Objects/UI/Pause Menu.yy",
+    "name": "Overlays",
+    "path": "folders/Objects/UI/Overlays.yy",
   },
   "parentObjectId": {
     "name": "obj_follow_camera_element",
