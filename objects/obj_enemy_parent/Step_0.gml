@@ -31,7 +31,8 @@ if (distance_to_point(obj_player.x, obj_player.y) > global.point_reached_thresho
 	moving = false;
 }
 
-if (use_damaged_sprite)
+sprite_index = get_enemy_sprite(use_damaged_sprite, map_angles_to_cardinal_directions(curr_face_angle), enemy_element);
+/*if (use_damaged_sprite)
 	sprite_index = enemy_sprites_damaged.get_sprite(map_angles_to_cardinal_directions(curr_face_angle));
 else
-	sprite_index = enemy_sprites.get_sprite(map_angles_to_cardinal_directions(curr_face_angle));
+	sprite_index = enemy_sprites.get_sprite(map_angles_to_cardinal_directions(curr_face_angle));*/

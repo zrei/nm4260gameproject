@@ -29,7 +29,8 @@
   "physicsStartAwake": true,
   "properties": [
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"element_to_swap_to","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"SKILL_ELEMENTS.NONE","varType":4,},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"text_y_offset","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"50","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"popup_y_offset","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"-20","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"sprite_text","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"spr_element_swapper_instruction","varType":5,},
   ],
   "solid": true,
   "spriteId": null,

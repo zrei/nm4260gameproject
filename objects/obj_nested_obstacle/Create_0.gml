@@ -6,11 +6,6 @@ is_cleared = false;
 // Inherit the parent event
 event_inherited();
 
-bb_top = y - sprite_height;
-bb_bottom = y;
-bb_left = x - sprite_width / 2;
-bb_right = x + sprite_width / 2;
-
 clear_obstacle = function()
 {
 	solid = false;
@@ -40,6 +35,7 @@ shift_player = function()
 
 reset_obstacle = function()
 {
+	var _to_play_sound = is_cleared;
 	solid = true;
 	visible = true;
 	mask_index = sprite_index;
@@ -50,6 +46,7 @@ reset_obstacle = function()
 		show_debug_message("Player stuck");
 		shift_player();
 	}
+	return _to_play_sound;
 }
 
 reset_obstacle();
