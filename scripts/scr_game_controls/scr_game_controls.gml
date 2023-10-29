@@ -7,6 +7,7 @@ function go_to_main_menu()
 
 function to_next_level()
 {
+	global.on_complete_level_event.invoke();
 	obj_bgm_controller.stop_all_sounds();
 	room_goto_next();
 }

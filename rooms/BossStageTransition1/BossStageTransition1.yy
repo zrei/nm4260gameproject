@@ -1,21 +1,21 @@
 {
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
-  "name": "Level3Transition",
-  "creationCodeFile": "rooms/Level3Transition/RoomCreationCode.gml",
+  "name": "BossStageTransition1",
+  "creationCodeFile": "",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,
   "instanceCreationOrder": [
-    {"name":"inst_39418A2F_1_1","path":"rooms/Level3Transition/Level3Transition.yy",},
+    {"name":"inst_68B07249","path":"rooms/BossStageTransition1/BossStageTransition1.yy",},
   ],
   "isDnd": false,
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Controllers","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_39418A2F_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_level_transition_controller","path":"objects/obj_level_transition_controller/obj_level_transition_controller.yy",},"properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_level_transition_controller","path":"objects/obj_level_transition_controller/obj_level_transition_controller.yy",},"propertyId":{"name":"text_to_display","path":"objects/obj_level_transition_controller/obj_level_transition_controller.yy",},"value":"level 3",},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_68B07249","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_level_transition_controller","path":"objects/obj_level_transition_controller/obj_level_transition_controller.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_level_transition_controller","path":"objects/obj_level_transition_controller/obj_level_transition_controller.yy",},"propertyId":{"name":"text_to_display","path":"objects/obj_level_transition_controller/obj_level_transition_controller.yy",},"value":"boss stage",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_level_transition_controller","path":"objects/obj_level_transition_controller/obj_level_transition_controller.yy",},"propertyId":{"name":"color_to_use","path":"objects/obj_level_transition_controller/obj_level_transition_controller.yy",},"value":"c_white",},
-          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":352.0,"y":192.0,},
+          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":320.0,"y":96.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],

@@ -30,7 +30,7 @@
   "properties": [
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"spawn_side","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"CARDINAL_DIRECTIONS.NORTH","varType":4,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"spawn_offset","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"20","varType":0,},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"spawn_time","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"convert_seconds_to_microseconds(15)","varType":4,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"spawn_time","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"convert_seconds_to_microseconds(30)","varType":4,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"item_to_spawn","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"obj_healing_egg","varType":5,},
   ],
   "solid": false,

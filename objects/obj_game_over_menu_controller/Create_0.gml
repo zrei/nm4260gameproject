@@ -34,6 +34,9 @@ show_overlay_menu = function()
 	obj_bgm_controller.stop_all_sounds();
 	obj_bgm_controller.play_music(snd_game_over_music);
 	activate_all_instances();
+	instance_create_layer(0, 0, global.menu_layer, obj_menu_timer, {
+		timer_value: get_microseconds_to_closest_second(obj_timer_controller.player_timer)
+	});
 }
 
 play_again_btn_instance.on_pressed.subscribe(restart_level_transition);

@@ -7,9 +7,8 @@ curr_attack_cooldown = 0;
 curr_damage_flash_amount_remaining = 0;
 curr_damage_flash_interval = 0;
 
+curr_health = enemy_health;
 curr_face_angle = 270;
-enemy_sprites = new FourDirectionalSprites(left_facing_sprite, right_facing_sprite, front_facing_sprite, back_facing_sprite);
-enemy_sprites_damaged = new FourDirectionalSprites(left_facing_sprite_damaged, right_facing_sprite_damaged, front_facing_sprite_damaged, back_facing_sprite_damaged);
 use_damaged_sprite = false;
 
 get_hit_by_projectile = function(_projectile_element, _damage)
@@ -34,11 +33,11 @@ power_up = function()
 take_damage = function(_damage_value)
 {
 	if (global.enable_player_one_hit_kill)
-		enemy_health = 0;
+		curr_health = 0;
 	else if (!global.invincible_enemy)
-		enemy_health -= _damage_value;
+		curr_health -= _damage_value;
 	
-	if (enemy_health <= 0)
+	if (curr_health <= 0)
 	{
 		die();
 		return;

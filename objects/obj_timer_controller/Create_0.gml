@@ -20,6 +20,9 @@ add_to_timer = function(_amount)
 {
 	player_timer += _amount;
 	global.on_timer_changed_event.invoke(get_microseconds_to_closest_second(player_timer));
+	obj_popup_controller.create_popup(obj_time_deduction_popup, new Vector2(0, 0), {
+		change_amount: _amount
+	});
 }
 
 on_level_complete = function()

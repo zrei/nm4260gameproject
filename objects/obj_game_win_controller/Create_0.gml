@@ -11,8 +11,13 @@ go_to_main_menu_btn_instance = instance_create_layer(0, 0, global.menu_layer, ob
 
 instances = [overlay_instance, play_again_btn_instance, go_to_main_menu_btn_instance];
 
-on_transition_end = function()
+instance_create_layer(0, 0, global.menu_layer, obj_menu_timer, {
+	timer_value: get_microseconds_to_closest_second(global.saved_timer)
+});
+
+on_full_black_screen = function()
 {
+	reset_timer();
 	switch (global.curr_transition_purpose) 
 	{
 		case TRANSITION_PURPOSE.TO_FIRST_LEVEL:
@@ -36,4 +41,4 @@ go_to_main_menu_transition_override = function()
 
 go_to_main_menu_btn_instance.on_pressed.subscribe(go_to_main_menu_transition_override);
 
-global.on_end_transition_event.subscribe(on_transition_end);
+global.on_full_black_screen_event.subscribe(on_full_black_screen);

@@ -4,6 +4,7 @@
 #macro FIRST_LEVEL Level1Transition
 
 function gamemaker_room_start(_dungeon_room_instance, _entrance_direction) {
+	obj_bgm_controller.stop_all_sounds();
 	instantiate_enemy_layer();
 	instantiate_player();
 	instantiate_popup_layer();

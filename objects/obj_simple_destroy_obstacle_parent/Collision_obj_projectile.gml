@@ -13,4 +13,6 @@ if (is_cleared)
 	sprite_index = cleared_sprite;
 	solid = false;
 	mask_index = -1;
+	is_fading = vanish_when_cleared;
+	fade_timer = fade_time;
 }

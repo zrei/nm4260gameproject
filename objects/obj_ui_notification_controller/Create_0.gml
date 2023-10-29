@@ -26,9 +26,9 @@ on_obtain_key = function()
 	send_notification("Obtained key!", spr_key);	
 }
 
-on_pick_up_item = function(_item_name)
+on_pick_up_item = function(_heal_amount)
 {
-	send_notification("Picked up " + _item_name, spr_egg);
+	send_notification("Healed " + string(_heal_amount) + " HP", spr_egg);
 }
 
 on_change_element = function(_element)

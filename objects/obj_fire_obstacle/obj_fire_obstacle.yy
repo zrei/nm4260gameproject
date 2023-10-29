@@ -8,6 +8,8 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_obstacle_parent","path":"objects/obj_obstacle_parent/obj_obstacle_parent.yy",},"propertyId":{"name":"obstacle_element","path":"objects/obj_obstacle_parent/obj_obstacle_parent.yy",},"value":"SKILL_ELEMENTS.FIRE",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_obstacle_parent","path":"objects/obj_obstacle_parent/obj_obstacle_parent.yy",},"propertyId":{"name":"not_cleared_sprite","path":"objects/obj_obstacle_parent/obj_obstacle_parent.yy",},"value":"spr_fire_obstacle",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_obstacle_parent","path":"objects/obj_obstacle_parent/obj_obstacle_parent.yy",},"propertyId":{"name":"cleared_sprite","path":"objects/obj_obstacle_parent/obj_obstacle_parent.yy",},"value":"spr_fire_obstacle_cleared",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_simple_destroy_obstacle_parent","path":"objects/obj_simple_destroy_obstacle_parent/obj_simple_destroy_obstacle_parent.yy",},"propertyId":{"name":"vanish_when_cleared","path":"objects/obj_simple_destroy_obstacle_parent/obj_simple_destroy_obstacle_parent.yy",},"value":"True",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_simple_destroy_obstacle_parent","path":"objects/obj_simple_destroy_obstacle_parent/obj_simple_destroy_obstacle_parent.yy",},"propertyId":{"name":"fade_time","path":"objects/obj_simple_destroy_obstacle_parent/obj_simple_destroy_obstacle_parent.yy",},"value":"convert_seconds_to_microseconds(3)",},
   ],
   "parent": {
     "name": "Obstacles",
