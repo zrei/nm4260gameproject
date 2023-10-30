@@ -9,12 +9,12 @@
   ],
   "managed": true,
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_follow_camera_element","path":"objects/obj_follow_camera_element/obj_follow_camera_element.yy",},"propertyId":{"name":"camera_offset_x","path":"objects/obj_follow_camera_element/obj_follow_camera_element.yy",},"value":"730",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_follow_camera_element","path":"objects/obj_follow_camera_element/obj_follow_camera_element.yy",},"propertyId":{"name":"camera_offset_y","path":"objects/obj_follow_camera_element/obj_follow_camera_element.yy",},"value":"10",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_follow_camera_element","path":"objects/obj_follow_camera_element/obj_follow_camera_element.yy",},"propertyId":{"name":"camera_offset_x","path":"objects/obj_follow_camera_element/obj_follow_camera_element.yy",},"value":"660",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_follow_camera_element","path":"objects/obj_follow_camera_element/obj_follow_camera_element.yy",},"propertyId":{"name":"camera_offset_y","path":"objects/obj_follow_camera_element/obj_follow_camera_element.yy",},"value":"30",},
   ],
   "parent": {
-    "name": "Pop Ups",
-    "path": "folders/Objects/UI/Pop Ups.yy",
+    "name": "HUD",
+    "path": "folders/Objects/UI/HUD.yy",
   },
   "parentObjectId": {
     "name": "obj_follow_camera_element",
@@ -34,8 +34,8 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"move_up_speed","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"10","varType":0,},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"move_up_time","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"convert_seconds_to_microseconds(1.5)","varType":4,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"move_up_speed","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0.00005","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"move_up_time","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"convert_seconds_to_microseconds(0.3)","varType":4,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"change_amount","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
   ],
   "solid": false,

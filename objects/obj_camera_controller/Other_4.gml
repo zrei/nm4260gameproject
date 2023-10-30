@@ -12,11 +12,7 @@ view_set_hport(DEFAULT_VIEWPORT, global.viewport_height);
 curr_camera = camera_create_view(camera_pos.x, camera_pos.y, camera_width, camera_height);
 view_camera[DEFAULT_VIEWPORT] = curr_camera;
 
-var _dwidth = display_get_width();
-var _dheight = display_get_height();
-var _xpos = (_dwidth / 2) - global.viewport_width / 2;
-var _ypos = (_dheight / 2) - global.viewport_height / 2;
-window_set_rectangle(_xpos, _ypos, global.viewport_width, global.viewport_height);
+window_set_rectangle(window_get_x(), window_get_y(), global.viewport_width, global.viewport_height);
 
 surface_resize(application_surface, global.viewport_width, global.viewport_height);
 

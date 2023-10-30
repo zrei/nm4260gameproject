@@ -1,0 +1,43 @@
+{
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_popup_healing_egg",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
+  "managed": true,
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_healing_item_parent","path":"objects/obj_healing_item_parent/obj_healing_item_parent.yy",},"propertyId":{"name":"heal_amount","path":"objects/obj_healing_item_parent/obj_healing_item_parent.yy",},"value":"2",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_healing_item_parent","path":"objects/obj_healing_item_parent/obj_healing_item_parent.yy",},"propertyId":{"name":"item_name","path":"objects/obj_healing_item_parent/obj_healing_item_parent.yy",},"value":"Egg",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_healing_item_parent","path":"objects/obj_healing_item_parent/obj_healing_item_parent.yy",},"propertyId":{"name":"pickup_sound","path":"objects/obj_healing_item_parent/obj_healing_item_parent.yy",},"value":"snd_egg_pickup",},
+  ],
+  "parent": {
+    "name": "Heal Items",
+    "path": "folders/Objects/Heal Items.yy",
+  },
+  "parentObjectId": {
+    "name": "obj_healing_item_parent",
+    "path": "objects/obj_healing_item_parent/obj_healing_item_parent.yy",
+  },
+  "persistent": false,
+  "physicsAngularDamping": 0.1,
+  "physicsDensity": 0.5,
+  "physicsFriction": 0.2,
+  "physicsGroup": 1,
+  "physicsKinematic": false,
+  "physicsLinearDamping": 0.1,
+  "physicsObject": false,
+  "physicsRestitution": 0.1,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsShapePoints": [],
+  "physicsStartAwake": true,
+  "properties": [],
+  "solid": false,
+  "spriteId": {
+    "name": "spr_popping_up_egg",
+    "path": "sprites/spr_popping_up_egg/spr_popping_up_egg.yy",
+  },
+  "spriteMaskId": null,
+  "visible": true,
+}

@@ -197,6 +197,7 @@
     {"id":{"name":"spr_credits_1","path":"sprites/spr_credits_1/spr_credits_1.yy",},},
     {"id":{"name":"snd_order_obstacle_fail","path":"sounds/snd_order_obstacle_fail/snd_order_obstacle_fail.yy",},},
     {"id":{"name":"spr_ui_timer","path":"sprites/spr_ui_timer/spr_ui_timer.yy",},},
+    {"id":{"name":"obj_popup_healing_egg","path":"objects/obj_popup_healing_egg/obj_popup_healing_egg.yy",},},
     {"id":{"name":"obj_sfx_controller","path":"objects/obj_sfx_controller/obj_sfx_controller.yy",},},
     {"id":{"name":"Level2Transition","path":"rooms/Level2Transition/Level2Transition.yy",},},
     {"id":{"name":"spr_water_emu_left_facing","path":"sprites/spr_water_emu_left_facing/spr_water_emu_left_facing.yy",},},

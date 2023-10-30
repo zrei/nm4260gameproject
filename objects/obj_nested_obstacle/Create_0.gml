@@ -45,7 +45,7 @@ reset_obstacle = function()
 	mask_index = sprite_index;
 	is_cleared = false;
 	
-	if (collision_rectangle(bb_left, bb_top, bb_right, bb_top, obj_player, false, true))
+	if (collision_rectangle(bb_left, bb_top, bb_right, bb_bottom, obj_player, false, true))
 	{	
 		show_debug_message("Player stuck");
 		shift_player();

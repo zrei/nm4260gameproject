@@ -4,4 +4,4 @@
 curr_time += delta_time * global.time_scale;
 
 if (curr_time >= move_up_time)
-	obj_popup_controller.destroy_popup(self.id);
+	instance_destroy(self);
