@@ -250,6 +250,7 @@
     {"name":"spr_fire_obstacle_wide","order":7,"path":"sprites/spr_fire_obstacle_wide/spr_fire_obstacle_wide.yy",},
     {"name":"obj_cheats_controller","order":3,"path":"objects/obj_cheats_controller/obj_cheats_controller.yy",},
     {"name":"scr_global_constants","order":2,"path":"scripts/scr_global_constants/scr_global_constants.yy",},
+    {"name":"obj_powerup_aura","order":8,"path":"objects/obj_powerup_aura/obj_powerup_aura.yy",},
     {"name":"scr_math_calculations","order":3,"path":"scripts/scr_math_calculations/scr_math_calculations.yy",},
     {"name":"spr_fire_emu_front_facing","order":2,"path":"sprites/spr_fire_emu_front_facing/spr_fire_emu_front_facing.yy",},
     {"name":"scr_viewport_constants","order":4,"path":"scripts/scr_viewport_constants/scr_viewport_constants.yy",},

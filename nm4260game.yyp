@@ -312,6 +312,7 @@
     {"id":{"name":"obj_cheats_controller","path":"objects/obj_cheats_controller/obj_cheats_controller.yy",},},
     {"id":{"name":"spr_fire_projectile","path":"sprites/spr_fire_projectile/spr_fire_projectile.yy",},},
     {"id":{"name":"scr_global_constants","path":"scripts/scr_global_constants/scr_global_constants.yy",},},
+    {"id":{"name":"obj_powerup_aura","path":"objects/obj_powerup_aura/obj_powerup_aura.yy",},},
     {"id":{"name":"scr_math_calculations","path":"scripts/scr_math_calculations/scr_math_calculations.yy",},},
     {"id":{"name":"spr_fire_emu_front_facing","path":"sprites/spr_fire_emu_front_facing/spr_fire_emu_front_facing.yy",},},
     {"id":{"name":"scr_viewport_constants","path":"scripts/scr_viewport_constants/scr_viewport_constants.yy",},},

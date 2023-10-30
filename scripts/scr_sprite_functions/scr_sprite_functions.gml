@@ -22,3 +22,18 @@ function FourDirectionalSprites(_west_facing, _east_facing, _north_facing, _sout
 		}
 	}
 }
+
+global.aura_frame_rate = 9;
+
+function on_pause()
+{
+	sprite_set_speed(spr_emu_power_up_aura, 0, spritespeed_framespersecond);	
+}
+
+function on_unpause()
+{
+	sprite_set_speed(spr_emu_power_up_aura, global.aura_frame_rate, spritespeed_framespersecond);	
+}
+
+global.on_pause_menu_opened_event.subscribe(on_pause);
+global.on_pause_menu_closed_event.subscribe(on_unpause);

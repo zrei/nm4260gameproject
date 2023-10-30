@@ -11,6 +11,8 @@ curr_health = enemy_health;
 curr_face_angle = 270;
 use_damaged_sprite = false;
 
+on_destroy_event = new VoidEvent();
+
 get_hit_by_projectile = function(_projectile_element, _damage)
 {
 	if (enemy_element == SKILL_ELEMENTS.NONE)
@@ -28,6 +30,11 @@ get_hit_by_projectile = function(_projectile_element, _damage)
 power_up = function()
 {
 	movement_speed = min(movement_speed + movement_speed_increase_amount, movement_speed_cap);
+	var _to_follow = self;
+	instance_create_depth(x, y, -50, obj_powerup_aura,
+	{
+		to_follow: _to_follow
+	});
 }
 
 take_damage = function(_damage_value)
