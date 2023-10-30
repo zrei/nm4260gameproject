@@ -34,7 +34,10 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"item_to_spawn","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"obj_healing_egg","varType":5,},
   ],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_egg_spawner",
+    "path": "sprites/spr_egg_spawner/spr_egg_spawner.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

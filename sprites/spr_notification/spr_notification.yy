@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 3,
   "parent": {
-    "name": "HUD",
-    "path": "folders/Sprites/UI/HUD.yy",
+    "name": "Notifications",
+    "path": "folders/Sprites/UI/HUD/Notifications.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

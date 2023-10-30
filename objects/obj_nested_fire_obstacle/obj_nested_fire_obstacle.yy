@@ -10,8 +10,8 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_obstacle_parent","path":"objects/obj_obstacle_parent/obj_obstacle_parent.yy",},"propertyId":{"name":"cleared_sprite","path":"objects/obj_obstacle_parent/obj_obstacle_parent.yy",},"value":"spr_fire_obstacle_cleared",},
   ],
   "parent": {
-    "name": "Obstacles",
-    "path": "folders/Objects/Obstacles.yy",
+    "name": "Order Obstacles",
+    "path": "folders/Objects/Obstacles/Order Obstacles.yy",
   },
   "parentObjectId": {
     "name": "obj_nested_obstacle",

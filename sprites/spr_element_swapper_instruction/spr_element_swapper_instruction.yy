@@ -4,7 +4,7 @@
   "name": "spr_element_swapper_instruction",
   "bbox_bottom": 59,
   "bbox_left": 0,
-  "bbox_right": 167,
+  "bbox_right": 222,
   "bbox_top": 3,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"22f3aa44-86bb-4fdd-b03e-8e30caf60cf8",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fbd07c3f-2ea2-41ad-8581-0f966d1a2920",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 60,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"4e13ba1c-03ed-4693-81a3-0bedab581e32","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"7f6a4c7e-b725-49b3-b2bb-eaf8fd1e77c1","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 7,
@@ -54,12 +54,12 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"22f3aa44-86bb-4fdd-b03e-8e30caf60cf8","path":"sprites/spr_element_swapper_instruction/spr_element_swapper_instruction.yy",},},},"Disabled":false,"id":"ddc963c4-1238-44d8-a185-848c6983dee4","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"fbd07c3f-2ea2-41ad-8581-0f966d1a2920","path":"sprites/spr_element_swapper_instruction/spr_element_swapper_instruction.yy",},},},"Disabled":false,"id":"e841d45e-bc33-4ff1-adcc-7e9815a4e7a5","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 84,
+    "xorigin": 111,
     "yorigin": 60,
   },
   "swatchColours": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 168,
+  "width": 223,
 }

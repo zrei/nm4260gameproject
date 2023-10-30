@@ -10,8 +10,8 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_obstacle_parent","path":"objects/obj_obstacle_parent/obj_obstacle_parent.yy",},"propertyId":{"name":"cleared_sprite","path":"objects/obj_obstacle_parent/obj_obstacle_parent.yy",},"value":"spr_grass_obstacle_cleared",},
   ],
   "parent": {
-    "name": "Obstacles",
-    "path": "folders/Objects/Obstacles.yy",
+    "name": "Simple Obstacles",
+    "path": "folders/Objects/Obstacles/Simple Obstacles.yy",
   },
   "parentObjectId": {
     "name": "obj_simple_destroy_obstacle_parent",

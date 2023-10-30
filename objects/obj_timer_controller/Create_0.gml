@@ -19,6 +19,8 @@ resume_timer = function()
 add_to_timer = function(_amount)
 {
 	player_timer += _amount;
+	if (player_timer < 0) 
+		player_timer = 0;
 	global.on_timer_changed_event.invoke(get_microseconds_to_closest_second(player_timer));
 	obj_popup_controller.create_popup(obj_time_deduction_popup, new Vector2(0, 0), {
 		change_amount: _amount

@@ -6,8 +6,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Obstacles",
-    "path": "folders/Objects/Obstacles.yy",
+    "name": "Appear Obstacles",
+    "path": "folders/Objects/Obstacles/Appear Obstacles.yy",
   },
   "parentObjectId": null,
   "persistent": false,

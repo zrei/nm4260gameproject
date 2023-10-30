@@ -35,6 +35,8 @@ show_overlay_menu = function()
 	obj_bgm_controller.play_music(snd_game_over_music);
 	activate_all_instances();
 	instance_create_layer(0, 0, global.menu_layer, obj_menu_timer, {
+		camera_offset_x: timer_obj_x_offset,
+		camera_offset_y: timer_obj_y_offset,
 		timer_value: get_microseconds_to_closest_second(obj_timer_controller.player_timer)
 	});
 }

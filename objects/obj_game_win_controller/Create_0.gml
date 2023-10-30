@@ -3,15 +3,17 @@
 
 overlay_instance = instance_create_layer(0, 0, global.overlay_layer, obj_you_won_screen);
 play_again_btn_instance = instance_create_layer(0, 0, global.menu_layer, obj_overlay_menu_btn, {
-	camera_offset_y: 20,
+	camera_offset_y: 70,
 	btn_text: "play again?"});
 go_to_main_menu_btn_instance = instance_create_layer(0, 0, global.menu_layer, obj_overlay_menu_btn, {
-	camera_offset_y: 70,
+	camera_offset_y: 120,
 	btn_text: "exit to main menu"});
 
 instances = [overlay_instance, play_again_btn_instance, go_to_main_menu_btn_instance];
 
 instance_create_layer(0, 0, global.menu_layer, obj_menu_timer, {
+	camera_offset_x: timer_obj_x_offset,
+	camera_offset_y: timer_obj_y_offset,
 	timer_value: get_microseconds_to_closest_second(global.saved_timer)
 });
 

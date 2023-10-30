@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Obstacles",
-    "path": "folders/Objects/Obstacles.yy",
+    "name": "Order Obstacles",
+    "path": "folders/Objects/Obstacles/Order Obstacles.yy",
   },
   "parentObjectId": {
     "name": "obj_obstacle_parent",
