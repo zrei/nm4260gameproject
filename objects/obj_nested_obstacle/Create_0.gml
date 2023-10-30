@@ -6,6 +6,11 @@ is_cleared = false;
 // Inherit the parent event
 event_inherited();
 
+bb_bottom = y;
+bb_top = y - sprite_height;
+bb_left = x - sprite_width / 2;
+bb_right = x + sprite_width / 2;
+
 clear_obstacle = function()
 {
 	solid = false;
@@ -35,18 +40,16 @@ shift_player = function()
 
 reset_obstacle = function()
 {
-	var _to_play_sound = is_cleared;
 	solid = true;
 	visible = true;
 	mask_index = sprite_index;
 	is_cleared = false;
 	
-	if (collision_rectangle(x - sprite_width / 2, y - sprite_height, x + sprite_width / 2, y, obj_player, false, true))
+	if (collision_rectangle(bb_left, bb_top, bb_right, bb_top, obj_player, false, true))
 	{	
 		show_debug_message("Player stuck");
 		shift_player();
 	}
-	return _to_play_sound;
 }
 
 reset_obstacle();

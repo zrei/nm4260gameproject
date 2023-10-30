@@ -27,12 +27,10 @@ check_order = function(_obstacle_instance)
 
 reset_obstacles = function()
 {
-	var _to_play_sound = false;
 	for (var _i = 0; _i < num_obstacles; _i++)
-		_to_play_sound = _to_play_sound || obstacles_in_order[_i].reset_obstacle();
+		obstacles_in_order[_i].reset_obstacle();
 	curr_obstacle_to_clear = 0;
-	if (_to_play_sound)
-		obj_sfx_controller.play_sound(snd_order_obstacle_fail);
+	obj_sfx_controller.play_sound(snd_order_obstacle_fail);
 }
 
 for (var _i = 0; _i < num_obstacles; _i++)
