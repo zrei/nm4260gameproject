@@ -20,11 +20,11 @@ get_hit_by_projectile = function(_projectile_element, _damage)
 	else if (_projectile_element == SKILL_ELEMENTS.NONE)
 		take_damage(0.75 * _damage);
 	else if (is_element_a_weak_to_element_b(_projectile_element, enemy_element))
-		show_debug_message("Weaker element hit");
+		power_up();
 	else if (is_element_a_weak_to_element_b(enemy_element, _projectile_element))
 		take_damage(_damage);
 	else
-		power_up();
+		show_debug_message("Same element hit");
 }
 
 power_up = function()
