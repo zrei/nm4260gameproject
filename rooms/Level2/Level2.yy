@@ -99,8 +99,6 @@
     {"name":"level_2_dungeon_room_20_fire_2","path":"rooms/Level2/Level2.yy",},
     {"name":"level_2_dungeon_room_20_fire_3","path":"rooms/Level2/Level2.yy",},
     {"name":"inst_553BBA0B","path":"rooms/Level2/Level2.yy",},
-    {"name":"inst_6C687EAD","path":"rooms/Level2/Level2.yy",},
-    {"name":"inst_3551DDC0","path":"rooms/Level2/Level2.yy",},
     {"name":"inst_DD2239B","path":"rooms/Level2/Level2.yy",},
   ],
   "isDnd": false,
@@ -460,8 +458,6 @@
             {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7B26E068","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_fire_obstacle_wide","path":"objects/obj_fire_obstacle_wide/obj_fire_obstacle_wide.yy",},"properties":[],"rotation":0.0,"scaleX":1.1,"scaleY":1.0,"x":410.0,"y":2592.0,},
             {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6918E08F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_water_obstacle_wide","path":"objects/obj_water_obstacle_wide/obj_water_obstacle_wide.yy",},"properties":[],"rotation":0.0,"scaleX":1.1,"scaleY":1.0,"x":410.0,"y":2740.0,},
             {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2C5D1C9C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_grass_obstacle_wide","path":"objects/obj_grass_obstacle_wide/obj_grass_obstacle_wide.yy",},"properties":[],"rotation":0.0,"scaleX":1.1,"scaleY":1.0,"x":410.0,"y":2890.0,},
-            {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6C687EAD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_dungeon_wall","path":"objects/obj_dungeon_wall/obj_dungeon_wall.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":264.0,"x":240.0,"y":2400.0,},
-            {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3551DDC0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_dungeon_wall","path":"objects/obj_dungeon_wall/obj_dungeon_wall.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":264.0,"x":576.0,"y":2400.0,},
           ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
       ],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Walls","depth":2100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":105,"SerialiseWidth":105,"TileCompressedData":[

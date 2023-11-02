@@ -147,7 +147,7 @@ function instantiate_door(_position, _layer, _door_type, _entrance_direction = u
 
 function instantiate_room(_dungeon_room_struct)
 {
-	instantiate_walls(_dungeon_room_struct.position, _dungeon_room_struct.layer, _dungeon_room_struct.has_north_door, _dungeon_room_struct.has_south_door, _dungeon_room_struct.has_east_door, _dungeon_room_struct.has_west_door);
+	//instantiate_walls(_dungeon_room_struct.position, _dungeon_room_struct.layer, _dungeon_room_struct.has_north_door, _dungeon_room_struct.has_south_door, _dungeon_room_struct.has_east_door, _dungeon_room_struct.has_west_door);
 	
 	var _doors = [];
 	

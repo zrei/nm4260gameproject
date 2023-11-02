@@ -100,13 +100,13 @@ function get_enemy_sprite(_use_damaged, _cardinal_direction, _element)
 		return get_normal_sprite(_cardinal_direction, _element);
 }
 
-function check_collision(_bb_left, _bb_right, _bb_top, _bb_bottom, _objs = [])//_pos, _objs = [])//_bb_left, _bb_right, _bb_top, _bb_bottom, _objs = [])
+/*function check_collision(_bb_left, _bb_right, _bb_top, _bb_bottom, _objs = [])//_pos, _objs = [])//_bb_left, _bb_right, _bb_top, _bb_bottom, _objs = [])
 {
 	for (var _i = 0; _i < array_length(_objs); _i++)
 		if (collision_rectangle(_bb_left, _bb_top, _bb_right, _bb_bottom, _objs[_i], false, true))
 			return true;
-			/*if (collision_point(_pos.x, _pos.y, _objs[_i], false, true))
-			return true;*/
+			//if (collision_point(_pos.x, _pos.y, _objs[_i], false, true))
+			//return true;
 	return false;
 }
 
@@ -133,4 +133,4 @@ function movement_respecting_collision(_initial_move_direction, _move_speed, _bb
 	}
 	return new Vector2(0, 0);
 	//_instance.speed = 0;
-}
+}*/

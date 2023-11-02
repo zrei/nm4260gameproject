@@ -1,10 +1,11 @@
 /// @description Update state
 // You can write your code in this editor
 
+var _movement_vector = undefined;
 // update movement
 if (knockback_cooldown > 0)
 {
-	speed = global.player_knockback_speed * global.time_scale;
+	_movement_vector = get_movement_vector(direction, global.player_knockback_speed * global.time_scale);
 	show_debug_message("Position: " + string(x) + ", " + string(y));
 }
 else
@@ -13,13 +14,12 @@ else
 	var _vertical = check_key_held(MOVE_DOWN_KEY) - check_key_held(MOVE_UP_KEY);
 	if (_horizontal != 0 || _vertical != 0)
 	{
-		speed = movement_speed * global.time_scale;
 		direction = point_direction(0, 0, _horizontal, _vertical);
+		_movement_vector = get_movement_vector(direction, movement_speed * global.time_scale);
 		moving = true;
 	}
 	else
 	{
-		speed = 0;
 		moving = false;
 	}	
 	
@@ -61,6 +61,16 @@ else
 	else if (_horizontal == -1 && _vertical == 1)
 	{
 		set_facing_position(get_earlier_input(CARDINAL_DIRECTIONS.SOUTH, CARDINAL_DIRECTIONS.WEST));
+	}
+}
+
+if (_movement_vector != undefined)
+{
+	var _final_pos = get_final_pos(new Vector2(x, y), _movement_vector);
+	if (!place_meeting(_final_pos.x, _final_pos.y, global.wall_layer))
+	{
+		x = _final_pos.x;
+		y = _final_pos.y;
 	}
 }
 

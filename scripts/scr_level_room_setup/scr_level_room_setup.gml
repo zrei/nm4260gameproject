@@ -29,6 +29,7 @@ function instantiate_controllers()
 	instance_create_layer(0, 0, global.controllers_layer, obj_timer_controller);
 	instance_create_layer(0, 0, global.controllers_layer, obj_hud_controller);
 	instance_create_layer(0, 0, global.controllers_layer, obj_game_over_menu_controller);
+	instance_create_layer(0, 0, global.controllers_layer, obj_collision_controller);
 }
 
 function instantiate_main_menu_controllers()
