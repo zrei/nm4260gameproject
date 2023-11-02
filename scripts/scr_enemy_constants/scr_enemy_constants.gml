@@ -2,6 +2,9 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 global.damage_flash_interval = convert_seconds_to_frames(0.2);
 global.damage_flash_time = convert_seconds_to_frames(0.6);
+global.dir_calculation_angle_offset = 30;
+global.enemy_collision_objs = [obj_obstacle_parent, obj_enemy_parent, obj_dungeon_wall];
+global.additional_collision_offset = 0;
 
 global.enemy_neutral_sprites = new FourDirectionalSprites(
 	spr_neutral_emu_left_facing,
@@ -95,4 +98,39 @@ function get_enemy_sprite(_use_damaged, _cardinal_direction, _element)
 		return get_damaged_sprite(_cardinal_direction, _element);
 	else
 		return get_normal_sprite(_cardinal_direction, _element);
+}
+
+function check_collision(_bb_left, _bb_right, _bb_top, _bb_bottom, _objs = [])//_pos, _objs = [])//_bb_left, _bb_right, _bb_top, _bb_bottom, _objs = [])
+{
+	for (var _i = 0; _i < array_length(_objs); _i++)
+		if (collision_rectangle(_bb_left, _bb_top, _bb_right, _bb_bottom, _objs[_i], false, true))
+			return true;
+			/*if (collision_point(_pos.x, _pos.y, _objs[_i], false, true))
+			return true;*/
+	return false;
+}
+
+function calculate_movement_offset(_move_speed, _direction)
+{
+	// x-component: angle 0 is flat line so cos(angle) * hypotenuse of 1
+	// y-component: sin(angle) * hypotenuse 1
+	return (new Vector2(cos(_direction), sin(_direction))).scale(_move_speed);
+}
+
+function movement_respecting_collision(_initial_move_direction, _move_speed, _bb_left, _bb_right, _bb_top, _bb_bottom)//_initial_move_direction, _move_speed, _instance, _curr_pos)//_bb_left, _bb_right, _bb_top, _bb_bottom)
+{
+	for (var _i = 0; _i < 360; _i += global.dir_calculation_angle_offset)
+	{	
+		var _curr_direction = (_initial_move_direction + _i) % 360;
+		var _curr_offset = calculate_movement_offset(_move_speed, _curr_direction);
+		if (!check_collision(_bb_left + _curr_offset.x - global.additional_collision_offset, _bb_right + _curr_offset.x + global.additional_collision_offset, _bb_top - _curr_offset.y - global.additional_collision_offset, _bb_bottom - _curr_offset.y + global.additional_collision_offset, global.enemy_collision_objs))//_curr_pos.add(_curr_offset), global.enemy_collision_objs))//_bb_left + _curr_offset.x - global.additional_collision_offset, _bb_right + _curr_offset.x + global.additional_collision_offset, _bb_top - _curr_offset.y - global.additional_collision_offset, _bb_bottom - _curr_offset.y + global.additional_collision_offset, global.enemy_collision_objs))
+		{
+			//_instance.direction = _curr_direction;
+			//_instance.speed = _move_speed;
+			return _curr_offset;
+		}
+		show_debug_message("Collision logged");
+	}
+	return new Vector2(0, 0);
+	//_instance.speed = 0;
 }

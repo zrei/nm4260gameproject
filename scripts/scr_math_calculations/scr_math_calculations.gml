@@ -49,6 +49,16 @@ function Vector2(_x = 0, _y = 0) constructor
 			return false;
 		return x == _other_vector.x && y == _other_vector.y;
 	}
+	
+	static scale = function(_scale_factor)
+	{
+		return new Vector2(_scale_factor * x, _scale_factor * y);
+	}
+	
+	static add = function(_other_vector)
+	{
+		return new Vector2(x + _other_vector.x, y - _other_vector.y);	
+	}
 }
 
 // four cardinal directions

@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-global.projectile_speed = 5;
+global.projectile_speed = 6;
 global.projectile_damage = 3;
 
 function ProjectileVariables(_sprite, _direction, _element, _rotation, _speed = global.projectile_speed, _damage = global.projectile_damage) constructor
@@ -26,5 +26,20 @@ function get_projectile_variable(_direction, _element, _rotation)
 			return new ProjectileVariables(spr_fire_projectile, _direction, SKILL_ELEMENTS.FIRE, _rotation);
 		case SKILL_ELEMENTS.WATER:
 			return new ProjectileVariables(spr_water_projectile, _direction, SKILL_ELEMENTS.WATER, _rotation);
+	}
+}
+
+function get_projectile_offset(_direction)
+{
+	switch (_direction)
+	{
+		case 0:
+			return new Vector2(30, 0);
+		case 90:
+			return new Vector2(0, 20);
+		case 180:
+			return new Vector2(-30, 0);
+		case 270:
+			return new Vector2(0, -20);
 	}
 }
