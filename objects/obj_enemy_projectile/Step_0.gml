@@ -1,6 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-event_inherited();
-
-curr_time = 0;
+speed = projectile_movement_speed * global.time_scale;

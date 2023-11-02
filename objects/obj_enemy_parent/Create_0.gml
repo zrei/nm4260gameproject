@@ -31,9 +31,13 @@ power_up = function()
 {
 	movement_speed = min(movement_speed + movement_speed_increase_amount, movement_speed_cap);
 	var _to_follow = self;
+	var _xscale = image_xscale;
+	var _yscale = image_yscale;
 	instance_create_depth(x, y, -50, obj_powerup_aura,
 	{
-		to_follow: _to_follow
+		to_follow: _to_follow,
+		image_xscale: _xscale,
+		image_yscale: _yscale
 	});
 }
 

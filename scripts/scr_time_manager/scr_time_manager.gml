@@ -23,3 +23,9 @@ function convert_seconds_to_display_time(_seconds)
 		
 	return string(_number_of_minutes) + " : " + _seconds_string; 
 }
+
+function TimeDeductionPopup(_change_amount) constructor
+{
+	curr_time = 0;
+	change_amount = _change_amount;
+}

@@ -22,10 +22,6 @@ add_to_timer = function(_amount)
 	if (player_timer < 0) 
 		player_timer = 0;
 	global.on_timer_changed_event.invoke(get_microseconds_to_closest_second(player_timer));
-	instance_create_layer(x, y, global.hud_layer, obj_time_deduction_popup,
-	{
-		change_amount: convert_microseconds_to_seconds(_amount)	
-	});
 }
 
 on_level_complete = function()
