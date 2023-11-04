@@ -8,6 +8,8 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_obstacle_parent","path":"objects/obj_obstacle_parent/obj_obstacle_parent.yy",},"propertyId":{"name":"obstacle_element","path":"objects/obj_obstacle_parent/obj_obstacle_parent.yy",},"value":"SKILL_ELEMENTS.WATER",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_obstacle_parent","path":"objects/obj_obstacle_parent/obj_obstacle_parent.yy",},"propertyId":{"name":"not_cleared_sprite","path":"objects/obj_obstacle_parent/obj_obstacle_parent.yy",},"value":"spr_water_obstacle_wide",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_obstacle_parent","path":"objects/obj_obstacle_parent/obj_obstacle_parent.yy",},"propertyId":{"name":"cleared_sprite","path":"objects/obj_obstacle_parent/obj_obstacle_parent.yy",},"value":"spr_water_obstacle_cleared_wide",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_pathfindable","path":"objects/obj_pathfindable/obj_pathfindable.yy",},"propertyId":{"name":"num_tiles_in_width","path":"objects/obj_pathfindable/obj_pathfindable.yy",},"value":"3",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_pathfindable","path":"objects/obj_pathfindable/obj_pathfindable.yy",},"propertyId":{"name":"num_tiles_in_height","path":"objects/obj_pathfindable/obj_pathfindable.yy",},"value":"1",},
   ],
   "parent": {
     "name": "Simple Obstacles",

@@ -25,6 +25,43 @@ if (curr_damage_flash_interval > 0 && curr_damage_flash_amount_remaining > 0)
 else
 	use_damaged_sprite = false;
 
+if (to_gen_path)
+{
+	//mp_potential_path(path, obj_player.x, obj_player.y, movement_speed, 2, false);
+	path_found = mp_grid_path(global.grid, path, x, y, obj_player.x, obj_player.y, true);
+	to_gen_path = false;
+	path_num_nodes = path_get_number(path);
+	path_idx = 0;
+}
+else if (path_idx == 3)
+{
+	path_clear_points(path);
+	//mp_potential_path(path, obj_player.x, obj_player.y, movement_speed, 2, false);
+	path_found = mp_grid_path(global.grid, path, x, y, obj_player.x, obj_player.y, true);
+	path_idx = 0;
+	path_num_nodes = path_get_number(path);
+}
+
+if (can_act && path_found && path_idx < path_num_nodes)
+{
+	//show_debug_message("New x and y: " + string(path_get_point_x(path, path_idx)) + ", " + string(path_get_point_y(path, path_idx)));
+	var _new_x = path_get_point_x(path, path_idx);
+	var _new_y = path_get_point_y(path, path_idx);
+	move_towards_point(_new_x, _new_y, movement_speed * global.time_scale);
+	curr_face_angle = calculate_face_angle(x, y, obj_player.x, obj_player.y);
+	if (distance_to_point(_new_x, _new_y) <= global.point_reached_threshold)
+	{	
+		//speed = 0;
+		path_idx += 1;
+	}
+}
+else 
+{
+	speed = 0;
+	if (path_idx >= path_num_nodes)
+		to_gen_path = true;
+}
+/*
 if (distance_to_point(obj_player.x, obj_player.y) > global.point_reached_threshold && can_act)
 {
 	//var _move_direction = point_direction(x, y, obj_player.x, obj_player.y);
@@ -39,6 +76,6 @@ if (distance_to_point(obj_player.x, obj_player.y) > global.point_reached_thresho
 {
 	speed = 0;	
 	moving = false;
-}
+}*/
 
 sprite_index = get_enemy_sprite(use_damaged_sprite, map_angles_to_cardinal_directions(curr_face_angle), enemy_element);

@@ -34,4 +34,4 @@ reset_obstacles = function()
 }
 
 for (var _i = 0; _i < num_obstacles; _i++)
-		obstacles_in_order[_i].on_hit_by_projectile_event.subscribe(check_order);
+	obstacles_in_order[_i].on_hit_by_projectile_event.subscribe(check_order);

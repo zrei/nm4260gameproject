@@ -1,5 +1,6 @@
 /// @description Initialise variables
 // You can write your code in this editor
+event_inherited();
 
 // stats
 movement_speed = global.player_movement_speed;
@@ -112,7 +113,7 @@ heal = function(_heal_amount)
 		show_debug_message("Cannot heal negative amount");
 		return;
 	}
-
+	spawn_vfx(obj_heal_aura, (new Vector2(x, y)).translate_vector(get_heal_vfx_offset()), -70, 1, 1, self, get_heal_vfx_offset()); 
 	player_health = min(player_health + _heal_amount, global.player_health);
 	global.on_player_change_health_event.invoke(player_health);
 }
@@ -174,6 +175,21 @@ knockback = function(_damage_direction)
 	knockback_cooldown = global.player_knockback_time;
 	moving = false;
 	direction = _damage_direction;
+}
+
+get_heal_vfx_offset = function()
+{
+	switch (curr_facing_position)
+	{
+		case 0:
+			return new Vector2(-12, 0);
+		case 90:
+			return new Vector2(-5, 0);
+		case 180:
+			return new Vector2(2, 0);
+		case 270:
+			return new Vector2(-4, 0);
+	}
 }
 
 global.on_debug_change_element_event.subscribe(set_element);

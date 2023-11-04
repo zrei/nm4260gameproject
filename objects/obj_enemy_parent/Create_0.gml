@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+event_inherited();
 
 can_act = false;
 moving = false;
@@ -11,7 +12,11 @@ curr_health = enemy_health;
 curr_face_angle = 270;
 use_damaged_sprite = false;
 
-on_destroy_event = new VoidEvent();
+path = path_add();
+path_found = false;
+path_idx = 0;
+to_gen_path = true;
+path_num_nodes = 0;
 
 get_hit_by_projectile = function(_projectile_element, _damage)
 {
@@ -30,15 +35,7 @@ get_hit_by_projectile = function(_projectile_element, _damage)
 power_up = function()
 {
 	movement_speed = min(movement_speed + movement_speed_increase_amount, movement_speed_cap);
-	var _to_follow = self;
-	var _xscale = image_xscale;
-	var _yscale = image_yscale;
-	instance_create_depth(x, y, -50, obj_powerup_aura,
-	{
-		to_follow: _to_follow,
-		image_xscale: _xscale,
-		image_yscale: _yscale
-	});
+	spawn_vfx(obj_powerup_aura, new Vector2(x, y), -50, image_xscale, image_yscale, self);
 }
 
 take_damage = function(_damage_value)
@@ -63,6 +60,10 @@ die = function()
 	global.on_enemy_death_event.invoke();
 	global.on_timer_affected_event.invoke(-time_reduction);
 	drop_heal_item();
+	if (time_reduction != 0)
+		obj_popup_controller.create_popup(obj_time_deduction_popup, new Vector2(x, y - time_deduction_offset_y), {
+			change_amount: convert_microseconds_to_seconds(time_reduction)
+		});
 	instance_destroy(self);
 	// start death animation
 	// disable attacks and any hitboxes
@@ -80,6 +81,7 @@ attack = function()
 		can_act = false;
 		speed = 0;
 		moving = false;
+		to_gen_path = true;
 	}
 	
 }
@@ -138,9 +140,15 @@ on_pause_menu_closed = function()
 	can_act = true;
 }
 
+on_grid_updated = function()
+{
+	to_gen_path = true;	
+}
+
 global.on_player_death_event.subscribe(on_player_die);
 global.on_begin_transition_event.subscribe(on_transition_begin);
 global.on_end_dungeon_room_event.subscribe(on_dungeon_room_end);
 global.on_pause_menu_opened_event.subscribe(on_pause_menu_opened);
 global.on_pause_menu_closed_event.subscribe(on_pause_menu_closed);
 global.on_start_dungeon_room_event.subscribe(on_dungeon_room_begin);
+global.on_grid_updated_event.subscribe(on_grid_updated);

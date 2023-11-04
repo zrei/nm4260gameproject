@@ -4,7 +4,7 @@
   "name": "spr_notification",
   "bbox_bottom": 70,
   "bbox_left": 0,
-  "bbox_right": 269,
+  "bbox_right": 334,
   "bbox_top": 30,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 270,
+  "width": 335,
 }

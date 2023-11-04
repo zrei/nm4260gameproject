@@ -20,4 +20,5 @@ unlock_gate = function()
 	mask_index = -1;
 	solid = false;
 	visible = false;
+	remove_tiles(self, obj_dungeon_controller.get_current_dungeon_room());
 }

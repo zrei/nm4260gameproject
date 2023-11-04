@@ -16,7 +16,10 @@
     "name": "Player",
     "path": "folders/Objects/Player.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_destroyable",
+    "path": "objects/obj_destroyable/obj_destroyable.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

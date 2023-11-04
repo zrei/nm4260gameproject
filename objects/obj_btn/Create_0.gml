@@ -2,8 +2,8 @@
 // You can write your code in this editor
 event_inherited();
 
-is_being_pressed = false;
-is_being_hovered = false;
+is_being_hovered = false
+;
 sprite_index = unhovered_sprite;
 on_pressed = new VoidEvent();
 

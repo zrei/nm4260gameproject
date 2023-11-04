@@ -4,7 +4,10 @@
   "name": "obj_gate_horizontal",
   "eventList": [],
   "managed": true,
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_pathfindable","path":"objects/obj_pathfindable/obj_pathfindable.yy",},"propertyId":{"name":"num_tiles_in_width","path":"objects/obj_pathfindable/obj_pathfindable.yy",},"value":"3",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_pathfindable","path":"objects/obj_pathfindable/obj_pathfindable.yy",},"propertyId":{"name":"num_tiles_in_height","path":"objects/obj_pathfindable/obj_pathfindable.yy",},"value":"1",},
+  ],
   "parent": {
     "name": "Gates",
     "path": "folders/Objects/Obstacles/Gates.yy",
@@ -29,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_dungeon_door_horizontal",
-    "path": "sprites/spr_dungeon_door_horizontal/spr_dungeon_door_horizontal.yy",
+    "name": "spr_gate_horizontal",
+    "path": "sprites/spr_gate_horizontal/spr_gate_horizontal.yy",
   },
   "spriteMaskId": null,
   "visible": true,

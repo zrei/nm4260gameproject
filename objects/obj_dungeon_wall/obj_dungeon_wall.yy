@@ -10,8 +10,8 @@
     "path": "folders/Objects/Dungeon Room.yy",
   },
   "parentObjectId": {
-    "name": "obj_bullet_destroy_upon_collide_parent",
-    "path": "objects/obj_bullet_destroy_upon_collide_parent/obj_bullet_destroy_upon_collide_parent.yy",
+    "name": "obj_pathfindable",
+    "path": "objects/obj_pathfindable/obj_pathfindable.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

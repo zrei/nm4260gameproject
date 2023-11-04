@@ -13,8 +13,8 @@ bb_right = x + sprite_width / 2;
 
 clear_obstacle = function()
 {
+	sprite_index = cleared_sprite;
 	solid = false;
-	visible = false;
 	mask_index = -1;
 	is_cleared = true;
 }
@@ -41,7 +41,7 @@ shift_player = function()
 reset_obstacle = function()
 {
 	solid = true;
-	visible = true;
+	sprite_index = not_cleared_sprite;
 	mask_index = sprite_index;
 	is_cleared = false;
 	

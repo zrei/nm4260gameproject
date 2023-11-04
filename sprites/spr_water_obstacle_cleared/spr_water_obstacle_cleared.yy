@@ -23,7 +23,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"248b9abf-0889-4941-9daf-b8af17544979","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 7,
+  "origin": 4,
   "parent": {
     "name": "Obstacles",
     "path": "folders/Sprites/Obstacles.yy",
@@ -60,7 +60,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 49,
-    "yorigin": 105,
+    "yorigin": 52,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

@@ -24,15 +24,18 @@ function FourDirectionalSprites(_west_facing, _east_facing, _north_facing, _sout
 }
 
 global.aura_frame_rate = 9;
+global.aura_sprites = [spr_emu_power_up_aura, spr_heal_aura];
 
 function on_pause()
 {
-	sprite_set_speed(spr_emu_power_up_aura, 0, spritespeed_framespersecond);	
+	for (var _i = 0; _i < array_length(global.aura_sprites); _i++)
+		sprite_set_speed(global.aura_sprites[_i], 0, spritespeed_framespersecond);	
 }
 
 function on_unpause()
 {
-	sprite_set_speed(spr_emu_power_up_aura, global.aura_frame_rate, spritespeed_framespersecond);	
+	for (var _i = 0; _i < array_length(global.aura_sprites); _i++)
+		sprite_set_speed(global.aura_sprites[_i], global.aura_frame_rate, spritespeed_framespersecond);	
 }
 
 global.on_pause_menu_opened_event.subscribe(on_pause);

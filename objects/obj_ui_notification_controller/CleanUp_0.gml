@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 ds_list_destroy(notification_objects);
-
+ds_list_destroy(queued_notifications);
 
 global.on_player_pick_up_item_event.unsubscribe(on_pick_up_item);
 global.on_player_change_element_event.unsubscribe(on_change_element);

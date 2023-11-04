@@ -5,10 +5,12 @@
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_projectile","path":"objects/obj_projectile/obj_projectile.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_player_projectile","path":"objects/obj_player_projectile/obj_player_projectile.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
   ],
   "managed": true,
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_pathfindable","path":"objects/obj_pathfindable/obj_pathfindable.yy",},"propertyId":{"name":"contribute_to_pathfinding","path":"objects/obj_pathfindable/obj_pathfindable.yy",},"value":"False",},
+  ],
   "parent": {
     "name": "Order Obstacles",
     "path": "folders/Objects/Obstacles/Order Obstacles.yy",

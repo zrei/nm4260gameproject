@@ -12,10 +12,7 @@
     "name": "Order Obstacles",
     "path": "folders/Objects/Obstacles/Order Obstacles.yy",
   },
-  "parentObjectId": {
-    "name": "obj_obstacle_parent",
-    "path": "objects/obj_obstacle_parent/obj_obstacle_parent.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

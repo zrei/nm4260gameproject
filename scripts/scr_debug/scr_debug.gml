@@ -2,3 +2,4 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 global.show_debug_messages = false;
 global.cheats_enabled = true;
+global.draw_pathfinding_path = false;

@@ -32,6 +32,11 @@ function Vector2(_x = 0, _y = 0) constructor
 		return new Vector2(x + _x, y + _y);
 	}
 	
+	static translate_vector = function(_vector)
+	{
+		return new Vector2(x + _vector.x, y + _vector.y);	
+	}
+	
 	static calculate_magnitude = function()
 	{
 		return sqrt(sqr(x) + sqr(y));	

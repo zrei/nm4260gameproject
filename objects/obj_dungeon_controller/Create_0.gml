@@ -8,7 +8,10 @@ direction_of_entrance = undefined;
 set_current_room = function(_dungeon_room, _direction_of_entrance, _instantaneous = false)
 {	
 	if (current_dungeon_room != undefined)
+	{
 		current_dungeon_room.end_room();
+		free_grid();
+	}
 	
 	current_dungeon_room = _dungeon_room;
 	
@@ -23,6 +26,7 @@ start_current_room = function()
 	if (current_dungeon_room == undefined)
 		return;
 	
+	create_grid(current_dungeon_room.dungeon_dimensions);
 	current_dungeon_room.start_room();
 }
 
@@ -108,6 +112,12 @@ on_full_black_screen = function()
 on_transition_end = function()
 {
 	start_current_room();	
+}
+
+get_current_dungeon_room = function()
+{
+	if (current_dungeon_room != undefined)
+		return current_dungeon_room.dungeon_dimensions;
 }
 
 global.on_enemy_spawn_event.subscribe(on_enemy_spawn);
