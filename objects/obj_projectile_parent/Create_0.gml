@@ -29,7 +29,7 @@ get_particle_rotation = function()
 
 disappear = function()
 {
-	if (destroy_particles != undefined)
+	if (destroy_particles != noone)
 		obj_particles_controller.play_particles(destroy_particles, layer, new Vector2(x, y), get_particle_color(), 1, get_particle_rotation());
 	instance_destroy(self);
 }

@@ -6,8 +6,8 @@ is_cleared = false;
 // Inherit the parent event
 event_inherited();
 
-bb_bottom = y;
-bb_top = y - sprite_height;
+bb_bottom = y + sprite_height / 2;
+bb_top = y - sprite_height / 2;
 bb_left = x - sprite_width / 2;
 bb_right = x + sprite_width / 2;
 
