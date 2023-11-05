@@ -4,4 +4,6 @@
 speed = projectile_movement_speed * global.time_scale;
 
 if (place_meeting(x, y, global.wall_layer))
-	instance_destroy(self);
+{
+	disappear();
+}

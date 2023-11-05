@@ -17,8 +17,8 @@
     "path": "folders/Objects/Player.yy",
   },
   "parentObjectId": {
-    "name": "obj_destroyable",
-    "path": "objects/obj_destroyable/obj_destroyable.yy",
+    "name": "obj_entities",
+    "path": "objects/obj_entities/obj_entities.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

@@ -62,7 +62,7 @@ die = function()
 	drop_heal_item();
 	if (time_reduction != 0)
 		obj_popup_controller.create_popup(obj_time_deduction_popup, new Vector2(x, y - time_deduction_offset_y), {
-			change_amount: convert_microseconds_to_seconds(time_reduction)
+			change_amount: -convert_microseconds_to_seconds(time_reduction)
 		});
 	instance_destroy(self);
 	// start death animation

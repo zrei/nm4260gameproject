@@ -8,3 +8,4 @@ obj_sfx_controller.play_sound(snd_key_pickup);
 other.obtain_key();
 sprite_index = chest_open_sprite;
 curr_state = DOOR_STATE.UNLOCKED;
+show_key_sprite_timer = time_to_show_key_sprite;

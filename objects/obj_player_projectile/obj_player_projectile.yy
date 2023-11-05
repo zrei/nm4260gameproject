@@ -8,6 +8,7 @@
   "managed": true,
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_projectile_parent","path":"objects/obj_projectile_parent/obj_projectile_parent.yy",},"propertyId":{"name":"projectile_sprite","path":"objects/obj_projectile_parent/obj_projectile_parent.yy",},"value":"spr_neutral_projectile",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_projectile_parent","path":"objects/obj_projectile_parent/obj_projectile_parent.yy",},"propertyId":{"name":"destroy_particles","path":"objects/obj_projectile_parent/obj_projectile_parent.yy",},"value":"ps_player_projectile",},
   ],
   "parent": {
     "name": "Projectiles",

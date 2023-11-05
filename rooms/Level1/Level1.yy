@@ -132,7 +132,7 @@
                 {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_spawner","path":"objects/obj_enemy_spawner/obj_enemy_spawner.yy",},"propertyId":{"name":"max_spawn_number","path":"objects/obj_enemy_spawner/obj_enemy_spawner.yy",},"value":"1",},
                 {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_spawner","path":"objects/obj_enemy_spawner/obj_enemy_spawner.yy",},"propertyId":{"name":"min_spawn_radius","path":"objects/obj_enemy_spawner/obj_enemy_spawner.yy",},"value":"5",},
                 {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_spawner","path":"objects/obj_enemy_spawner/obj_enemy_spawner.yy",},"propertyId":{"name":"max_spawn_radius","path":"objects/obj_enemy_spawner/obj_enemy_spawner.yy",},"value":"5",},
-                {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_spawner","path":"objects/obj_enemy_spawner/obj_enemy_spawner.yy",},"propertyId":{"name":"wave_number","path":"objects/obj_enemy_spawner/obj_enemy_spawner.yy",},"value":"2",},
+                {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_spawner","path":"objects/obj_enemy_spawner/obj_enemy_spawner.yy",},"propertyId":{"name":"wave_number","path":"objects/obj_enemy_spawner/obj_enemy_spawner.yy",},"value":"1",},
               ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2496.0,"y":1312.0,},
           ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
       ],"properties":[],"userdefinedDepth":false,"visible":true,},

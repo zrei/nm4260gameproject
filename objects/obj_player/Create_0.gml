@@ -141,6 +141,7 @@ set_facing_position = function(_cardinal_direction)
 		return;
 
 	curr_facing_position = map_cardinal_directions_to_angles(_cardinal_direction);
+	on_change_face_event.invoke(get_heal_vfx_offset());
 }
 
 set_sprite = function(_cardinal_direction)

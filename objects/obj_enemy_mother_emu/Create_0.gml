@@ -9,6 +9,7 @@ curr_element_index = 0;
 element_swap_order = [SKILL_ELEMENTS.GRASS, SKILL_ELEMENTS.FIRE, SKILL_ELEMENTS.WATER];
 
 shoot_projectile_timer = 0;
+
 swap_elements = function()
 {
 	curr_element_index = (curr_element_index + 1) % array_length(element_swap_order);
@@ -30,7 +31,8 @@ spawn_projectile = function(_dir)
 	{
 		direction: _dir,
 		projectile_movement_speed: enemy_projectile_speed,
-		projectile_damage: enemy_projectile_damage
+		projectile_damage: enemy_projectile_damage,
+		image_angle: (_dir + 270) % 360
 	});
 }
 

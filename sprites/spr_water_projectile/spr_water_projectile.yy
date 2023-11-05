@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Projectiles",
-    "path": "folders/Sprites/Player/Projectiles.yy",
+    "path": "folders/Sprites/Projectiles.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

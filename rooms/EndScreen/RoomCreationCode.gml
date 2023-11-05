@@ -3,4 +3,5 @@ instantiate_overlay_layer();
 instantiate_menu_layer();
 instantiate_transition_layer();
 instantiate_end_screen_controllers();
+obj_bgm_controller.play_music(snd_victory_music);
 unblock_keys([PAUSE_KEY]);
