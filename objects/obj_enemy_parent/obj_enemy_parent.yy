@@ -51,6 +51,7 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"time_reduction","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"convert_seconds_to_microseconds(5)","varType":4,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"enemy_element","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"SKILL_ELEMENTS.NONE","varType":4,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"time_deduction_offset_y","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"50","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"death_sound","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"snd_emu_death","varType":5,},
   ],
   "solid": false,
   "spriteId": null,

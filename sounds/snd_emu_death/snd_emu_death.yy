@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "snd_order_obstacle_fail",
+  "name": "snd_emu_death",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.306213,
+  "duration": 1.683447,
   "parent": {
-    "name": "Dungeon",
-    "path": "folders/Sounds/SFX/Dungeon.yy",
+    "name": "Enemy",
+    "path": "folders/Sounds/SFX/Enemy.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "snd_order_obstacle_fail.ogg",
+  "soundFile": "snd_emu_death.ogg",
   "type": 0,
   "volume": 1.0,
 }

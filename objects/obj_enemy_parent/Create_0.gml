@@ -60,6 +60,8 @@ die = function()
 	global.on_enemy_death_event.invoke();
 	global.on_timer_affected_event.invoke(-time_reduction);
 	drop_heal_item();
+	if (death_sound != noone)
+		obj_sfx_controller.play_sound(death_sound);
 	if (time_reduction != 0)
 		obj_popup_controller.create_popup(obj_time_deduction_popup, new Vector2(x, y - time_deduction_offset_y), {
 			change_amount: -convert_microseconds_to_seconds(time_reduction)
