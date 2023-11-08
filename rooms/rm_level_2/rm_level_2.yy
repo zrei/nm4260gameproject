@@ -102,6 +102,8 @@
     {"name":"inst_DD2239B","path":"rooms/rm_level_2/rm_level_2.yy",},
     {"name":"inst_542702D2","path":"rooms/rm_level_2/rm_level_2.yy",},
     {"name":"inst_27BD0E4F","path":"rooms/rm_level_2/rm_level_2.yy",},
+    {"name":"inst_24294536","path":"rooms/rm_level_2/rm_level_2.yy",},
+    {"name":"inst_478A8E17","path":"rooms/rm_level_2/rm_level_2.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -198,6 +200,8 @@
                 {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_dungeon_room","path":"objects/obj_dungeon_room/obj_dungeon_room.yy",},"propertyId":{"name":"west_door_connecting_room","path":"objects/obj_dungeon_room/obj_dungeon_room.yy",},"value":"level_2_dungeon_room_18",},
               ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":912.0,"y":2352.0,},
             {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_DD2239B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_water_obstacle_tall","path":"objects/obj_water_obstacle_tall/obj_water_obstacle_tall.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":984.0,"y":2664.0,},
+            {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_24294536","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_water_obstacle_tall","path":"objects/obj_water_obstacle_tall/obj_water_obstacle_tall.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1656.0,"y":2664.0,},
+            {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_478A8E17","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_water_obstacle_wide","path":"objects/obj_water_obstacle_wide/obj_water_obstacle_wide.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1320.0,"y":2424.0,},
           ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
         {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Room_1","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
             {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"level_2_dungeon_room_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_arena_room","path":"objects/obj_arena_room/obj_arena_room.yy",},"properties":[

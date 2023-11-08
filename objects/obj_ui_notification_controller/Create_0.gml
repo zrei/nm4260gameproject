@@ -37,7 +37,10 @@ move_active_notifications_up = function()
 {
 	for (var _i = 0; _i < num_notifications; _i++)
 		if (notification_objects[| _i].check_is_active())
+		{
+			show_debug_message("Move " + string(_i) + " notification object");
 			notification_objects[| _i].move_up(move_up_distance, move_up_speed);
+		}
 }
 
 queue_notifications = function(_notif_struct)
@@ -80,6 +83,12 @@ for (var _i = 0; _i < num_notifications; _i++)
 	ds_list_add(notification_objects, _notif_object);
 }
 
+debug_send_notif = function()
+{
+	send_notification("test", spr_player_front_facing, 0.2, 0.2);
+}
+
 global.on_player_pick_up_item_event.subscribe(on_pick_up_item);
 global.on_player_change_element_event.subscribe(on_change_element);
 global.on_player_obtain_key_event.subscribe(on_obtain_key);
+global.on_debug_send_notif_event.subscribe(debug_send_notif);

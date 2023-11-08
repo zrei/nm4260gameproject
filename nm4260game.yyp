@@ -282,6 +282,7 @@
     {"id":{"name":"spr_fire_emu_left_facing","path":"sprites/spr_fire_emu_left_facing/spr_fire_emu_left_facing.yy",},},
     {"id":{"name":"spr_grass_obstacle_cleared","path":"sprites/spr_grass_obstacle_cleared/spr_grass_obstacle_cleared.yy",},},
     {"id":{"name":"scr_player_events","path":"scripts/scr_player_events/scr_player_events.yy",},},
+    {"id":{"name":"scr_ui_events","path":"scripts/scr_ui_events/scr_ui_events.yy",},},
     {"id":{"name":"spr_grass_emu_front_facing_damaged","path":"sprites/spr_grass_emu_front_facing_damaged/spr_grass_emu_front_facing_damaged.yy",},},
     {"id":{"name":"spr_instruction_4","path":"sprites/spr_instruction_4/spr_instruction_4.yy",},},
     {"id":{"name":"snd_decoy_destroy","path":"sounds/snd_decoy_destroy/snd_decoy_destroy.yy",},},

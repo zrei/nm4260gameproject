@@ -76,6 +76,6 @@ check_is_active = function()
 
 move_up = function(_move_up_distance, _move_up_speed)
 {
-	move_up_distance = _move_up_distance;
+	move_up_distance += _move_up_distance;
 	move_up_speed = _move_up_speed;	
 }

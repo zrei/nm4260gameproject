@@ -332,3 +332,13 @@ ds_map_add(string_map_to_cheat, "player.obtainkey", new Cheat(
 	give_key,
 	"Give player the key",
 	"player.obtainkey"));
+	
+function generate_notif(_ignore)
+{
+	global.on_debug_send_notif_event.invoke();
+}
+
+ds_map_add(string_map_to_cheat, "notif", new Cheat(
+	generate_notif,
+	"Sends a notification",
+	"notif"));
