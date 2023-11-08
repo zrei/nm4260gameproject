@@ -18,6 +18,8 @@ on_arena_end = function()
 
 spawn_item = function(_x, _y, _layer)
 {
+	if (spawn_item_vfx != noone)	
+		spawn_vfx(spawn_item_vfx, new Vector2(0, 0), depth - 10);
 	instance_create_layer(_x, _y, _layer, item_to_spawn);	
 }
 

@@ -89,7 +89,7 @@ else
 	
 set_sprite(map_angles_to_cardinal_directions(curr_facing_position));
 
-if check_mouse_pressed(SHOOT_KEY) && !(shooting_cooldown > 0 || knockback_cooldown > 0 || (!global.allow_shooting_while_moving && moving))
+if check_key_pressed(SHOOT_KEY) && !(shooting_cooldown > 0 || knockback_cooldown > 0 || (!global.allow_shooting_while_moving && moving))
 {
 	var _projectile_offset = get_projectile_offset(curr_facing_position);
 	instance_create_layer(x + _projectile_offset.x, y - _projectile_offset.y, global.player_layer, obj_player_projectile, get_projectile_variable(curr_facing_position, curr_element, (curr_facing_position + 180) % 360));

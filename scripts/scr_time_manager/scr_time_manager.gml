@@ -28,4 +28,9 @@ function TimeDeductionPopup(_change_amount) constructor
 {
 	curr_time = 0;
 	change_amount = _change_amount;
+	
+	static update_curr_time = function(_change_amt)
+	{
+		curr_time += _change_amt;	
+	}
 }

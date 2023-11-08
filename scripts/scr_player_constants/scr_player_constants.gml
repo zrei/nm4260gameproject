@@ -5,9 +5,9 @@
 #macro MOVE_RIGHT_KEY ord("D")
 #macro MOVE_UP_KEY ord("W")
 #macro MOVE_DOWN_KEY ord("S")
-#macro SHOOT_KEY mb_left
+#macro SHOOT_KEY ord("O")
 #macro PAUSE_KEY vk_escape
-#macro INTERACT_BUTTON ord("E")
+#macro INTERACT_BUTTON ord("P")
 
 global.player_movement_speed = 5.0;
 global.player_health = 10;

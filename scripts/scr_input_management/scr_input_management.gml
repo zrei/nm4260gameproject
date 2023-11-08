@@ -72,14 +72,15 @@ function unblock_mouse(_mouses)
 }
 
 global.player_movement_keys = [MOVE_LEFT_KEY, MOVE_RIGHT_KEY, MOVE_DOWN_KEY, MOVE_UP_KEY];
-global.player_mouse = [SHOOT_KEY];
+global.player_shoot_key = [SHOOT_KEY];
 global.player_pause = [PAUSE_KEY];
 global.player_interact = [INTERACT_BUTTON];
 
 function block_all_player_controls()
 {
 	block_keys(global.player_movement_keys);
-	block_mouse(global.player_mouse);
+	//block_mouse(global.player_mouse);
+	block_keys(global.player_shoot_key);
 	block_keys(global.player_interact);
 	block_keys(global.player_pause);
 }
@@ -87,7 +88,8 @@ function block_all_player_controls()
 function unblock_all_player_controls()
 {
 	unblock_keys(global.player_movement_keys);
-	unblock_mouse(global.player_mouse);
+	//unblock_mouse(global.player_mouse);
+	unblock_keys(global.player_shoot_key);
 	unblock_keys(global.player_interact);
 	unblock_keys(global.player_pause);
 }
@@ -95,13 +97,15 @@ function unblock_all_player_controls()
 function block_player_actions()
 {
 	block_keys(global.player_movement_keys);
-	block_mouse(global.player_mouse);
+	//block_mouse(global.player_mouse);
+	block_keys(global.player_shoot_key);
 	block_keys(global.player_interact);
 }
 
 function unblock_player_actions()
 {
 	unblock_keys(global.player_movement_keys);
-	unblock_mouse(global.player_mouse);
+	//unblock_mouse(global.player_mouse);
+	unblock_keys(global.player_shoot_key);
 	unblock_keys(global.player_interact);
 }

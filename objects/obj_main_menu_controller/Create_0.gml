@@ -36,7 +36,7 @@ global.on_end_transition_event.subscribe(on_end_transition);
 
 start_game = function()
 {
-	obj_bgm_controller.stop_all_sounds();
+	obj_bgm_controller.stop_all_music();
 	obj_transition_controller.create_transition(global.fade_in_transition, new Vector2(0, 0), false);
 }
 

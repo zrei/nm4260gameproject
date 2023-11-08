@@ -36,7 +36,7 @@ play_again_btn_instance.on_pressed.subscribe(go_to_first_level_transition);
 
 go_to_main_menu_transition_override = function()
 {	
-	obj_bgm_controller.stop_all_sounds();	
+	obj_bgm_controller.stop_all_music();	
 	global.curr_transition_purpose = TRANSITION_PURPOSE.TO_MAIN_MENU;
 	obj_transition_controller.create_transition(global.fade_in_transition, new Vector2(0, 0), false, false);
 }

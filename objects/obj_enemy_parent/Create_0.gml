@@ -18,6 +18,11 @@ path_idx = 0;
 to_gen_path = true;
 path_num_nodes = 0;
 
+curr_movement_speed = starting_movement_speed;
+speed_boosts = [];
+
+curr_angry_vfx = undefined;
+
 get_hit_by_projectile = function(_projectile_element, _damage)
 {
 	if (enemy_element == SKILL_ELEMENTS.NONE)
@@ -34,8 +39,36 @@ get_hit_by_projectile = function(_projectile_element, _damage)
 
 power_up = function()
 {
-	movement_speed = min(movement_speed + movement_speed_increase_amount, movement_speed_cap);
+	array_push(speed_boosts, new SpeedUpBuff(speed_boost_wear_off_time, movement_speed_increase_amount));
+	//movement_speed = min(movement_speed + movement_speed_increase_amount, movement_speed_cap);
 	spawn_vfx(obj_powerup_aura, new Vector2(x, y), -50, image_xscale, image_yscale, self);
+	if (curr_angry_vfx == undefined)
+		create_angry_vfx();
+}
+
+create_angry_vfx = function()
+{
+	if (angry_vfx != noone)
+		curr_angry_vfx = spawn_vfx(angry_vfx, (new Vector2(x, y)).translate_vector(angry_vfx_offset), -50, angry_vfx_xscale, angry_vfx_yscale, self, angry_vfx_offset);
+}
+
+destroy_angry_vfx = function()
+{
+	if (curr_angry_vfx != undefined)
+		instance_destroy(curr_angry_vfx);	
+}
+
+sum_of_speed_ups = function(_previous, _current, _index)
+{
+	return _previous + _current.speed_up_amt;
+}
+
+update_speed_up_buffs = function()
+{
+	array_foreach(speed_boosts, function(_element, _index) { _element.update_buff_duration(-delta_time * global.time_scale); });
+	speed_boosts = array_filter(speed_boosts, function(_element, _index) { return _element.duration > 0; });
+	if (array_length(speed_boosts) == 0)
+		destroy_angry_vfx();
 }
 
 take_damage = function(_damage_value)

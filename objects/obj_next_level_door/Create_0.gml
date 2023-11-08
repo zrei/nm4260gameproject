@@ -16,7 +16,7 @@ popup_instance = undefined;
 setup_popup = function()
 {
 	global.on_popup_controller_ready_event.unsubscribe(setup_popup);
-	popup_instance = obj_popup_controller.create_popup(obj_padlock, new Vector2(0, 0), {origin: new Vector2(x + sprite_get_width(sprite_index) / 2, y + sprite_get_height(sprite_index) / 2)});
+	popup_instance = obj_popup_controller.create_popup(obj_padlock, new Vector2(0, 0), {origin: new Vector2(x, y)});
 }
 
 remove_popup = function()

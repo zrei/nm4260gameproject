@@ -5,9 +5,10 @@
   "eventList": [],
   "managed": true,
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_btn","path":"objects/obj_btn/obj_btn.yy",},"propertyId":{"name":"hovered_sprite","path":"objects/obj_btn/obj_btn.yy",},"value":"spr_pause_button_hovered",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_btn","path":"objects/obj_btn/obj_btn.yy",},"propertyId":{"name":"unhovered_sprite","path":"objects/obj_btn/obj_btn.yy",},"value":"spr_pause_button",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_btn","path":"objects/obj_btn/obj_btn.yy",},"propertyId":{"name":"selected_sprite","path":"objects/obj_btn/obj_btn.yy",},"value":"spr_pause_button_hovered",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_btn","path":"objects/obj_btn/obj_btn.yy",},"propertyId":{"name":"hovered_sprite","path":"objects/obj_btn/obj_btn.yy",},"value":"spr_pause_button_esc_hovered",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_btn","path":"objects/obj_btn/obj_btn.yy",},"propertyId":{"name":"unhovered_sprite","path":"objects/obj_btn/obj_btn.yy",},"value":"spr_pause_button_esc",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_btn","path":"objects/obj_btn/obj_btn.yy",},"propertyId":{"name":"selected_sprite","path":"objects/obj_btn/obj_btn.yy",},"value":"spr_pause_button_esc_hovered",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_btn","path":"objects/obj_btn/obj_btn.yy",},"propertyId":{"name":"selected_sound","path":"objects/obj_btn/obj_btn.yy",},"value":"snd_button_press",},
   ],
   "parent": {
     "name": "HUD",
@@ -33,9 +34,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
+    "name": "spr_pause_button_esc",
+    "path": "sprites/spr_pause_button_esc/spr_pause_button_esc.yy",
+  },
+  "spriteMaskId": {
     "name": "spr_pause_button",
     "path": "sprites/spr_pause_button/spr_pause_button.yy",
   },
-  "spriteMaskId": null,
   "visible": true,
 }

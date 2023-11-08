@@ -32,6 +32,7 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"spawn_offset_y","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"10","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"spawn_time","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"convert_seconds_to_microseconds(30)","varType":4,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"item_to_spawn","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"obj_popup_healing_egg","varType":5,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"spawn_item_vfx","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"noone","varType":5,},
   ],
   "solid": false,
   "spriteId": {

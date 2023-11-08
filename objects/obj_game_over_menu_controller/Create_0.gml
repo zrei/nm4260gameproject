@@ -31,7 +31,7 @@ activate_all_instances = function()
 show_overlay_menu = function()
 {
 	is_open = true;
-	obj_bgm_controller.stop_all_sounds();
+	obj_bgm_controller.stop_all_music();
 	obj_bgm_controller.play_music(snd_game_over_music);
 	activate_all_instances();
 	instance_create_layer(0, 0, global.menu_layer, obj_menu_timer, {

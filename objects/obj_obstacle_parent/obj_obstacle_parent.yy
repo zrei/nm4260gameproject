@@ -4,6 +4,7 @@
   "name": "obj_obstacle_parent",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_player_projectile","path":"objects/obj_player_projectile/obj_player_projectile.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -32,6 +33,7 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"obstacle_element","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"SKILL_ELEMENTS.NONE","varType":4,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"not_cleared_sprite","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":5,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"cleared_sprite","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":5,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"play_particles","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"True","varType":3,},
   ],
   "solid": true,
   "spriteId": null,

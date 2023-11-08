@@ -15,14 +15,14 @@ play_particles = function(_ps, _layer, _pos = new Vector2(0, 0), _color = c_whit
 
 advance_particles = function()
 {
-	var _new_active_particles = [];	
-	for (var _i = 0; _i < array_length(active_particle_systems); _i++)
-	{
-		part_system_update(active_particle_systems[_i]);
-		if (part_particles_count(active_particle_systems[_i]) == 0)
-			part_system_destroy(active_particle_systems[_i]);
+	array_foreach(active_particle_systems, function(_element, _index) { part_system_update(_element); });
+	active_particle_systems = array_filter(active_particle_systems, function(_element, _index) { 
+		if (part_particles_count(_element) == 0)
+		{
+			part_system_destroy(_element);
+			return false;
+		}
 		else
-			array_push(_new_active_particles, active_particle_systems[_i]);
-	}
-	active_particle_systems = _new_active_particles;
+			return true;
+	});
 }

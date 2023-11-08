@@ -8,6 +8,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_obstacle_parent","path":"objects/obj_obstacle_parent/obj_obstacle_parent.yy",},"propertyId":{"name":"obstacle_element","path":"objects/obj_obstacle_parent/obj_obstacle_parent.yy",},"value":"SKILL_ELEMENTS.WATER",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_obstacle_parent","path":"objects/obj_obstacle_parent/obj_obstacle_parent.yy",},"propertyId":{"name":"not_cleared_sprite","path":"objects/obj_obstacle_parent/obj_obstacle_parent.yy",},"value":"spr_water_obstacle",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_obstacle_parent","path":"objects/obj_obstacle_parent/obj_obstacle_parent.yy",},"propertyId":{"name":"cleared_sprite","path":"objects/obj_obstacle_parent/obj_obstacle_parent.yy",},"value":"spr_water_obstacle_cleared",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_obstacle_parent","path":"objects/obj_obstacle_parent/obj_obstacle_parent.yy",},"propertyId":{"name":"play_particles","path":"objects/obj_obstacle_parent/obj_obstacle_parent.yy",},"value":"False",},
   ],
   "parent": {
     "name": "Order Obstacles",

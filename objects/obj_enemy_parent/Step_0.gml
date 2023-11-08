@@ -5,6 +5,13 @@ var _bb_bottom = y + sprite_height / 2;
 var _bb_left = x - sprite_width / 2;
 var _bb_right = x + sprite_width / 2;
 
+if (speed_boost_wears_off)
+	update_speed_up_buffs();
+
+curr_movement_speed = min(movement_speed_cap, array_reduce(speed_boosts, sum_of_speed_ups, starting_movement_speed));
+//else
+//	pass;
+
 if (curr_attack_cooldown > 0)
 {
 	curr_attack_cooldown -= global.time_scale;
@@ -47,7 +54,7 @@ if (can_act && path_found && path_idx < path_num_nodes)
 	//show_debug_message("New x and y: " + string(path_get_point_x(path, path_idx)) + ", " + string(path_get_point_y(path, path_idx)));
 	var _new_x = path_get_point_x(path, path_idx);
 	var _new_y = path_get_point_y(path, path_idx);
-	move_towards_point(_new_x, _new_y, movement_speed * global.time_scale);
+	move_towards_point(_new_x, _new_y, curr_movement_speed * global.time_scale);
 	curr_face_angle = calculate_face_angle(x, y, obj_player.x, obj_player.y);
 	if (distance_to_point(_new_x, _new_y) <= global.point_reached_threshold)
 	{	

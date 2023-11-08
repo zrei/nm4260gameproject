@@ -100,6 +100,21 @@ function get_enemy_sprite(_use_damaged, _cardinal_direction, _element)
 		return get_normal_sprite(_cardinal_direction, _element);
 }
 
+function Buff(_duration) constructor
+{
+	duration = _duration;
+	
+	static update_buff_duration = function(_change_amt)
+	{
+		duration += _change_amt;	
+	}
+}
+
+function SpeedUpBuff(_duration, _speed_up_amt) : Buff(_duration) constructor
+{
+	speed_up_amt = _speed_up_amt;	
+}
+
 /*function check_collision(_bb_left, _bb_right, _bb_top, _bb_bottom, _objs = [])//_pos, _objs = [])//_bb_left, _bb_right, _bb_top, _bb_bottom, _objs = [])
 {
 	for (var _i = 0; _i < array_length(_objs); _i++)

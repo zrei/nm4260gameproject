@@ -34,8 +34,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "spr_notification",
-    "path": "sprites/spr_notification/spr_notification.yy",
+    "name": "spr_notification_black",
+    "path": "sprites/spr_notification_black/spr_notification_black.yy",
   },
   "spriteMaskId": null,
   "visible": true,

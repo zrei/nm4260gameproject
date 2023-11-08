@@ -16,14 +16,8 @@ time_deductions = [];
 
 update_time_deductions = function()
 {
-	var _remaining_time_deductions = [];
-	for (var _i = 0; _i < array_length(time_deductions); _i++)
-	{
-		time_deductions[_i].curr_time += delta_time * global.time_scale;
-		if (time_deductions[_i].curr_time < deduction_popup_move_up_time)
-			array_push(_remaining_time_deductions, time_deductions[_i]);
-	}
-	time_deductions = _remaining_time_deductions;
+	array_foreach(time_deductions, function(_element, _index) { _element.update_curr_time(delta_time * global.time_scale); });
+	time_deductions = array_filter(time_deductions, function(_element, _index) { return _element.curr_time < deduction_popup_move_up_time; });
 }
 
 draw_time_deductions = function()

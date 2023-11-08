@@ -1,10 +1,14 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-#macro FIRST_SCREEN SplashScreen
-#macro FIRST_LEVEL Level1Transition
+#macro FIRST_SCREEN rm_splash_screen
+#macro FIRST_LEVEL_START rm_level_1_transition
+#macro FIRST_LEVEL rm_level_1
+#macro SECOND_LEVEL rm_level_2
+#macro THIRD_LEVEL rm_level_3
+#macro BOSS_LEVEL rm_boss_stage
 
 function gamemaker_room_start(_dungeon_room_instance, _entrance_direction) {
-	obj_bgm_controller.stop_all_sounds();
+	obj_bgm_controller.stop_all_music();
 	instantiate_enemy_layer();
 	instantiate_player();
 	instantiate_popup_layer();

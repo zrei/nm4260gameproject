@@ -10,6 +10,7 @@
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_dungeon_door","path":"objects/obj_dungeon_door/obj_dungeon_door.yy",},"propertyId":{"name":"closed_sprite","path":"objects/obj_dungeon_door/obj_dungeon_door.yy",},"value":"spr_dungeon_door_to_next_level",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_dungeon_door","path":"objects/obj_dungeon_door/obj_dungeon_door.yy",},"propertyId":{"name":"open_sprite","path":"objects/obj_dungeon_door/obj_dungeon_door.yy",},"value":"spr_dirt_horizontal",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_dungeon_door","path":"objects/obj_dungeon_door/obj_dungeon_door.yy",},"propertyId":{"name":"flip_sprite_on_unlock","path":"objects/obj_dungeon_door/obj_dungeon_door.yy",},"value":"True",},
   ],
   "parent": {
     "name": "Doors",

@@ -9,7 +9,7 @@
   ],
   "managed": true,
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"movement_speed","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"2",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"starting_movement_speed","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"2",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"attack_damage","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"2",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"enemy_health","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"100",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"attack_cooldown","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"convert_seconds_to_frames(2)",},
@@ -20,6 +20,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"time_reduction","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"convert_seconds_to_microseconds(0)",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"movement_speed_cap","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"3",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"enemy_element","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"SKILL_ELEMENTS.GRASS",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"speed_boost_wears_off","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"True",},
   ],
   "parent": {
     "name": "Enemies",

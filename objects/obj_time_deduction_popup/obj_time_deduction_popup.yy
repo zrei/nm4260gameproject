@@ -28,9 +28,10 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"deduction_popup_time","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"convert_seconds_to_microseconds(0.3)","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"deduction_fade_time","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"convert_seconds_to_microseconds(0.3)","varType":4,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"deduction_popup_move_up_speed","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0.00005","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"change_amount","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"deduction_solid_time","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"convert_seconds_to_microseconds(0.4)","varType":4,},
   ],
   "solid": false,
   "spriteId": {

@@ -17,4 +17,4 @@ else if (!popup_active && check_player_in_range())
 }
 
 if (check_key_pressed(INTERACT_BUTTON) && check_player_in_range())
-		perform_interaction();
+	perform_interaction();
