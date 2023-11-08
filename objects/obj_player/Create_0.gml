@@ -113,7 +113,7 @@ heal = function(_heal_amount)
 		show_debug_message("Cannot heal negative amount");
 		return;
 	}
-	spawn_vfx(obj_heal_aura, (new Vector2(x, y)).translate_vector(get_heal_vfx_offset()), -70, 1, 1, self, get_heal_vfx_offset()); 
+	spawn_vfx(obj_heal_aura, (new Vector2(x, y)).translate_vector(get_heal_vfx_offset()), depth - 10, 1, 1, self, get_heal_vfx_offset()); 
 	player_health = min(player_health + _heal_amount, global.player_health);
 	global.on_player_change_health_event.invoke(player_health);
 }

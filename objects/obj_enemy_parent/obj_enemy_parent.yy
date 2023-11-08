@@ -58,6 +58,7 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"angry_vfx_offset","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"new Vector2(0, -50)","varType":4,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"angry_vfx_xscale","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0.7","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"angry_vfx_yscale","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0.7","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"is_boss","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":3,},
   ],
   "solid": false,
   "spriteId": null,

@@ -23,6 +23,8 @@ speed_boosts = [];
 
 curr_angry_vfx = undefined;
 
+half_health_event_fired = false;
+
 get_hit_by_projectile = function(_projectile_element, _damage)
 {
 	if (enemy_element == SKILL_ELEMENTS.NONE)
@@ -41,7 +43,7 @@ power_up = function()
 {
 	array_push(speed_boosts, new SpeedUpBuff(speed_boost_wear_off_time, movement_speed_increase_amount));
 	//movement_speed = min(movement_speed + movement_speed_increase_amount, movement_speed_cap);
-	spawn_vfx(obj_powerup_aura, new Vector2(x, y), -50, image_xscale, image_yscale, self);
+	spawn_vfx(obj_powerup_aura, new Vector2(x, y), depth - 10, image_xscale, image_yscale, self);
 	if (curr_angry_vfx == undefined)
 		create_angry_vfx();
 }
@@ -49,13 +51,16 @@ power_up = function()
 create_angry_vfx = function()
 {
 	if (angry_vfx != noone)
-		curr_angry_vfx = spawn_vfx(angry_vfx, (new Vector2(x, y)).translate_vector(angry_vfx_offset), -50, angry_vfx_xscale, angry_vfx_yscale, self, angry_vfx_offset);
+		curr_angry_vfx = spawn_vfx(angry_vfx, (new Vector2(x, y)).translate_vector(angry_vfx_offset), layer_get_depth(global.player_layer) - 10, angry_vfx_xscale, angry_vfx_yscale, self, angry_vfx_offset);
 }
 
 destroy_angry_vfx = function()
 {
 	if (curr_angry_vfx != undefined)
+	{
 		instance_destroy(curr_angry_vfx);	
+		curr_angry_vfx = undefined;	
+	}
 }
 
 sum_of_speed_ups = function(_previous, _current, _index)
@@ -83,6 +88,13 @@ take_damage = function(_damage_value)
 		die();
 		return;
 	}	
+	
+	if (curr_health <= enemy_health / 2 && is_boss && !half_health_event_fired)
+	{
+		show_debug_message("Phase 2 entered");
+		global.on_boss_entered_second_phase_event.invoke();
+		half_health_event_fired = true;
+	}
 
 	curr_damage_flash_amount_remaining = flash_amount;
 	curr_damage_flash_interval = flash_interval;
@@ -134,7 +146,7 @@ drop_heal_item = function()
 		var _angle = random_range(min_heal_item_drop_angle, max_heal_item_drop_angle);
 		var _spawn_radius = random_range(min_heal_item_drop_radius, max_heal_item_drop_radius);
 		var _spawn_point = calculate_point_on_circle_perimeter(new Vector2(x, y), _angle, _spawn_radius);
-		instance_create_layer(_spawn_point.x, _spawn_point.y, "Enemy", heal_item);
+		instance_create_layer(_spawn_point.x, _spawn_point.y, global.enemy_layer, heal_item);
 	}
 }
 

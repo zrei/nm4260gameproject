@@ -21,6 +21,10 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"movement_speed_cap","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"3",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"enemy_element","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"SKILL_ELEMENTS.GRASS",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"speed_boost_wears_off","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"True",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"angry_vfx_xscale","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"0.8",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"angry_vfx_yscale","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"0.8",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"angry_vfx_offset","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"new Vector2(0, -80)",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"is_boss","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"True",},
   ],
   "parent": {
     "name": "Enemies",
