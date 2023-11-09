@@ -25,6 +25,8 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"angry_vfx_yscale","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"0.8",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"angry_vfx_offset","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"new Vector2(0, -80)",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"is_boss","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"True",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"dust_cloud_x_offset","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"30",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"propertyId":{"name":"dust_cloud_y_offset","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"value":"50",},
   ],
   "parent": {
     "name": "Enemies",

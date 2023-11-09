@@ -37,10 +37,7 @@ move_active_notifications_up = function()
 {
 	for (var _i = 0; _i < num_notifications; _i++)
 		if (notification_objects[| _i].check_is_active())
-		{
-			show_debug_message("Move " + string(_i) + " notification object");
 			notification_objects[| _i].move_up(move_up_distance, move_up_speed);
-		}
 }
 
 queue_notifications = function(_notif_struct)

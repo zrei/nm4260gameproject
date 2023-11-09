@@ -45,6 +45,6 @@ get_particle_offset = function()
 disappear = function()
 {
 	if (destroy_particles != noone)
-		obj_particles_controller.play_particles(destroy_particles, layer, (new Vector2(x, y)).translate_vector(get_particle_offset()), get_particle_color(), 1, get_particle_rotation());
+		obj_particles_controller.play_particles(destroy_particles, layer, PARTICLE_SYSTEM_TYPE.LIMITED_COUNT, 0, (new Vector2(x, y)).translate_vector(get_particle_offset()), get_particle_color(), 1, get_particle_rotation());
 	instance_destroy(self);
 }

@@ -25,6 +25,18 @@ curr_angry_vfx = undefined;
 
 half_health_event_fired = false;
 
+spawn_smoke_cloud = function()
+{
+	if (dust_cloud != noone)
+	{
+		var _pos = new Vector2(x, y);
+		obj_particles_controller.play_particles(dust_cloud, global.player_layer, PARTICLE_SYSTEM_TYPE.LIFETIME, dust_cloud_time, _pos.translate(-dust_cloud_x_offset, dust_cloud_y_offset));
+		obj_particles_controller.play_particles(dust_cloud, global.player_layer, PARTICLE_SYSTEM_TYPE.LIFETIME, dust_cloud_time, _pos.translate(dust_cloud_x_offset, dust_cloud_y_offset));
+	}
+}
+
+spawn_smoke_cloud();
+
 get_hit_by_projectile = function(_projectile_element, _damage)
 {
 	if (enemy_element == SKILL_ELEMENTS.NONE)
@@ -143,6 +155,7 @@ drop_heal_item = function()
 	var _rand_value = random(1);
 	if (_rand_value < heal_item_drop_chance)
 	{
+		var _pos = find_free_item_spawn_point();
 		var _angle = random_range(min_heal_item_drop_angle, max_heal_item_drop_angle);
 		var _spawn_radius = random_range(min_heal_item_drop_radius, max_heal_item_drop_radius);
 		var _spawn_point = calculate_point_on_circle_perimeter(new Vector2(x, y), _angle, _spawn_radius);
@@ -190,6 +203,24 @@ on_pause_menu_closed = function()
 on_grid_updated = function()
 {
 	to_gen_path = true;	
+}
+
+find_free_item_spawn_point = function()
+{
+	var _horizontal_interval = sprite_width / 2 * image_xscale;
+	var _i = 1;
+	while (_i <= 10)
+	{
+		if (!collision_rectangle(x + _i * _horizontal_interval - sprite_get_width(spr_egg) / 2, y - sprite_get_height(spr_egg) / 2, x + _i * _horizontal_interval + sprite_get_width(spr_egg) / 2, y + sprite_get_height(spr_egg) / 2, [obj_pathfindable, ts_wall], false, true))
+			return new Vector2(x + _i * _horizontal_interval, y);
+		//if (!place_meeting(x + _i * _horizontal_interval, y, [obj_pathfindable, ts_wall]))
+		//	return new Vector2(x + _i * _horizontal_interval, y);
+		if (!collision_rectangle(x - _i * _horizontal_interval - sprite_get_width(spr_egg) / 2, y - sprite_get_height(spr_egg) / 2, x - _i * _horizontal_interval + sprite_get_width(spr_egg) / 2, y + sprite_get_height(spr_egg) / 2, [obj_pathfindable, ts_wall], false, true))
+			return new Vector2(x - _i * _horizontal_interval, y);
+		_i += 1;
+		//if (!place_meeting(
+	}
+	show_debug_message("Unable to find spawn point");
 }
 
 global.on_player_death_event.subscribe(on_player_die);

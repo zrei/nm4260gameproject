@@ -3,6 +3,7 @@
 
 curr_state = ROOM_STATE.IDLE;
 spawned_points = ds_list_create();
+
 min_angle = 0;
 max_angle = 360;
 
@@ -18,13 +19,13 @@ spawn_enemy = function()
 		return;
 	while (true)
 	{
-		_angle = random_range(min_angle, max_angle);
-		_spawn_radius = random_range(min_spawn_radius, max_spawn_radius);
-		_spawn_point = calculate_point_on_circle_perimeter(position, _angle, _spawn_radius);
+		var _angle = random_range(min_angle, max_angle);
+		var _spawn_radius = random_range(min_spawn_radius, max_spawn_radius);
+		var _spawn_point = calculate_point_on_circle_perimeter(position, _angle, _spawn_radius);
 		if (ds_list_find_index(spawned_points, _spawn_point) != -1)
 			continue;
-		instance_create_layer(_spawn_point.x, _spawn_point.y, "Enemy", enemy_to_spawn);
 		ds_list_add(spawned_points, _spawn_point);
+		instance_create_layer(_spawn_point.x, _spawn_point.y, "Enemy", enemy_to_spawn);
 		break;
 	}
 	
