@@ -65,6 +65,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI","folderPath":"folders/Sounds/SFX/UI.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Backgrounds","folderPath":"folders/Sprites/Backgrounds.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Decorations","folderPath":"folders/Sprites/Decorations.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Dungeon Room","folderPath":"folders/Sprites/Dungeon Room.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Element Swappers","folderPath":"folders/Sprites/Element Swappers.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Enemy","folderPath":"folders/Sprites/Enemy.yy",},
@@ -87,7 +88,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Walls","folderPath":"folders/Sprites/Walls.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Decorations","folderPath":"folders/Sprites/Decorations.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"slkscr.ttf","CopyToMask":-1,"filePath":"datafiles",},

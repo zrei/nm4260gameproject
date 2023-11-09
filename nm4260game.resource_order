@@ -53,6 +53,7 @@
     {"name":"UI","order":2,"path":"folders/Sounds/SFX/UI.yy",},
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"Backgrounds","order":16,"path":"folders/Sprites/Backgrounds.yy",},
+    {"name":"Decorations","order":19,"path":"folders/Sprites/Decorations.yy",},
     {"name":"Dungeon Room","order":8,"path":"folders/Sprites/Dungeon Room.yy",},
     {"name":"Element Swappers","order":10,"path":"folders/Sprites/Element Swappers.yy",},
     {"name":"Enemy","order":7,"path":"folders/Sprites/Enemy.yy",},
@@ -74,7 +75,6 @@
     {"name":"Walls","order":17,"path":"folders/Sprites/Walls.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"Decorations","order":19,"path":"folders/Sprites/Decorations.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_grass_projectile","order":1,"path":"sprites/spr_grass_projectile/spr_grass_projectile.yy",},

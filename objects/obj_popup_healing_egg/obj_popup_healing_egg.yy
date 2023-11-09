@@ -2,9 +2,7 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_popup_healing_egg",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-  ],
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_healing_item_parent","path":"objects/obj_healing_item_parent/obj_healing_item_parent.yy",},"propertyId":{"name":"heal_amount","path":"objects/obj_healing_item_parent/obj_healing_item_parent.yy",},"value":"2",},

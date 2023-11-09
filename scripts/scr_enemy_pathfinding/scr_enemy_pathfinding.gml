@@ -45,19 +45,15 @@ function modify_grid(_instance, _dungeon_room, _callback)
 	var _horiz_tile_num = (x - global.tileset_dimensions / 2 - _dungeon_room.left_bound) / global.tileset_dimensions;
 	var _num_vert_tiles = _instance.num_tiles_in_height;
 	var _num_horiz_tiles = _instance.num_tiles_in_width;
-	show_debug_message("Position of center. Horizontal: " + string(_horiz_tile_num) + ", Vertical: " + string(_vert_tile_num));
-	show_debug_message("Number of tiles (dimensions). Horizontal: " + string(_num_horiz_tiles) + ", Vertical: " + string(_num_vert_tiles));
 	for (var _h = _vert_tile_num - floor(_num_vert_tiles / 2); _h <= _vert_tile_num; _h++)
 	{
 		for (var _w = _horiz_tile_num - floor(_num_horiz_tiles / 2); _w <= _horiz_tile_num; _w++)
 		{
 			_callback(global.grid, _w, _h);
-			show_debug_message("Tiles: " + string(_w) + ", " + string(_h));
 		}
 		for (var _w = _horiz_tile_num + 1; _w < _horiz_tile_num + floor(_num_horiz_tiles / 2) + 1; _w++)
 		{
 			_callback(global.grid, _w, _h);
-			show_debug_message("Tiles: " + string(_w) + ", " + string(_h));
 		}
 	}
 	for (var _h = _vert_tile_num + 1; _h < _vert_tile_num + 1 + floor(_num_vert_tiles / 2); _h++)
@@ -65,12 +61,10 @@ function modify_grid(_instance, _dungeon_room, _callback)
 		for (var _w = _horiz_tile_num - floor(_num_horiz_tiles / 2); _w <= _horiz_tile_num; _w++)
 		{
 			_callback(global.grid, _w, _h);
-			show_debug_message("Tiles: " + string(_w) + ", " + string(_h));
 		}
 		for (var _w = _horiz_tile_num + 1; _w < _horiz_tile_num + floor(_num_horiz_tiles / 2) + 1; _w++)
 		{
 			_callback(global.grid, _w, _h);
-			show_debug_message("Tiles: " + string(_w) + ", " + string(_h));
 		}
 	}
 }

@@ -3,7 +3,7 @@
 
 if (in_transition)
 	return;
-
+show_debug_message("Collide player?");
 other.heal(heal_amount);
 global.on_player_pick_up_item_event.invoke(heal_amount);
 

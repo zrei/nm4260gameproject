@@ -153,13 +153,17 @@ despawn = function()
 drop_heal_item = function()
 {
 	var _rand_value = random(1);
-	if (_rand_value < heal_item_drop_chance)
+	if (_rand_value <= heal_item_drop_chance)
 	{
-		var _pos = find_free_item_spawn_point();
-		var _angle = random_range(min_heal_item_drop_angle, max_heal_item_drop_angle);
-		var _spawn_radius = random_range(min_heal_item_drop_radius, max_heal_item_drop_radius);
-		var _spawn_point = calculate_point_on_circle_perimeter(new Vector2(x, y), _angle, _spawn_radius);
-		instance_create_layer(_spawn_point.x, _spawn_point.y, global.enemy_layer, heal_item);
+		var _spawn_point = find_free_item_spawn_point();
+		//var _angle = random_range(min_heal_item_drop_angle, max_heal_item_drop_angle);
+		//var _spawn_radius = random_range(min_heal_item_drop_radius, max_heal_item_drop_radius);
+		//var _spawn_point = calculate_point_on_circle_perimeter(new Vector2(x, y), _angle, _spawn_radius);
+		//instance_create_layer(_spawn_point.x, _spawn_point.y, global.enemy_layer, heal_item);
+		if (_spawn_point != undefined)
+			instance_create_layer(x, y, global.enemy_layer, heal_item, {
+				final_pos: _spawn_point
+			});
 	}
 }
 
@@ -207,7 +211,7 @@ on_grid_updated = function()
 
 find_free_item_spawn_point = function()
 {
-	var _horizontal_interval = sprite_width / 2 * image_xscale;
+	var _horizontal_interval = sprite_width / 2 * image_xscale + spawn_offset_x;
 	var _i = 1;
 	while (_i <= 10)
 	{
@@ -221,6 +225,7 @@ find_free_item_spawn_point = function()
 		//if (!place_meeting(
 	}
 	show_debug_message("Unable to find spawn point");
+	return undefined;
 }
 
 global.on_player_death_event.subscribe(on_player_die);

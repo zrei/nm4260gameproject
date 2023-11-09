@@ -63,6 +63,7 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"dust_cloud_time","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"convert_seconds_to_microseconds(0.3)","varType":4,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"dust_cloud_x_offset","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"20","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"dust_cloud_y_offset","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"20","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"spawn_offset_x","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"30","varType":0,},
   ],
   "solid": false,
   "spriteId": null,
