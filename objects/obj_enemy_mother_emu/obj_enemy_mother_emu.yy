@@ -60,6 +60,7 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"enemy_projectile","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"obj_rock_projectile","varType":5,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"enemy_projectile_damage","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"1","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"enemy_projectile_speed","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"global.projectile_speed","varType":4,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"enemy_projectile_spawn_sound","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"snd_boss_bullet_spawn","varType":5,},
   ],
   "solid": false,
   "spriteId": {

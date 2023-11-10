@@ -18,6 +18,8 @@ swap_elements = function()
 
 spawn_projectiles = function()
 {
+	if (enemy_projectile_spawn_sound != noone)
+		obj_sfx_controller.play_sound(enemy_projectile_spawn_sound);
 	spawn_projectile(0);
 	spawn_projectile(90);
 	spawn_projectile(180);

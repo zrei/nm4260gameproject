@@ -378,6 +378,7 @@
     {"id":{"name":"obj_main_menu_btn","path":"objects/obj_main_menu_btn/obj_main_menu_btn.yy",},},
     {"id":{"name":"obj_nested_water_obstacle","path":"objects/obj_nested_water_obstacle/obj_nested_water_obstacle.yy",},},
     {"id":{"name":"snd_victory_music","path":"sounds/snd_victory_music/snd_victory_music.yy",},},
+    {"id":{"name":"snd_boss_bullet_spawn","path":"sounds/snd_boss_bullet_spawn/snd_boss_bullet_spawn.yy",},},
     {"id":{"name":"scr_abandoned_player_functions","path":"scripts/scr_abandoned_player_functions/scr_abandoned_player_functions.yy",},},
     {"id":{"name":"scr_time_events","path":"scripts/scr_time_events/scr_time_events.yy",},},
     {"id":{"name":"spr_neutral_emu_right_facing","path":"sprites/spr_neutral_emu_right_facing/spr_neutral_emu_right_facing.yy",},},

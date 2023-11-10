@@ -309,6 +309,7 @@
     {"name":"obj_main_menu_btn","order":7,"path":"objects/obj_main_menu_btn/obj_main_menu_btn.yy",},
     {"name":"obj_nested_water_obstacle","order":3,"path":"objects/obj_nested_water_obstacle/obj_nested_water_obstacle.yy",},
     {"name":"snd_victory_music","order":9,"path":"sounds/snd_victory_music/snd_victory_music.yy",},
+    {"name":"snd_boss_bullet_spawn","order":2,"path":"sounds/snd_boss_bullet_spawn/snd_boss_bullet_spawn.yy",},
     {"name":"scr_abandoned_player_functions","order":3,"path":"scripts/scr_abandoned_player_functions/scr_abandoned_player_functions.yy",},
     {"name":"scr_time_events","order":7,"path":"scripts/scr_time_events/scr_time_events.yy",},
     {"name":"spr_neutral_emu_right_facing","order":3,"path":"sprites/spr_neutral_emu_right_facing/spr_neutral_emu_right_facing.yy",},
