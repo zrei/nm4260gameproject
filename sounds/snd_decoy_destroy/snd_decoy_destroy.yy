@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 1.105442,
+  "duration": 3.333333,
   "parent": {
     "name": "Interactions",
     "path": "folders/Sounds/SFX/Interactions.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "snd_decoy_destroy.ogg",
+  "soundFile": "snd_decoy_destroy.wav",
   "type": 0,
   "volume": 1.0,
 }

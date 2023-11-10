@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.864943,
+  "duration": 2.0,
   "parent": {
     "name": "Pickup",
     "path": "folders/Sounds/SFX/Pickup.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "snd_egg_pickup.ogg",
+  "soundFile": "snd_egg_pickup.wav",
   "type": 0,
   "volume": 1.0,
 }

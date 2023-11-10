@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 61.97798,
+  "duration": 53.33304,
   "parent": {
     "name": "Music",
     "path": "folders/Sounds/Music.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "snd_boss_music.ogg",
+  "soundFile": "snd_boss_music.wav",
   "type": 0,
   "volume": 1.0,
 }

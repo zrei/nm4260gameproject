@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_level_1_wall_tilesprite",
-  "bbox_bottom": 95,
+  "bbox_bottom": 47,
   "bbox_left": 0,
   "bbox_right": 95,
   "bbox_top": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8034e2a2-637d-4557-bd68-fc3c1d6edc7d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"61450ebe-6f72-4f43-877f-bd9f7767cfaa",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 96,
+  "height": 48,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"87d48b6e-b647-4a20-af35-2aecc50d23ce","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"bebef515-2940-4d97-bd40-574f9f4d80fb","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8034e2a2-637d-4557-bd68-fc3c1d6edc7d","path":"sprites/spr_level_1_wall_tilesprite/spr_level_1_wall_tilesprite.yy",},},},"Disabled":false,"id":"5ab7aa79-534f-4fe0-8450-223dc89d80a7","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"61450ebe-6f72-4f43-877f-bd9f7767cfaa","path":"sprites/spr_level_1_wall_tilesprite/spr_level_1_wall_tilesprite.yy",},},},"Disabled":false,"id":"928d545b-d066-47e2-8686-7679c0c493dd","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

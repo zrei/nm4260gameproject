@@ -11,8 +11,14 @@ bb_top = y - sprite_height / 2;
 bb_left = x - sprite_width / 2;
 bb_right = x + sprite_width / 2;
 
+curr_flash_amount_remaining = 0;
+curr_flash_interval = 0;
+is_red = false;
+
 clear_obstacle = function()
 {
+	curr_flash_amount_remaining = 0;
+	curr_flash_interval = 0;
 	sprite_index = cleared_sprite;
 	solid = false;
 	mask_index = -1;
@@ -50,6 +56,12 @@ reset_obstacle = function()
 		show_debug_message("Player stuck");
 		shift_player();
 	}
+}
+
+set_to_flash = function()
+{
+	curr_flash_interval += flash_interval;
+	curr_flash_amount_remaining = flash_amount;
 }
 
 reset_obstacle();

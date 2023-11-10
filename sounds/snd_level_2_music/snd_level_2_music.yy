@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 83.19941,
+  "duration": 99.00014,
   "parent": {
     "name": "Music",
     "path": "folders/Sounds/Music.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "snd_level_2_music.ogg",
+  "soundFile": "snd_level_2_music.wav",
   "type": 0,
   "volume": 1.0,
 }

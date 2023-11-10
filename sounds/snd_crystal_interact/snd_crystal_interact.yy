@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.987029,
+  "duration": 5.333333,
   "parent": {
     "name": "Interactions",
     "path": "folders/Sounds/SFX/Interactions.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "snd_crystal_interact.ogg",
+  "soundFile": "snd_crystal_interact.wav",
   "type": 0,
   "volume": 1.0,
 }

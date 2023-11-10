@@ -101,6 +101,9 @@ take_damage = function(_damage_value)
 		return;
 	}	
 	
+	if (damage_sound != noone)
+		obj_sfx_controller.play_sound(damage_sound);
+
 	if (curr_health <= enemy_health / 2 && is_boss && !half_health_event_fired)
 	{
 		show_debug_message("Phase 2 entered");

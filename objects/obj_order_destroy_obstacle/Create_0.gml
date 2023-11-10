@@ -15,7 +15,10 @@ unlock_gates = function()
 check_order = function(_obstacle_instance)
 {		
 	if (obstacles_in_order[curr_obstacle_to_clear] != _obstacle_instance)
+	{
 		reset_obstacles();
+		_obstacle_instance.set_to_flash();
+	}
 	else
 	{
 		_obstacle_instance.clear_obstacle();

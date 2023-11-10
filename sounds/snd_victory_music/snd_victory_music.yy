@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 21.315214,
+  "duration": 89.60898,
   "parent": {
     "name": "Music",
     "path": "folders/Sounds/Music.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "snd_victory_music.ogg",
+  "soundFile": "snd_victory_music.wav",
   "type": 0,
   "volume": 1.0,
 }

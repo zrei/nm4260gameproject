@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.306213,
+  "duration": 1.333333,
   "parent": {
     "name": "Dungeon",
     "path": "folders/Sounds/SFX/Dungeon.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "snd_order_obstacle_fail.ogg",
+  "soundFile": "snd_order_obstacle_fail.wav",
   "type": 0,
   "volume": 1.0,
 }

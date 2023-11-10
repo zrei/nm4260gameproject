@@ -34,7 +34,7 @@ enum DOOR_TYPE
 function NextLevelDoorCreationStruct(_entrance_direction) constructor
 {
 	open_sprite = get_open_door_sprite(_entrance_direction);
-	flip_sprite_on_unlock = _entrance_direction == CARDINAL_DIRECTIONS.NORTH;
+	flip_sprite_on_unlock = _entrance_direction == CARDINAL_DIRECTIONS.SOUTH;
 }
 
 function DungeonDoorCreationStruct(_entrance_direction, _connecting_room) constructor
@@ -44,7 +44,7 @@ function DungeonDoorCreationStruct(_entrance_direction, _connecting_room) constr
 	open_sprite = get_open_door_sprite(entrance_direction);
 	connected_dungeon_room = _connecting_room;
 	image_xscale = _entrance_direction == CARDINAL_DIRECTIONS.EAST ? -1 : 1;
-	image_yscale = _entrance_direction == CARDINAL_DIRECTIONS.NORTH ? -1 : 1;
+	image_yscale = _entrance_direction == CARDINAL_DIRECTIONS.NORTH ? 1 : -1;
 }
 
 function DungeonRoomSideStruct(_has_door, _door_type = DOOR_TYPE.ARENA_DOOR, _connecting_room = undefined) constructor

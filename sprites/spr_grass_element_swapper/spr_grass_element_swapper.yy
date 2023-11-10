@@ -2,10 +2,10 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_grass_element_swapper",
-  "bbox_bottom": 47,
-  "bbox_left": 7,
-  "bbox_right": 40,
-  "bbox_top": 5,
+  "bbox_bottom": 45,
+  "bbox_left": 1,
+  "bbox_right": 44,
+  "bbox_top": 3,
   "bboxMode": 0,
   "collisionKind": 5,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"080d1bd6-8f70-4219-b75c-238688722658",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2dd9a0b2-aae8-425d-9189-596ab9a71e55",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 48,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8b91b7b1-a715-4f2e-9a2d-70656982ad09","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"319a3013-db19-439c-a348-d1f8e2bda863","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": {
     "resourceType": "GMNineSliceData",
@@ -77,7 +77,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"080d1bd6-8f70-4219-b75c-238688722658","path":"sprites/spr_grass_element_swapper/spr_grass_element_swapper.yy",},},},"Disabled":false,"id":"92786a6a-e322-4233-a2c8-49d366d9e5f0","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2dd9a0b2-aae8-425d-9189-596ab9a71e55","path":"sprites/spr_grass_element_swapper/spr_grass_element_swapper.yy",},},},"Disabled":false,"id":"3fbd43fe-76e2-4740-8fff-ec9186029d39","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
