@@ -55,6 +55,11 @@ on_pick_up_item = function(_heal_amount)
 	send_notification("Healed " + string(_heal_amount) + " HP", spr_egg, 0.5, 0.5);
 }
 
+on_decoy_crystal_activated = function()
+{
+	send_notification("Trap activated", spr_fake_element_swapper, 0.5, 0.5);	
+}
+
 on_change_element = function(_element)
 {
 	var _spr;
@@ -89,3 +94,4 @@ global.on_player_pick_up_item_event.subscribe(on_pick_up_item);
 global.on_player_change_element_event.subscribe(on_change_element);
 global.on_player_obtain_key_event.subscribe(on_obtain_key);
 global.on_debug_send_notif_event.subscribe(debug_send_notif);
+global.on_decoy_crystal_activated_event.subscribe(on_decoy_crystal_activated);
