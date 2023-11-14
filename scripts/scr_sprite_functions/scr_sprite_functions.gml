@@ -22,29 +22,3 @@ function FourDirectionalSprites(_west_facing, _east_facing, _north_facing, _sout
 		}
 	}
 }
-
-function SpriteInfo(_spr) constructor
-{
-	spr = _spr;
-	framerate = sprite_get_speed(_spr);
-	framerate_type = sprite_get_speed_type(_spr);
-}
-
-global.animated_sprites = [spr_emu_power_up_aura, spr_heal_aura, spr_angry_bubble];
-global.animated_sprites = array_map(global.animated_sprites, function(_element, _index) { return new SpriteInfo(_element); });
-	
-function pause_animations()
-{
-	array_foreach(global.animated_sprites, function(_element, _index) { sprite_set_speed(_element.spr, 0, _element.framerate_type); });
-}
-
-function unpause_animations()
-{
-	array_foreach(global.animated_sprites, function(_element, _index) { sprite_set_speed(_element.spr, _element.framerate, _element.framerate_type); });
-	//for (var _i = 0; _i < array_length(global.aura_sprites); _i++)
-	//	sprite_set_speed(global.aura_sprites[_i], global.aura_frame_rate, spritespeed_framespersecond);	
-}
-
-global.on_pause_menu_opened_event.subscribe(pause_animations);
-global.on_pause_menu_closed_event.subscribe(unpause_animations);
-global.on_end_transition_event.subscribe(unpause_animations);

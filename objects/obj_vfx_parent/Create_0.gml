@@ -16,3 +16,18 @@ if (destroy_with_parent)
 	
 if (!stationary)
 	parent.on_change_face_event.subscribe(on_parent_change_face);
+
+pause_animation = function()
+{
+	image_speed = 0;
+}
+
+unpause_animation = function()
+{
+	image_speed = 1;
+}
+
+global.on_pause_menu_opened_event.subscribe(pause_animation);
+global.on_pause_menu_closed_event.subscribe(unpause_animation);
+global.on_end_transition_event.subscribe(unpause_animation);
+global.on_player_death_event.subscribe(pause_animation);

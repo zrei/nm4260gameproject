@@ -4,4 +4,4 @@
 event_inherited();
 
 global.on_timer_changed_event.unsubscribe(on_timer_change);
-global.on_timer_affected_event.unsubscribe(on_timer_affected);
+//global.on_timer_affected_event.unsubscribe(on_timer_affected);

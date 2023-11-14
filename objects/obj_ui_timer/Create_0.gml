@@ -31,4 +31,4 @@ on_timer_affected = function(_change_amount)
 	array_push(time_deductions, new TimeDeductionPopup(convert_microseconds_to_seconds(_change_amount)));
 }
 
-global.on_timer_affected_event.subscribe(on_timer_affected);
+//global.on_timer_affected_event.subscribe(on_timer_affected);
